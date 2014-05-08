@@ -48,27 +48,28 @@ class QuerySynsetExpandingTokenizer(object):
     def __init__(self):
         self.first_run = True
 
-  def __call__(self, doc):
-      if self.first_run:
-          self.query = doc
-      self.query_tokens = [t for t in word_tokenize(doc)]
-      self.query_set set(self.query_tokens)
-      self.first_run = False
-      return self.query_tokens
-  else:
-      nouns_verbs = nouns_and_verbs(doc)
-      tokens = [t for t in word_tokenize(doc)]
-      syns = {}
-      for nv in nouns_verbs:
-          syns[nv] = get_synset(nv)
+    def __call__(self, doc):
+        if self.first_run:
+            self.query = doc
+            self.query_tokens = [t for t in word_tokenize(doc)]
 
-      # Replace tokens with synonyms if they occur in the query
-      for token in tokens:
-          if token in nouns_verbs:
-              overlap = self.query_set.intersection(set(synonym_map[token]))
-            if len(overlap):
-                token = overlap[0]
-    return tokens
+            self.query_set = set(self.query_tokens)
+            self.first_run = False
+            return self.query_tokens
+        else:
+            nouns_verbs = nouns_and_verbs(doc)
+            tokens = [t for t in word_tokenize(doc)]
+            syns = {}
+            for nv in nouns_verbs:
+                syns[nv] = get_synset(nv)
+
+            # Replace tokens with synonyms if they occur in the query
+            for token in tokens:
+                if token in nouns_verbs:
+                   overlap = self.query_set.intersection(set(synonym_map[token]))
+                if len(overlap):
+                  token = overlap[0]
+        return tokens
 
 
 def l1(sim_matrix, s, corpus_sums): #summary is collection of indicies
@@ -82,17 +83,17 @@ def l1(sim_matrix, s, corpus_sums): #summary is collection of indicies
 
 def r1(corpus_sums, s, groups, rqj, beta = 0.5):
     k = len(groups)
-        n = len(corpus_sums)
+    n = len(corpus_sums)
 
-        result = 0.0
-        for p in groups:
-            result2 = 0.0
-            for j in set(p).intersection(set(s)):
-                result2 += ((beta/n) * corpus_sums[j] + ((1 - beta) * rqj[j]))
+    result = 0.0
+    for p in groups:
+        result2 = 0.0
+        for j in set(p).intersection(set(s)):
+            result2 += ((beta/n) * corpus_sums[j] + ((1 - beta) * rqj[j]))
 
-            result += math.sqrt(result2)
+        result += math.sqrt(result2)
 
-        return result
+    return result
 
 def reward(sim_matrix, s, corpus_sums, groups, rqj):
     return l1(sim_matrix, s, corpus_sums) + (6 * r1(corpus_sums, s, groups, rqj))

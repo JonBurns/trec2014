@@ -24,12 +24,14 @@ import math
 
 from sklearn.feature_extraction.stop_words import ENGLISH_STOP_WORDS
 
-new_stop_words = set(".").union(set(",")).union(set("\"")).union(ENGLISH_STOP_WORDS)
+#new_stop_words = set('.').union(set(',')).union(set('\"')).union(ENGLISH_STOP_WORDS)
 
-print new_stop_words.symmetric_difference(ENGLISH_STOP_WORDS)
-
+#new_stop_words = ENGLISH_STOP_WORDS
 
 path = os.path.join(os.path.dirname(os.path.realpath(__file__)), ('ROUGE/DUC-2007/docs/' + sys.argv[1]))
+
+with open('ROUGE/smart_common_words.txt') as f:
+	new_stop_words = f.read().splitlines()
 
 class LemmaTokenizer(object):
 	def __init__(self):
@@ -40,7 +42,7 @@ class LemmaTokenizer(object):
 
 def l1(sim_matrix, s, corpus_sums): #summary is collection of indicies
 	n = sim_matrix.shape[0]
-	alpha = 100.0/n
+	alpha = 12.0/n
 	score_sum = 0.0
 
 	for i in range(n):
@@ -126,24 +128,41 @@ def create_groups(clusters):
 	return [map(lambda x: x[0], g) for k, g in groupby(c1, lambda x: x[1])]
 
 
-def replace_all(sentence):
-	to_replace = {' ,' : ',', ' .' : '.', ' ?' : '?', ' !' : '!', ' n\'t' : 'n\'t', '$ ' : '$', ' \'s' : '\'s', ' \'' : '\''}
+def contraction_filter(sentence):
+	to_replace = {' n\'t' : 'n\'t',' \'s' : ''}
 	for i, j in to_replace.iteritems():
 		sentence = sentence.replace(i, j)
 
 	return sentence
 
+def replace_all(sentence):
+	to_replace = {' ,' : ',', ' .' : '.', ' ?' : '?', ' !' : '!', '$ ' : '$'}
+	for i, j in to_replace.iteritems():
+		sentence = sentence.replace(i, j)
+
+	return sentence
+
+def nouns_and_verbs(sentence):
+
+	verbs_nouns = [word for word in word_tokenize(sentence) if nltk.pos_tag([word])[0][1][0] == 'N' or nltk.pos_tag([word])[0][1][0] == 'V']
+
+	return verbs_nouns
+
+
 docs = file_setup(path) #Do string replaces here on every doc (sentences) 
 
 
+##################__CONTRACTION_REPLACEMENT__############
+
+docs = [contraction_filter(doc) for doc in docs]
+
 ##################__STRING_REPLACEMENT__#################
 
-#for i in range(len(docs)):
-	#docs[i] = replace_all(docs[i])
+#docs = [replace_all(doc) for doc in docs]
 
 ##################__VECTORIZERS__########################
 
-vectorizer = TfidfVectorizer(input = 'content', ngram_range = (1, 2), stop_words = 'english', tokenizer = LemmaTokenizer(), norm = 'l2', smooth_idf = True) #Add Stemming 
+vectorizer = TfidfVectorizer(input = 'content', ngram_range = (1, 2), stop_words = new_stop_words, tokenizer = LemmaTokenizer(), norm = 'l2', smooth_idf = True) #Add Stemming 
 vectorizer.fit(docs)
 
 q_vectorizer = CountVectorizer(input = 'content', ngram_range = (1, 2), stop_words = new_stop_words, tokenizer = LemmaTokenizer())
@@ -154,10 +173,14 @@ with open(path + '/query.txt') as f:
 
 ##################__SENTENCE_CREATION__########################
 
-
-##################__MOVED_INTO_FUNCTION__########################
-
 sentences = split_into_sentences(docs)
+
+#################__GET_NOUNS_AND_VERBS_STUFF__#################
+
+# for sentence in sentences:
+# 	print nouns_and_verbs(sentence)
+
+###############################################################
 
 tfidf = vectorizer.transform(sentences)
 
@@ -188,7 +211,7 @@ for sentence in sentences:
 idxs = greedy(sim_matrix, reward, corpus_sums, groups, rqj, lengths)
 
 for idx in idxs:
-	print sentences[idx]
+	print replace_all(sentences[idx])
 
 
 

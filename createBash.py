@@ -12,5 +12,5 @@ with open('./runAll.sh', 'w') as f:
 	while i < len(lines):
 		cluster = lines[i]
 		cluster1 = cluster[:-1]
-		f.write('python BasicSummerizer.py ' + cluster + ' >> ' + path2 + 'SYSTEM/' + cluster1 + '/' + cluster1 + '.max-reward-with-nsw.system' + '\n')
+		f.write('python BasicSummerizer.py ' + cluster + ' >> ' + path2 + 'SYSTEM/' + cluster1 + '/' + cluster1 + '.max-reward-Rouge-Words-no-filter.system' + '\n')
 		i += 1

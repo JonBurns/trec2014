@@ -263,6 +263,42 @@ max-reward ROUGE-SU4 Average_R: 0.13862 (95%-conf.int. 0.13093 - 0.14640)
 max-reward ROUGE-SU4 Average_P: 0.15785 (95%-conf.int. 0.14959 - 0.16667)
 max-reward ROUGE-SU4 Average_F: 0.14755 (95%-conf.int. 0.13955 - 0.15550)
 ---------------------------------------------
+max-reward-Rouge-Words-filter-after ROUGE-1 Average_R: 0.39196 (95%-conf.int. 0.37869 - 0.40470)
+max-reward-Rouge-Words-filter-after ROUGE-1 Average_P: 0.42640 (95%-conf.int. 0.41254 - 0.43926)
+max-reward-Rouge-Words-filter-after ROUGE-1 Average_F: 0.40834 (95%-conf.int. 0.39511 - 0.42101)
+---------------------------------------------
+max-reward-Rouge-Words-filter-after ROUGE-2 Average_R: 0.09905 (95%-conf.int. 0.09092 - 0.10726)
+max-reward-Rouge-Words-filter-after ROUGE-2 Average_P: 0.10783 (95%-conf.int. 0.09908 - 0.11667)
+max-reward-Rouge-Words-filter-after ROUGE-2 Average_F: 0.10322 (95%-conf.int. 0.09489 - 0.11179)
+---------------------------------------------
+max-reward-Rouge-Words-filter-after ROUGE-SU4 Average_R: 0.14958 (95%-conf.int. 0.14144 - 0.15751)
+max-reward-Rouge-Words-filter-after ROUGE-SU4 Average_P: 0.16287 (95%-conf.int. 0.15403 - 0.17128)
+max-reward-Rouge-Words-filter-after ROUGE-SU4 Average_F: 0.15590 (95%-conf.int. 0.14764 - 0.16407)
+---------------------------------------------
+max-reward-Rouge-Words-no-filter ROUGE-1 Average_R: 0.39022 (95%-conf.int. 0.37676 - 0.40398)
+max-reward-Rouge-Words-no-filter ROUGE-1 Average_P: 0.42455 (95%-conf.int. 0.41071 - 0.43809)
+max-reward-Rouge-Words-no-filter ROUGE-1 Average_F: 0.40656 (95%-conf.int. 0.39314 - 0.42036)
+---------------------------------------------
+max-reward-Rouge-Words-no-filter ROUGE-2 Average_R: 0.09944 (95%-conf.int. 0.09058 - 0.10854)
+max-reward-Rouge-Words-no-filter ROUGE-2 Average_P: 0.10815 (95%-conf.int. 0.09834 - 0.11781)
+max-reward-Rouge-Words-no-filter ROUGE-2 Average_F: 0.10359 (95%-conf.int. 0.09441 - 0.11287)
+---------------------------------------------
+max-reward-Rouge-Words-no-filter ROUGE-SU4 Average_R: 0.14938 (95%-conf.int. 0.14085 - 0.15787)
+max-reward-Rouge-Words-no-filter ROUGE-SU4 Average_P: 0.16262 (95%-conf.int. 0.15341 - 0.17162)
+max-reward-Rouge-Words-no-filter ROUGE-SU4 Average_F: 0.15568 (95%-conf.int. 0.14679 - 0.16442)
+---------------------------------------------
+max-reward-with-both-nws ROUGE-1 Average_R: 0.38450 (95%-conf.int. 0.37139 - 0.39803)
+max-reward-with-both-nws ROUGE-1 Average_P: 0.41862 (95%-conf.int. 0.40453 - 0.43208)
+max-reward-with-both-nws ROUGE-1 Average_F: 0.40070 (95%-conf.int. 0.38699 - 0.41378)
+---------------------------------------------
+max-reward-with-both-nws ROUGE-2 Average_R: 0.10007 (95%-conf.int. 0.09184 - 0.10838)
+max-reward-with-both-nws ROUGE-2 Average_P: 0.10902 (95%-conf.int. 0.10002 - 0.11775)
+max-reward-with-both-nws ROUGE-2 Average_F: 0.10431 (95%-conf.int. 0.09579 - 0.11280)
+---------------------------------------------
+max-reward-with-both-nws ROUGE-SU4 Average_R: 0.14793 (95%-conf.int. 0.13974 - 0.15625)
+max-reward-with-both-nws ROUGE-SU4 Average_P: 0.16118 (95%-conf.int. 0.15221 - 0.16988)
+max-reward-with-both-nws ROUGE-SU4 Average_F: 0.15422 (95%-conf.int. 0.14567 - 0.16246)
+---------------------------------------------
 max-reward-with-filter ROUGE-1 Average_R: 0.36643 (95%-conf.int. 0.35293 - 0.37885)
 max-reward-with-filter ROUGE-1 Average_P: 0.41753 (95%-conf.int. 0.40254 - 0.43129)
 max-reward-with-filter ROUGE-1 Average_F: 0.39015 (95%-conf.int. 0.37569 - 0.40260)
@@ -274,6 +310,90 @@ max-reward-with-filter ROUGE-2 Average_F: 0.09616 (95%-conf.int. 0.08692 - 0.105
 max-reward-with-filter ROUGE-SU4 Average_R: 0.13718 (95%-conf.int. 0.12843 - 0.14550)
 max-reward-with-filter ROUGE-SU4 Average_P: 0.15647 (95%-conf.int. 0.14635 - 0.16579)
 max-reward-with-filter ROUGE-SU4 Average_F: 0.14613 (95%-conf.int. 0.13692 - 0.15485)
+---------------------------------------------
+max-reward-with-filter-after-and-both-nws ROUGE-1 Average_R: 0.38561 (95%-conf.int. 0.37109 - 0.39973)
+max-reward-with-filter-after-and-both-nws ROUGE-1 Average_P: 0.41979 (95%-conf.int. 0.40491 - 0.43490)
+max-reward-with-filter-after-and-both-nws ROUGE-1 Average_F: 0.40185 (95%-conf.int. 0.38729 - 0.41637)
+---------------------------------------------
+max-reward-with-filter-after-and-both-nws ROUGE-2 Average_R: 0.09932 (95%-conf.int. 0.09052 - 0.10884)
+max-reward-with-filter-after-and-both-nws ROUGE-2 Average_P: 0.10828 (95%-conf.int. 0.09835 - 0.11878)
+max-reward-with-filter-after-and-both-nws ROUGE-2 Average_F: 0.10358 (95%-conf.int. 0.09430 - 0.11358)
+---------------------------------------------
+max-reward-with-filter-after-and-both-nws ROUGE-SU4 Average_R: 0.14755 (95%-conf.int. 0.13851 - 0.15654)
+max-reward-with-filter-after-and-both-nws ROUGE-SU4 Average_P: 0.16081 (95%-conf.int. 0.15135 - 0.17073)
+max-reward-with-filter-after-and-both-nws ROUGE-SU4 Average_F: 0.15385 (95%-conf.int. 0.14456 - 0.16328)
+---------------------------------------------
+max-reward-with-filter-and-both-nws ROUGE-1 Average_R: 0.38306 (95%-conf.int. 0.36966 - 0.39629)
+max-reward-with-filter-and-both-nws ROUGE-1 Average_P: 0.41748 (95%-conf.int. 0.40345 - 0.43211)
+max-reward-with-filter-and-both-nws ROUGE-1 Average_F: 0.39942 (95%-conf.int. 0.38597 - 0.41352)
+---------------------------------------------
+max-reward-with-filter-and-both-nws ROUGE-2 Average_R: 0.09703 (95%-conf.int. 0.08886 - 0.10606)
+max-reward-with-filter-and-both-nws ROUGE-2 Average_P: 0.10583 (95%-conf.int. 0.09723 - 0.11558)
+max-reward-with-filter-and-both-nws ROUGE-2 Average_F: 0.10121 (95%-conf.int. 0.09288 - 0.11062)
+---------------------------------------------
+max-reward-with-filter-and-both-nws ROUGE-SU4 Average_R: 0.14655 (95%-conf.int. 0.13801 - 0.15498)
+max-reward-with-filter-and-both-nws ROUGE-SU4 Average_P: 0.15988 (95%-conf.int. 0.15060 - 0.16925)
+max-reward-with-filter-and-both-nws ROUGE-SU4 Average_F: 0.15288 (95%-conf.int. 0.14413 - 0.16167)
+---------------------------------------------
+max-reward-with-high-BETA ROUGE-1 Average_R: 0.35663 (95%-conf.int. 0.34149 - 0.37079)
+max-reward-with-high-BETA ROUGE-1 Average_P: 0.41053 (95%-conf.int. 0.39365 - 0.42621)
+max-reward-with-high-BETA ROUGE-1 Average_F: 0.38152 (95%-conf.int. 0.36538 - 0.39638)
+---------------------------------------------
+max-reward-with-high-BETA ROUGE-2 Average_R: 0.08524 (95%-conf.int. 0.07490 - 0.09538)
+max-reward-with-high-BETA ROUGE-2 Average_P: 0.09822 (95%-conf.int. 0.08639 - 0.10975)
+max-reward-with-high-BETA ROUGE-2 Average_F: 0.09123 (95%-conf.int. 0.08013 - 0.10196)
+---------------------------------------------
+max-reward-with-high-BETA ROUGE-SU4 Average_R: 0.13208 (95%-conf.int. 0.12244 - 0.14147)
+max-reward-with-high-BETA ROUGE-SU4 Average_P: 0.15223 (95%-conf.int. 0.14146 - 0.16312)
+max-reward-with-high-BETA ROUGE-SU4 Average_F: 0.14138 (95%-conf.int. 0.13117 - 0.15143)
+---------------------------------------------
+max-reward-with-high-alpha ROUGE-1 Average_R: 0.36795 (95%-conf.int. 0.35523 - 0.37902)
+max-reward-with-high-alpha ROUGE-1 Average_P: 0.41994 (95%-conf.int. 0.40535 - 0.43332)
+max-reward-with-high-alpha ROUGE-1 Average_F: 0.39206 (95%-conf.int. 0.37865 - 0.40390)
+---------------------------------------------
+max-reward-with-high-alpha ROUGE-2 Average_R: 0.09029 (95%-conf.int. 0.08238 - 0.09845)
+max-reward-with-high-alpha ROUGE-2 Average_P: 0.10314 (95%-conf.int. 0.09394 - 0.11270)
+max-reward-with-high-alpha ROUGE-2 Average_F: 0.09625 (95%-conf.int. 0.08778 - 0.10487)
+---------------------------------------------
+max-reward-with-high-alpha ROUGE-SU4 Average_R: 0.13773 (95%-conf.int. 0.13007 - 0.14533)
+max-reward-with-high-alpha ROUGE-SU4 Average_P: 0.15741 (95%-conf.int. 0.14885 - 0.16605)
+max-reward-with-high-alpha ROUGE-SU4 Average_F: 0.14685 (95%-conf.int. 0.13867 - 0.15488)
+---------------------------------------------
+max-reward-with-low-BETA ROUGE-1 Average_R: 0.37090 (95%-conf.int. 0.35840 - 0.38235)
+max-reward-with-low-BETA ROUGE-1 Average_P: 0.41875 (95%-conf.int. 0.40522 - 0.43165)
+max-reward-with-low-BETA ROUGE-1 Average_F: 0.39324 (95%-conf.int. 0.38057 - 0.40503)
+---------------------------------------------
+max-reward-with-low-BETA ROUGE-2 Average_R: 0.09088 (95%-conf.int. 0.08295 - 0.09918)
+max-reward-with-low-BETA ROUGE-2 Average_P: 0.10264 (95%-conf.int. 0.09380 - 0.11199)
+max-reward-with-low-BETA ROUGE-2 Average_F: 0.09637 (95%-conf.int. 0.08798 - 0.10506)
+---------------------------------------------
+max-reward-with-low-BETA ROUGE-SU4 Average_R: 0.13821 (95%-conf.int. 0.12999 - 0.14597)
+max-reward-with-low-BETA ROUGE-SU4 Average_P: 0.15614 (95%-conf.int. 0.14734 - 0.16476)
+max-reward-with-low-BETA ROUGE-SU4 Average_F: 0.14658 (95%-conf.int. 0.13840 - 0.15475)
+---------------------------------------------
+max-reward-with-low-alpha ROUGE-1 Average_R: 0.37358 (95%-conf.int. 0.36092 - 0.38523)
+max-reward-with-low-alpha ROUGE-1 Average_P: 0.42210 (95%-conf.int. 0.40742 - 0.43549)
+max-reward-with-low-alpha ROUGE-1 Average_F: 0.39623 (95%-conf.int. 0.38251 - 0.40843)
+---------------------------------------------
+max-reward-with-low-alpha ROUGE-2 Average_R: 0.09168 (95%-conf.int. 0.08362 - 0.09969)
+max-reward-with-low-alpha ROUGE-2 Average_P: 0.10355 (95%-conf.int. 0.09475 - 0.11285)
+max-reward-with-low-alpha ROUGE-2 Average_F: 0.09722 (95%-conf.int. 0.08888 - 0.10581)
+---------------------------------------------
+max-reward-with-low-alpha ROUGE-SU4 Average_R: 0.13926 (95%-conf.int. 0.13108 - 0.14683)
+max-reward-with-low-alpha ROUGE-SU4 Average_P: 0.15747 (95%-conf.int. 0.14849 - 0.16579)
+max-reward-with-low-alpha ROUGE-SU4 Average_F: 0.14776 (95%-conf.int. 0.13925 - 0.15563)
+---------------------------------------------
+max-reward-with-nsw ROUGE-1 Average_R: 0.37061 (95%-conf.int. 0.35797 - 0.38311)
+max-reward-with-nsw ROUGE-1 Average_P: 0.41728 (95%-conf.int. 0.40426 - 0.43017)
+max-reward-with-nsw ROUGE-1 Average_F: 0.39244 (95%-conf.int. 0.37973 - 0.40483)
+---------------------------------------------
+max-reward-with-nsw ROUGE-2 Average_R: 0.09050 (95%-conf.int. 0.08208 - 0.09905)
+max-reward-with-nsw ROUGE-2 Average_P: 0.10195 (95%-conf.int. 0.09256 - 0.11154)
+max-reward-with-nsw ROUGE-2 Average_F: 0.09585 (95%-conf.int. 0.08706 - 0.10475)
+---------------------------------------------
+max-reward-with-nsw ROUGE-SU4 Average_R: 0.13864 (95%-conf.int. 0.13073 - 0.14673)
+max-reward-with-nsw ROUGE-SU4 Average_P: 0.15625 (95%-conf.int. 0.14760 - 0.16496)
+max-reward-with-nsw ROUGE-SU4 Average_F: 0.14687 (95%-conf.int. 0.13854 - 0.15521)
 ---------------------------------------------
 normalized-reward ROUGE-1 Average_R: 0.32356 (95%-conf.int. 0.30834 - 0.33964)
 normalized-reward ROUGE-1 Average_P: 0.38042 (95%-conf.int. 0.36426 - 0.39732)

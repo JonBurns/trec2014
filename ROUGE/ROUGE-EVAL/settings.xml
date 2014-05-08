@@ -25,7 +25,17 @@
 <P ID="lda200-dthresh0005">D0701.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0701.lda200-ss.system.html</P>
 <P ID="lda200">D0701.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0701.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0701.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0701.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0701.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0701.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0701.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0701.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0701.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0701.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0701.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0701.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0701.max-reward.system.html</P>
 <P ID="normalized-reward">D0701.normalized-reward.system.html</P></PEERS>
 
@@ -60,7 +70,17 @@
 <P ID="lda200-dthresh0005">D0702.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0702.lda200-ss.system.html</P>
 <P ID="lda200">D0702.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0702.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0702.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0702.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0702.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0702.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0702.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0702.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0702.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0702.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0702.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0702.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0702.max-reward.system.html</P>
 <P ID="normalized-reward">D0702.normalized-reward.system.html</P></PEERS>
 
@@ -95,7 +115,17 @@
 <P ID="lda200-dthresh0005">D0703.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0703.lda200-ss.system.html</P>
 <P ID="lda200">D0703.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0703.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0703.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0703.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0703.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0703.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0703.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0703.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0703.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0703.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0703.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0703.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0703.max-reward.system.html</P>
 <P ID="normalized-reward">D0703.normalized-reward.system.html</P></PEERS>
 
@@ -130,7 +160,17 @@
 <P ID="lda200-dthresh0005">D0704.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0704.lda200-ss.system.html</P>
 <P ID="lda200">D0704.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0704.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0704.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0704.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0704.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0704.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0704.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0704.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0704.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0704.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0704.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0704.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0704.max-reward.system.html</P>
 <P ID="normalized-reward">D0704.normalized-reward.system.html</P></PEERS>
 
@@ -165,7 +205,17 @@
 <P ID="lda200-dthresh0005">D0705.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0705.lda200-ss.system.html</P>
 <P ID="lda200">D0705.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0705.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0705.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0705.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0705.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0705.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0705.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0705.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0705.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0705.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0705.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0705.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0705.max-reward.system.html</P>
 <P ID="normalized-reward">D0705.normalized-reward.system.html</P></PEERS>
 
@@ -200,7 +250,17 @@
 <P ID="lda200-dthresh0005">D0706.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0706.lda200-ss.system.html</P>
 <P ID="lda200">D0706.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0706.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0706.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0706.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0706.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0706.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0706.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0706.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0706.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0706.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0706.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0706.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0706.max-reward.system.html</P>
 <P ID="normalized-reward">D0706.normalized-reward.system.html</P></PEERS>
 
@@ -235,7 +295,17 @@
 <P ID="lda200-dthresh0005">D0707.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0707.lda200-ss.system.html</P>
 <P ID="lda200">D0707.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0707.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0707.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0707.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0707.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0707.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0707.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0707.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0707.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0707.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0707.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0707.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0707.max-reward.system.html</P>
 <P ID="normalized-reward">D0707.normalized-reward.system.html</P></PEERS>
 
@@ -270,7 +340,17 @@
 <P ID="lda200-dthresh0005">D0708.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0708.lda200-ss.system.html</P>
 <P ID="lda200">D0708.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0708.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0708.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0708.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0708.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0708.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0708.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0708.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0708.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0708.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0708.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0708.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0708.max-reward.system.html</P>
 <P ID="normalized-reward">D0708.normalized-reward.system.html</P></PEERS>
 
@@ -305,7 +385,17 @@
 <P ID="lda200-dthresh0005">D0709.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0709.lda200-ss.system.html</P>
 <P ID="lda200">D0709.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0709.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0709.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0709.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0709.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0709.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0709.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0709.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0709.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0709.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0709.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0709.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0709.max-reward.system.html</P>
 <P ID="normalized-reward">D0709.normalized-reward.system.html</P></PEERS>
 
@@ -340,7 +430,17 @@
 <P ID="lda200-dthresh0005">D0710.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0710.lda200-ss.system.html</P>
 <P ID="lda200">D0710.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0710.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0710.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0710.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0710.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0710.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0710.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0710.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0710.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0710.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0710.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0710.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0710.max-reward.system.html</P>
 <P ID="normalized-reward">D0710.normalized-reward.system.html</P></PEERS>
 
@@ -375,7 +475,17 @@
 <P ID="lda200-dthresh0005">D0711.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0711.lda200-ss.system.html</P>
 <P ID="lda200">D0711.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0711.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0711.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0711.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0711.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0711.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0711.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0711.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0711.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0711.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0711.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0711.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0711.max-reward.system.html</P>
 <P ID="normalized-reward">D0711.normalized-reward.system.html</P></PEERS>
 
@@ -410,7 +520,17 @@
 <P ID="lda200-dthresh0005">D0712.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0712.lda200-ss.system.html</P>
 <P ID="lda200">D0712.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0712.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0712.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0712.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0712.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0712.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0712.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0712.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0712.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0712.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0712.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0712.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0712.max-reward.system.html</P>
 <P ID="normalized-reward">D0712.normalized-reward.system.html</P></PEERS>
 
@@ -444,7 +564,17 @@
 <P ID="lda200-dthresh00005">D0713.lda200-dthresh00005.system.html</P>
 <P ID="lda200-dthresh0005">D0713.lda200-dthresh0005.system.html</P>
 <P ID="lda200">D0713.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0713.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0713.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0713.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0713.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0713.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0713.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0713.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0713.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0713.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0713.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0713.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0713.max-reward.system.html</P>
 <P ID="normalized-reward">D0713.normalized-reward.system.html</P></PEERS>
 
@@ -479,7 +609,17 @@
 <P ID="lda200-dthresh0005">D0714.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0714.lda200-ss.system.html</P>
 <P ID="lda200">D0714.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0714.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0714.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0714.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0714.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0714.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0714.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0714.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0714.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0714.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0714.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0714.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0714.max-reward.system.html</P>
 <P ID="normalized-reward">D0714.normalized-reward.system.html</P></PEERS>
 
@@ -514,7 +654,17 @@
 <P ID="lda200-dthresh0005">D0715.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0715.lda200-ss.system.html</P>
 <P ID="lda200">D0715.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0715.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0715.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0715.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0715.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0715.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0715.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0715.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0715.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0715.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0715.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0715.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0715.max-reward.system.html</P>
 <P ID="normalized-reward">D0715.normalized-reward.system.html</P></PEERS>
 
@@ -549,7 +699,17 @@
 <P ID="lda200-dthresh0005">D0716.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0716.lda200-ss.system.html</P>
 <P ID="lda200">D0716.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0716.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0716.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0716.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0716.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0716.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0716.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0716.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0716.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0716.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0716.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0716.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0716.max-reward.system.html</P>
 <P ID="normalized-reward">D0716.normalized-reward.system.html</P></PEERS>
 
@@ -584,7 +744,17 @@
 <P ID="lda200-dthresh0005">D0717.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0717.lda200-ss.system.html</P>
 <P ID="lda200">D0717.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0717.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0717.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0717.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0717.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0717.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0717.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0717.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0717.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0717.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0717.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0717.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0717.max-reward.system.html</P>
 <P ID="normalized-reward">D0717.normalized-reward.system.html</P></PEERS>
 
@@ -619,7 +789,17 @@
 <P ID="lda200-dthresh0005">D0718.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0718.lda200-ss.system.html</P>
 <P ID="lda200">D0718.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0718.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0718.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0718.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0718.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0718.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0718.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0718.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0718.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0718.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0718.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0718.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0718.max-reward.system.html</P>
 <P ID="normalized-reward">D0718.normalized-reward.system.html</P></PEERS>
 
@@ -654,7 +834,17 @@
 <P ID="lda200-dthresh0005">D0719.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0719.lda200-ss.system.html</P>
 <P ID="lda200">D0719.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0719.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0719.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0719.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0719.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0719.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0719.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0719.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0719.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0719.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0719.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0719.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0719.max-reward.system.html</P>
 <P ID="normalized-reward">D0719.normalized-reward.system.html</P></PEERS>
 
@@ -689,7 +879,17 @@
 <P ID="lda200-dthresh0005">D0720.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0720.lda200-ss.system.html</P>
 <P ID="lda200">D0720.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0720.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0720.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0720.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0720.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0720.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0720.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0720.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0720.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0720.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0720.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0720.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0720.max-reward.system.html</P>
 <P ID="normalized-reward">D0720.normalized-reward.system.html</P></PEERS>
 
@@ -724,7 +924,17 @@
 <P ID="lda200-dthresh0005">D0721.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0721.lda200-ss.system.html</P>
 <P ID="lda200">D0721.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0721.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0721.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0721.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0721.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0721.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0721.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0721.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0721.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0721.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0721.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0721.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0721.max-reward.system.html</P>
 <P ID="normalized-reward">D0721.normalized-reward.system.html</P></PEERS>
 
@@ -756,7 +966,17 @@
 <P ID="lda200-dthresh0005">D0722.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0722.lda200-ss.system.html</P>
 <P ID="lda200">D0722.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0722.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0722.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0722.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0722.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0722.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0722.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0722.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0722.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0722.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0722.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0722.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0722.max-reward.system.html</P>
 <P ID="normalized-reward">D0722.normalized-reward.system.html</P></PEERS>
 
@@ -791,7 +1011,17 @@
 <P ID="lda200-dthresh0005">D0723.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0723.lda200-ss.system.html</P>
 <P ID="lda200">D0723.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0723.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0723.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0723.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0723.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0723.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0723.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0723.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0723.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0723.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0723.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0723.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0723.max-reward.system.html</P>
 <P ID="normalized-reward">D0723.normalized-reward.system.html</P></PEERS>
 
@@ -826,7 +1056,17 @@
 <P ID="lda200-dthresh0005">D0724.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0724.lda200-ss.system.html</P>
 <P ID="lda200">D0724.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0724.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0724.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0724.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0724.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0724.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0724.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0724.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0724.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0724.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0724.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0724.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0724.max-reward.system.html</P>
 <P ID="normalized-reward">D0724.normalized-reward.system.html</P></PEERS>
 
@@ -861,7 +1101,17 @@
 <P ID="lda200-dthresh0005">D0725.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0725.lda200-ss.system.html</P>
 <P ID="lda200">D0725.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0725.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0725.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0725.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0725.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0725.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0725.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0725.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0725.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0725.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0725.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0725.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0725.max-reward.system.html</P>
 <P ID="normalized-reward">D0725.normalized-reward.system.html</P></PEERS>
 
@@ -896,7 +1146,17 @@
 <P ID="lda200-dthresh0005">D0726.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0726.lda200-ss.system.html</P>
 <P ID="lda200">D0726.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0726.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0726.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0726.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0726.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0726.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0726.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0726.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0726.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0726.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0726.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0726.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0726.max-reward.system.html</P>
 <P ID="normalized-reward">D0726.normalized-reward.system.html</P></PEERS>
 
@@ -931,7 +1191,17 @@
 <P ID="lda200-dthresh0005">D0727.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0727.lda200-ss.system.html</P>
 <P ID="lda200">D0727.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0727.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0727.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0727.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0727.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0727.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0727.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0727.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0727.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0727.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0727.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0727.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0727.max-reward.system.html</P>
 <P ID="normalized-reward">D0727.normalized-reward.system.html</P></PEERS>
 
@@ -966,7 +1236,17 @@
 <P ID="lda200-dthresh0005">D0728.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0728.lda200-ss.system.html</P>
 <P ID="lda200">D0728.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0728.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0728.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0728.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0728.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0728.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0728.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0728.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0728.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0728.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0728.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0728.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0728.max-reward.system.html</P>
 <P ID="normalized-reward">D0728.normalized-reward.system.html</P></PEERS>
 
@@ -1001,7 +1281,17 @@
 <P ID="lda200-dthresh0005">D0729.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0729.lda200-ss.system.html</P>
 <P ID="lda200">D0729.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0729.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0729.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0729.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0729.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0729.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0729.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0729.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0729.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0729.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0729.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0729.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0729.max-reward.system.html</P>
 <P ID="normalized-reward">D0729.normalized-reward.system.html</P></PEERS>
 
@@ -1034,7 +1324,17 @@
 <P ID="lda200-dthresh0005">D0730.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0730.lda200-ss.system.html</P>
 <P ID="lda200">D0730.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0730.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0730.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0730.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0730.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0730.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0730.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0730.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0730.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0730.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0730.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0730.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0730.max-reward.system.html</P>
 <P ID="normalized-reward">D0730.normalized-reward.system.html</P></PEERS>
 
@@ -1069,7 +1369,17 @@
 <P ID="lda200-dthresh0005">D0731.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0731.lda200-ss.system.html</P>
 <P ID="lda200">D0731.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0731.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0731.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0731.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0731.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0731.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0731.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0731.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0731.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0731.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0731.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0731.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0731.max-reward.system.html</P>
 <P ID="normalized-reward">D0731.normalized-reward.system.html</P></PEERS>
 
@@ -1104,7 +1414,17 @@
 <P ID="lda200-dthresh0005">D0732.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0732.lda200-ss.system.html</P>
 <P ID="lda200">D0732.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0732.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0732.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0732.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0732.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0732.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0732.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0732.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0732.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0732.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0732.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0732.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0732.max-reward.system.html</P>
 <P ID="normalized-reward">D0732.normalized-reward.system.html</P></PEERS>
 
@@ -1139,7 +1459,17 @@
 <P ID="lda200-dthresh0005">D0733.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0733.lda200-ss.system.html</P>
 <P ID="lda200">D0733.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0733.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0733.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0733.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0733.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0733.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0733.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0733.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0733.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0733.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0733.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0733.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0733.max-reward.system.html</P>
 <P ID="normalized-reward">D0733.normalized-reward.system.html</P></PEERS>
 
@@ -1174,7 +1504,17 @@
 <P ID="lda200-dthresh0005">D0734.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0734.lda200-ss.system.html</P>
 <P ID="lda200">D0734.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0734.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0734.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0734.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0734.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0734.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0734.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0734.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0734.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0734.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0734.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0734.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0734.max-reward.system.html</P>
 <P ID="normalized-reward">D0734.normalized-reward.system.html</P></PEERS>
 
@@ -1209,7 +1549,17 @@
 <P ID="lda200-dthresh0005">D0735.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0735.lda200-ss.system.html</P>
 <P ID="lda200">D0735.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0735.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0735.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0735.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0735.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0735.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0735.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0735.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0735.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0735.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0735.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0735.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0735.max-reward.system.html</P>
 <P ID="normalized-reward">D0735.normalized-reward.system.html</P></PEERS>
 
@@ -1244,7 +1594,17 @@
 <P ID="lda200-dthresh0005">D0736.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0736.lda200-ss.system.html</P>
 <P ID="lda200">D0736.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0736.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0736.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0736.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0736.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0736.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0736.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0736.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0736.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0736.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0736.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0736.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0736.max-reward.system.html</P>
 <P ID="normalized-reward">D0736.normalized-reward.system.html</P></PEERS>
 
@@ -1279,7 +1639,17 @@
 <P ID="lda200-dthresh0005">D0737.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0737.lda200-ss.system.html</P>
 <P ID="lda200">D0737.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0737.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0737.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0737.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0737.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0737.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0737.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0737.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0737.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0737.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0737.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0737.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0737.max-reward.system.html</P>
 <P ID="normalized-reward">D0737.normalized-reward.system.html</P></PEERS>
 
@@ -1314,7 +1684,17 @@
 <P ID="lda200-dthresh0005">D0738.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0738.lda200-ss.system.html</P>
 <P ID="lda200">D0738.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0738.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0738.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0738.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0738.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0738.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0738.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0738.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0738.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0738.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0738.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0738.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0738.max-reward.system.html</P>
 <P ID="normalized-reward">D0738.normalized-reward.system.html</P></PEERS>
 
@@ -1349,7 +1729,17 @@
 <P ID="lda200-dthresh0005">D0739.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0739.lda200-ss.system.html</P>
 <P ID="lda200">D0739.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0739.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0739.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0739.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0739.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0739.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0739.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0739.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0739.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0739.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0739.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0739.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0739.max-reward.system.html</P>
 <P ID="normalized-reward">D0739.normalized-reward.system.html</P></PEERS>
 
@@ -1384,7 +1774,17 @@
 <P ID="lda200-dthresh0005">D0740.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0740.lda200-ss.system.html</P>
 <P ID="lda200">D0740.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0740.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0740.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0740.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0740.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0740.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0740.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0740.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0740.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0740.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0740.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0740.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0740.max-reward.system.html</P>
 <P ID="normalized-reward">D0740.normalized-reward.system.html</P></PEERS>
 
@@ -1419,7 +1819,17 @@
 <P ID="lda200-dthresh0005">D0741.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0741.lda200-ss.system.html</P>
 <P ID="lda200">D0741.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0741.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0741.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0741.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0741.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0741.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0741.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0741.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0741.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0741.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0741.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0741.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0741.max-reward.system.html</P>
 <P ID="normalized-reward">D0741.normalized-reward.system.html</P></PEERS>
 
@@ -1454,7 +1864,17 @@
 <P ID="lda200-dthresh0005">D0742.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0742.lda200-ss.system.html</P>
 <P ID="lda200">D0742.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0742.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0742.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0742.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0742.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0742.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0742.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0742.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0742.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0742.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0742.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0742.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0742.max-reward.system.html</P>
 <P ID="normalized-reward">D0742.normalized-reward.system.html</P></PEERS>
 
@@ -1489,7 +1909,17 @@
 <P ID="lda200-dthresh0005">D0743.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0743.lda200-ss.system.html</P>
 <P ID="lda200">D0743.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0743.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0743.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0743.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0743.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0743.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0743.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0743.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0743.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0743.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0743.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0743.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0743.max-reward.system.html</P>
 <P ID="normalized-reward">D0743.normalized-reward.system.html</P></PEERS>
 
@@ -1524,7 +1954,17 @@
 <P ID="lda200-dthresh0005">D0744.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0744.lda200-ss.system.html</P>
 <P ID="lda200">D0744.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0744.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0744.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0744.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0744.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0744.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0744.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0744.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0744.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0744.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0744.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0744.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0744.max-reward.system.html</P>
 <P ID="normalized-reward">D0744.normalized-reward.system.html</P></PEERS>
 
@@ -1559,7 +1999,17 @@
 <P ID="lda200-dthresh0005">D0745.lda200-dthresh0005.system.html</P>
 <P ID="lda200-ss">D0745.lda200-ss.system.html</P>
 <P ID="lda200">D0745.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-filter-after">D0745.max-reward-Rouge-Words-filter-after.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0745.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0745.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0745.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0745.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0745.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0745.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0745.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0745.max-reward-with-low-alpha.system.html</P>
+<P ID="max-reward-with-low-BETA">D0745.max-reward-with-low-BETA.system.html</P>
+<P ID="max-reward-with-nsw">D0745.max-reward-with-nsw.system.html</P>
 <P ID="max-reward">D0745.max-reward.system.html</P>
 <P ID="normalized-reward">D0745.normalized-reward.system.html</P></PEERS>
 

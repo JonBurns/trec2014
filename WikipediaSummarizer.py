@@ -1,7 +1,9 @@
+#!/usr/bin/env python
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.stop_words import ENGLISH_STOP_WORDS
 from tokenizers import *
+import wikipedia
 
 from algorithms import greedy
 
@@ -82,19 +84,36 @@ def replace_all(sentence):
     return sentence
 
 if __name__ == '__main__':
-    path = os.path.join(os.path.dirname(os.path.realpath(__file__)), ('ROUGE/DUC-2007/docs/' + sys.argv[1]))
     with open('ROUGE/smart_common_words.txt') as f:
         new_stop_words = f.read().splitlines()
 
-    docs = file_setup(path)
-    docs = [contraction_filter(doc) for doc in docs]
-    sentences = split_into_sentences(docs)
+    search_string = raw_input('Wikipedia Article: ')
+
+    search_results = wikipedia.search(search_string)
+    if len(search_results) == 0:
+        print "No results for search: {0}".format(search_string)
+        sys.exit(1)
+    page = wikipedia.page(search_results[0])
+    print "Search complete, using first result {0}.".format(search_results[0])
+    query_string = raw_input("Question about {0}: ".format(search_results[0]))
+
+    docs = []
+    unwanted = set([u'See also', u'References', u'Further reading', u'External links'])
+    for section in list(set(page.sections).difference(unwanted)):
+        content = page.section(section)
+        if content is not None:
+            docs.append(content)
+
+    if len(docs) < 2:
+        print "Not enough information on {0} for a meaningful summary.".format(search_results[0])
+        sys.exit(1)
+
+    sentences = split_into_sentences(docs, use_splitter=True)
 
     vectorizer = TfidfVectorizer(input = 'content', ngram_range = (1, 2), stop_words = new_stop_words, tokenizer = LemmaTokenizer(), norm = 'l2', smooth_idf = True) #Add Stemming 
     vectorizer.fit(docs)
     q_vectorizer = CountVectorizer(input = 'content', ngram_range = (1, 2), stop_words = new_stop_words, tokenizer=QuerySynsetExpandingTokenizer())
-    with open(path + '/query.txt') as f:
-        q_vectorizer.fit(f.readlines())
+    q_vectorizer.fit([query_string])
 
     tfidf = vectorizer.transform(sentences)
     query_matrix = q_vectorizer.transform(sentences)
@@ -119,7 +138,7 @@ if __name__ == '__main__':
     for sentence in sentences:
         lengths.append(len(word_tokenize(sentence)))
 
-    idxs = greedy(sim_matrix, reward, corpus_sums, groups, rqj, lengths)
+    idxs = greedy(sim_matrix, reward, corpus_sums, groups, rqj, lengths, max_length=180)
 
     for idx in idxs:
         print replace_all(sentences[idx])

@@ -14,13 +14,21 @@ class LemmaTokenizer(object):
     def __call__(self, doc):
         return [self.wnl.lemmatize(t) for t in word_tokenize(doc)]
 
+#Now also includes hypernyms (Hopefully)
 def get_synset(token):
     nested_lemmas = [s.lemmas for s in wn.synsets(token)]
     lemmas = []
     for lemma_list in nested_lemmas:
         for lemma in lemma_list:
-            lemmas.append(lemma.name)
-    return lemmas
+            lemmas.append(lemma.name.replace('_', ' '))
+
+    list_of_hyps = []
+    holder_for_hypers = wn.synsets(token)[0].hypernyms() #The first element is always itself. This way we only get hypernyms for the token itself
+    for hyp in holder_for_hypers:
+        for lemma in hyp.lemmas:
+            lemmas.append(lemma.name.replace('_', ' '))
+
+    return list(set(lemmas)) #Using nested lemmas means lots of duplicated, this removes them
 
 class QuerySynsetExpandingTokenizer(object):
     def __init__(self):

@@ -1,2 +1,7 @@
 ROUGE/ROUGE-EVAL/
 wikipedia/
+*.pyc
+JonStuff/
+RedditComments.py
+timinginfo.txt
+WikipediaSummarizer.py

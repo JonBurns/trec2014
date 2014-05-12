@@ -1,0 +1,46 @@
+TEST_NAME                                              ROUGE-2 Average_F:     Difference
+
+max-reward-with-both-nws                                     0.10431            0.0     
+max-reward-with-filter-after-and-both-nws                    0.10358            0.00073 
+max-reward-Rouge-Words-no-filter                             0.10347            0.00084 
+max-reward-Rouge-Words-filter-after                          0.10322            0.00109 
+sysnet-expansion-low-BETA                                    0.10317            0.00114 
+synset-expansion                                             0.10196            0.00235 
+max-reward-with-filter-and-both-nws                          0.10121            0.0031  
+remove-possesion                                             0.10058            0.00373 
+test                                                         0.09956            0.00475 
+r-is-0.2                                                     0.09808            0.00623 
+max-reward-with-low-alpha                                    0.09722            0.00709 
+max-reward                                                   0.09678            0.00753 
+max-reward-with-low-BETA                                     0.09637            0.00794 
+max-reward-with-high-alpha                                   0.09625            0.00806 
+max-reward-with-filter                                       0.09616            0.00815 
+max-reward-with-nsw                                          0.09585            0.00846 
+r-is-0.5                                                     0.09312            0.01119 
+max-reward-with-high-BETA                                    0.09123            0.01308 
+------------------------------------------------------------------------------------------
+baseline-ss                                                  0.09046            0.01385 
+js-thresh05                                                  0.08783            0.01648 
+js-thresh04                                                  0.08783            0.01648 
+js-thresh03                                                  0.08783            0.01648 
+
+>r-is-1                                                      0.08646            0.01785 
+
+baseline                                                     0.08638            0.01793 
+lda200-ss                                                    0.08551            0.0188  
+lda200                                                       0.07959            0.02472 
+div10                                                        0.07882            0.02549 
+js-thresh02                                                  0.07875            0.02556 
+div3                                                         0.07874            0.02557 
+js-thresh01                                                  0.07868            0.02563 
+div5                                                         0.07858            0.02573 
+div7                                                         0.07829            0.02602 
+lda200-dthreash00001                                         0.07736            0.02695 
+lda200-dthresh0005                                           0.07633            0.02798 
+baseline-kl                                                  0.07626            0.02805 
+baseline-js                                                  0.07619            0.02812 
+lda200-dthresh00005                                          0.07548            0.02883 
+lda100-js                                                    0.07215            0.03216 
+lda100                                                       0.07211            0.0322  
+lda100-kl                                                    0.07155            0.03276 
+normalized-reward                                            0.07151            0.0328  

@@ -16,17 +16,28 @@ class LemmaTokenizer(object):
 
 #Now also includes hypernyms (Hopefully)
 def get_synset(token):
-    nested_lemmas = [s.lemmas for s in wn.synsets(token)]
+    syn_sets = wn.synsets(token)
+    nested_lemmas = [s.lemmas for s in syn_sets]
     lemmas = []
     for lemma_list in nested_lemmas:
         for lemma in lemma_list:
             lemmas.append(lemma.name.replace('_', ' '))
 
-    list_of_hyps = []
-    holder_for_hypers = wn.synsets(token)[0].hypernyms() #The first element is always itself. This way we only get hypernyms for the token itself
-    for hyp in holder_for_hypers:
-        for lemma in hyp.lemmas:
-            lemmas.append(lemma.name.replace('_', ' '))
+    if len(syn_sets) > 1:
+        holder_for_hypers = syn_sets[0].hypernyms()
+        for hyp in holder_for_hypers:
+            for lemma in hyp.lemmas:
+                lemmas.append(lemma.name.replace('_', ' '))
+
+
+    #This is code for if we want the hypernames of every word in the syn_set
+    #Warning: if this is done then 'dog' could be replaced with 'fellow'
+    # holder_for_hypers = [syn.hypernyms() for syn in syn_sets]
+    # for nested_hyp in holder_for_hypers:
+    #     for hyp in nested_hyp:
+    #         for lemma in hyp.lemmas:
+    #             print "hyp: {0}".format(lemma.name)
+    #             lemmas.append(lemma.name.replace('_', ' '))
 
     return list(set(lemmas)) #Using nested lemmas means lots of duplicated, this removes them
 

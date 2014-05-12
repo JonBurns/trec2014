@@ -1,15 +1,15 @@
 import math
 
-def l1(sim_matrix, s, corpus_sums): #summary is collection of indicies
+def l1(s, sim_matrix, corpus_sums, alpha_numer = 12): #summary is collection of indicies
     n = sim_matrix.shape[0]
-    alpha = 12.0/n
+    alpha = alpha_numer/n
     score_sum = 0.0
 
     for i in range(n):
         score_sum += min([sum([sim_matrix[i, j] for j in s]), (alpha * corpus_sums[i])])
     return score_sum
 
-def r1(corpus_sums, s, groups, rqj, beta = 0.5):
+def r1(s, corpus_sums, groups, rqj, beta = 0.5):
     k = len(groups)
     n = len(corpus_sums)
 

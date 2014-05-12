@@ -8,6 +8,7 @@ sysnet-expansion-low-BETA                                    0.10317            
 synset-expansion                                             0.10196            0.00235 
 max-reward-with-filter-and-both-nws                          0.10121            0.0031  
 remove-possesion                                             0.10058            0.00373 
+testName                                                     0.10024            0.00407 
 test                                                         0.09956            0.00475 
 r-is-0.2                                                     0.09808            0.00623 
 max-reward-with-low-alpha                                    0.09722            0.00709 
@@ -23,9 +24,7 @@ baseline-ss                                                  0.09046            
 js-thresh05                                                  0.08783            0.01648 
 js-thresh04                                                  0.08783            0.01648 
 js-thresh03                                                  0.08783            0.01648 
-
->r-is-1                                                      0.08646            0.01785 
-
+r-is-1                                                       0.08646            0.01785 
 baseline                                                     0.08638            0.01793 
 lda200-ss                                                    0.08551            0.0188  
 lda200                                                       0.07959            0.02472 

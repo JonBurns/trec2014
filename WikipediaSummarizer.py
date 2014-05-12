@@ -23,12 +23,21 @@ import re
 from itertools import groupby
 import math
 
+from functools import partial 
 
 from rewards import l1, r1
 
+alpha_passed = 12
+beta_passed = .5
+lambda_passed = 6
 
-def reward(sim_matrix, s, corpus_sums, groups, rqj):
-    return l1(sim_matrix, s, corpus_sums) + (6 * r1(corpus_sums, s, groups, rqj))
+if len(sys.argv) == 5:
+    alpha_passed = sys.argv[2]
+    beta_passed = sys.argv[3]
+    lambda_passed = sys.argv[4]
+
+def reward(s, l1, r1, lambda_var = 6):
+    return l1(s) + (lambda_var * r1(s))
 
 
 def file_setup(path):
@@ -138,7 +147,11 @@ if __name__ == '__main__':
     for sentence in sentences:
         lengths.append(len(word_tokenize(sentence)))
 
-    idxs = greedy(sim_matrix, reward, corpus_sums, groups, rqj, lengths, max_length=180)
+    reward_l1 = partial(l1, sim_matrix = sim_matrix, corpus_sums = corpus_sums, alpha_numer = alpha_passed)
+    reward_r1 = partial(r1, corpus_sums = corpus_sums, groups = groups, rqj = rqj, beta = beta_passed)
+
+    filled_reward = partial(reward, l1 = reward_l1, r1 = reward_r1, lambda_var = lambda_passed)
+    idxs = greedy(sim_matrix, filled_reward, lengths)
 
     for idx in idxs:
         print replace_all(sentences[idx])

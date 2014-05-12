@@ -30,10 +30,10 @@ beta_passed = .5
 lambda_passed = 6
 
 if len(sys.argv) == 5:
-    alpha_passed = sys.argv[2]
-    beta_passed = sys.argv[3]
-    lambda_passed = sys.argv[4]
-    
+    alpha_passed = int(sys.argv[2])
+    beta_passed = float(sys.argv[3])
+    lambda_passed = int(sys.argv[4])
+
 # def reward(s, sim_matrix, corpus_sums, groups, rqj):
 #     return l1(s, sim_matrix, corpus_sums) + (6 * r1(s, corpus_sums, groups, rqj))
 

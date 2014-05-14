@@ -28,12 +28,20 @@ from rewards import l1, r1
 alpha_passed = 12
 beta_passed = .5
 lambda_passed = 6
+r_passed = 0
 
-if len(sys.argv) == 5:
-    alpha_passed = int(sys.argv[2])
-    beta_passed = float(sys.argv[3])
-    lambda_passed = int(sys.argv[4])
-
+iter_sys = 2
+while iter_sys < len(sys.argv):
+    if iter_sys == 2:
+        alpha_passed = int(sys.argv[2])
+    if iter_sys == 3:
+        beta_passed = float(sys.argv[3])
+    if iter_sys == 4:
+        lambda_passed = int(sys.argv[4])
+    if iter_sys == 5: 
+        r_passed = float(sys.argv[5])
+    iter_sys += 1
+    
 # def reward(s, sim_matrix, corpus_sums, groups, rqj):
 #     return l1(s, sim_matrix, corpus_sums) + (6 * r1(s, corpus_sums, groups, rqj))
 
@@ -135,7 +143,7 @@ if __name__ == '__main__':
     reward_r1 = partial(r1, corpus_sums = corpus_sums, groups = groups, rqj = rqj, beta = beta_passed)
 
     filled_reward = partial(reward, l1 = reward_l1, r1 = reward_r1, lambda_var = lambda_passed)
-    idxs = greedy(sim_matrix, filled_reward, lengths)
+    idxs = greedy(sim_matrix, filled_reward, lengths, r_passsed)
 
     for idx in idxs:
         print replace_all(sentences[idx])

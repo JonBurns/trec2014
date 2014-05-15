@@ -6,3 +6,6 @@ RedditComments.py
 timinginfo.txt
 WikipediaSummarizer.py
 remove_all.py
+hadoopStuff/*.txt
+*.jar
+*.p

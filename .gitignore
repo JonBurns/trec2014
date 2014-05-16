@@ -12,3 +12,5 @@ hadoopStuff/*.txt
 hadoopStuff/D0701A/*
 *.jar
 *.p
+copy-all.py
+hadoopStuff/jobOutput/*

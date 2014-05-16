@@ -12,7 +12,7 @@ lines = lines[1:]
 
 alpha_values = [12]
 
-r_values = [0]
+r_values = [0.2]
 beta_values = [0.5]
 lambda_values = [6]
 run_id = ""
@@ -35,4 +35,4 @@ for lambda_val in lambda_values:
                         f.write(output)
                 i += 1
 
-subprocess.call('prepare_results.sh ' + "placeHolder" , shell = True)
+subprocess.call('./prepare_results.sh ' + "placeHolder" , shell = True)

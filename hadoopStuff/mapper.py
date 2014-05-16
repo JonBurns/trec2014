@@ -9,8 +9,6 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 vectorizer = pickle.load(open('vecotrizer.p', 'rb'))
 
-temp = vectorizer.transform(['temp'])
-print temp.shape[1]
 
 for line in sys.stdin:
     listy = []
@@ -20,7 +18,7 @@ for line in sys.stdin:
     for i,j,v in zip(data.row, data.col, data.data):
         listy.append(str(j) + ' ' + str(v))
 
-    sys.stdout.write('{0}\t'.format(line.strip()))
+    sys.stdout.write('{0}\t{1}\t'.format(line.strip(), data.shape[1]))
     for item in listy:
         sys.stdout.write(item)
         sys.stdout.write('\t')

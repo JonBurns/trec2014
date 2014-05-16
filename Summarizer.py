@@ -124,7 +124,7 @@ if __name__ == '__main__':
 
     sim_matrix = pairwise_kernels(tfidf.todense(), metric = 'cosine')
 
-    kcluster = KMeans(init = 'k-means++', n_init = 10, n_clusters = len(sentences)/5, n_jobs=-1) #n-clusters is K
+    kcluster = KMeans(init = 'k-means++', n_init = 10, n_clusters = len(sentences)/5) #, n_jobs=-1) #n-clusters is K
     clusters = kcluster.fit_predict(tfidf.todense())
 
     groups = create_groups(clusters) #[map(lambda x: x[0], g) for k, g in groupby(c1, lambda x: x[1])]

@@ -8,3 +8,6 @@ WikipediaSummarizer.py
 remove_all.py
 
 ROUGE/DUC-2007/SYSTEM/
+hadoopStuff/*.txt
+*.jar
+*.p

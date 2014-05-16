@@ -4,6 +4,53 @@
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
 <PEERS>
+<P ID="lda200-dthresh00005">D0721.lda200-dthresh00005.system.html</P>
+<P ID="lda200-dthresh0005">D0721.lda200-dthresh0005.system.html</P>
+<P ID="lda200-ss">D0721.lda200-ss.system.html</P>
+<P ID="lda200">D0721.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0721.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0721.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0721.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0721.max-reward-with-filter-and-both-nws.system.html</P>
+<P ID="max-reward-with-filter">D0721.max-reward-with-filter.system.html</P>
+<P ID="max-reward-with-high-alpha">D0721.max-reward-with-high-alpha.system.html</P>
+<P ID="max-reward-with-high-BETA">D0721.max-reward-with-high-BETA.system.html</P>
+<P ID="max-reward-with-low-alpha">D0721.max-reward-with-low-alpha.system.html</P>
+<P ID="baseline-kl">D0721.baseline-kl.system.html</P>
+<P ID="baseline-ss">D0721.baseline-ss.system.html</P>
+<P ID="baseline">D0721.baseline.system.html</P>
+<P ID="div10">D0721.div10.system.html</P>
+<P ID="div3">D0721.div3.system.html</P>
+<P ID="div5">D0721.div5.system.html</P>
+<P ID="div7">D0721.div7.system.html</P>
+<P ID="js-thresh01">D0721.js-thresh01.system.html</P>
+<P ID="js-thresh02">D0721.js-thresh02.system.html</P>
+<P ID="lda100-js">D0721.lda100-js.system.html</P>
+<P ID="lda100-kl">D0721.lda100-kl.system.html</P>
+<P ID="lda100">D0721.lda100.system.html</P>
+<P ID="max-reward">D0721.max-reward.system.html</P>
+<P ID="normalized-reward">D0721.normalized-reward.system.html</P>
+<P ID="r-is-0.2">D0721.r-is-0.2.system.html</P>
+<P ID="r-is-0.5">D0721.r-is-0.5.system.html</P>
+<P ID="r-is-1">D0721.r-is-1.system.html</P>
+<P ID="synset-expansion">D0721.synset-expansion.system.html</P>
+<P ID="baseline-js">D0721.baseline-js.system.html</P>
+<P ID="lda200-dthreash00001">D0721.lda200-dthreash00001.system.html</P>
+<P ID="max-reward-with-low-BETA">D0721.max-reward-with-low-BETA.system.html</P></PEERS>
+
+	<MODELS>
+
+<M ID="1">D0721.1.gold.html</M>
+<M ID="2">D0721.2.gold.html</M>
+<M ID="3">D0721.3.gold.html</M>
+<M ID="4">D0721.4.gold.html</M>
+</MODELS>
+	</EVAL>
+<EVAL ID="2">
+<PEER-ROOT>systems</PEER-ROOT>
+<MODEL-ROOT>models</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
+<PEERS>
 <P ID="baseline-js">D0701.baseline-js.system.html</P>
 <P ID="baseline-kl">D0701.baseline-kl.system.html</P>
 <P ID="baseline-ss">D0701.baseline-ss.system.html</P>
@@ -17,12 +64,15 @@
 <P ID="js-thresh02">D0701.js-thresh02.system.html</P>
 <P ID="js-thresh03">D0701.js-thresh03.system.html</P>
 <P ID="js-thresh04">D0701.js-thresh04.system.html</P>
+<<<<<<< HEAD
 <P ID="js-thresh05">D0701.js-thresh05.system.html</P>
 <P ID="lambda-6-beta-0.3-alpha-10">D0701.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0701.lambda-6-beta-0.5-alpha-10.system.html</P>
 <P ID="lda100-js">D0701.lda100-js.system.html</P>
 <P ID="lda100-kl">D0701.lda100-kl.system.html</P>
 <P ID="lda100">D0701.lda100.system.html</P>
+=======
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="lda200-dthreash00001">D0701.lda200-dthreash00001.system.html</P>
 <P ID="lda200-dthresh00005">D0701.lda200-dthresh00005.system.html</P>
 <P ID="lda200-dthresh0005">D0701.lda200-dthresh0005.system.html</P>
@@ -35,7 +85,25 @@
 <P ID="max-reward-with-filter">D0701.max-reward-with-filter.system.html</P>
 <P ID="max-reward-with-high-alpha">D0701.max-reward-with-high-alpha.system.html</P>
 <P ID="max-reward-with-high-BETA">D0701.max-reward-with-high-BETA.system.html</P>
+<P ID="js-thresh05">D0701.js-thresh05.system.html</P>
+<P ID="lda100">D0701.lda100.system.html</P>
 <P ID="max-reward-with-low-alpha">D0701.max-reward-with-low-alpha.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0701.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0701.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0701.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0701.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0701.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0701.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0701.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0701.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0701.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0701.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0701.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0701.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0701.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.7-cody">D0701.lambda-6-beta-0.5-alpha-12-r-0.7-cody.system.html</P>
+<P ID="lda100-js">D0701.lda100-js.system.html</P>
+<P ID="lda100-kl">D0701.lda100-kl.system.html</P>
 <P ID="max-reward-with-low-BETA">D0701.max-reward-with-low-BETA.system.html</P>
 <P ID="max-reward">D0701.max-reward.system.html</P>
 <P ID="normalized-reward">D0701.normalized-reward.system.html</P>
@@ -44,7 +112,10 @@
 <P ID="r-is-0.2">D0701.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0701.r-is-0.5.system.html</P>
 <P ID="r-is-1">D0701.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0701.short10.system.html</P>
+=======
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="synset-expansion">D0701.synset-expansion.system.html</P></PEERS>
 
 	<MODELS>
@@ -55,22 +126,25 @@
 <M ID="4">D0701.4.gold.html</M>
 </MODELS>
 	</EVAL>
-<EVAL ID="2">
+<EVAL ID="3">
 <PEER-ROOT>systems</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
 <PEERS>
+<P ID="div5">D0702.div5.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0702.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0702.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="baseline-js">D0702.baseline-js.system.html</P>
 <P ID="baseline-kl">D0702.baseline-kl.system.html</P>
 <P ID="baseline-ss">D0702.baseline-ss.system.html</P>
 <P ID="baseline">D0702.baseline.system.html</P>
 <P ID="div10">D0702.div10.system.html</P>
 <P ID="div3">D0702.div3.system.html</P>
-<P ID="div5">D0702.div5.system.html</P>
 <P ID="div7">D0702.div7.system.html</P>
 <P ID="fuzzy1">D0702.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0702.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0702.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0702.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0702.lambda-6-beta-0.5-alpha-10.system.html</P>
 <P ID="lda100-js">D0702.lda100-js.system.html</P>
@@ -85,6 +159,17 @@
 <P ID="max-reward-with-both-nws">D0702.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0702.max-reward-with-filter-after-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter-and-both-nws">D0702.max-reward-with-filter-and-both-nws.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0702.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0702.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0702.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0702.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0702.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0702.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0702.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0702.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0702.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="max-reward-with-filter">D0702.max-reward-with-filter.system.html</P>
 <P ID="max-reward-with-high-alpha">D0702.max-reward-with-high-alpha.system.html</P>
 <P ID="max-reward-with-high-BETA">D0702.max-reward-with-high-BETA.system.html</P>
@@ -97,8 +182,26 @@
 <P ID="r-is-0.2">D0702.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0702.r-is-0.5.system.html</P>
 <P ID="r-is-1">D0702.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0702.short10.system.html</P>
 <P ID="synset-expansion">D0702.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="synset-expansion">D0702.synset-expansion.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0702.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0702.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0702.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+<P ID="lda100-js">D0702.lda100-js.system.html</P>
+<P ID="lda100-kl">D0702.lda100-kl.system.html</P>
+<P ID="lda100">D0702.lda100.system.html</P>
+<P ID="lda200-dthreash00001">D0702.lda200-dthreash00001.system.html</P>
+<P ID="lda200-dthresh00005">D0702.lda200-dthresh00005.system.html</P>
+<P ID="lda200-dthresh0005">D0702.lda200-dthresh0005.system.html</P>
+<P ID="lda200-ss">D0702.lda200-ss.system.html</P>
+<P ID="lda200">D0702.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0702.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0702.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0702.max-reward-with-filter-after-and-both-nws.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -108,14 +211,17 @@
 <M ID="4">D0702.4.gold.html</M>
 </MODELS>
 	</EVAL>
-<EVAL ID="3">
+<EVAL ID="4">
 <PEER-ROOT>systems</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
 <PEERS>
+<P ID="baseline-ss">D0703.baseline-ss.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0703.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0703.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="r-is-1">D0703.r-is-1.system.html</P>
 <P ID="baseline-js">D0703.baseline-js.system.html</P>
 <P ID="baseline-kl">D0703.baseline-kl.system.html</P>
-<P ID="baseline-ss">D0703.baseline-ss.system.html</P>
 <P ID="baseline">D0703.baseline.system.html</P>
 <P ID="div10">D0703.div10.system.html</P>
 <P ID="div3">D0703.div3.system.html</P>
@@ -124,6 +230,7 @@
 <P ID="fuzzy1">D0703.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0703.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0703.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0703.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0703.lambda-6-beta-0.5-alpha-10.system.html</P>
 <P ID="lda100-js">D0703.lda100-js.system.html</P>
@@ -135,6 +242,13 @@
 <P ID="lda200-ss">D0703.lda200-ss.system.html</P>
 <P ID="lda200">D0703.lda200.system.html</P>
 <P ID="max-reward-Rouge-Words-no-filter">D0703.max-reward-Rouge-Words-no-filter.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0703.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0703.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0703.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0703.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0703.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="max-reward-with-both-nws">D0703.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0703.max-reward-with-filter-after-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter-and-both-nws">D0703.max-reward-with-filter-and-both-nws.system.html</P>
@@ -149,8 +263,26 @@
 <P ID="porter-stemmer">D0703.porter-stemmer.system.html</P>
 <P ID="r-is-0.2">D0703.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0703.r-is-0.5.system.html</P>
+<<<<<<< HEAD
 <P ID="r-is-1">D0703.r-is-1.system.html</P>
 <P ID="short10">D0703.short10.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0703.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0703.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0703.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0703.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0703.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0703.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0703.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+<P ID="lda100-js">D0703.lda100-js.system.html</P>
+<P ID="lda100-kl">D0703.lda100-kl.system.html</P>
+<P ID="lda100">D0703.lda100.system.html</P>
+<P ID="lda200-dthreash00001">D0703.lda200-dthreash00001.system.html</P>
+<P ID="lda200-dthresh00005">D0703.lda200-dthresh00005.system.html</P>
+<P ID="lda200-dthresh0005">D0703.lda200-dthresh0005.system.html</P>
+<P ID="lda200-ss">D0703.lda200-ss.system.html</P>
+<P ID="lda200">D0703.lda200.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="synset-expansion">D0703.synset-expansion.system.html</P></PEERS>
 
 	<MODELS>
@@ -161,11 +293,12 @@
 <M ID="4">D0703.4.gold.html</M>
 </MODELS>
 	</EVAL>
-<EVAL ID="4">
+<EVAL ID="5">
 <PEER-ROOT>systems</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
 <PEERS>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0704.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
 <P ID="baseline-js">D0704.baseline-js.system.html</P>
 <P ID="baseline-kl">D0704.baseline-kl.system.html</P>
 <P ID="baseline-ss">D0704.baseline-ss.system.html</P>
@@ -177,8 +310,23 @@
 <P ID="fuzzy1">D0704.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0704.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0704.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0704.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0704.lambda-6-beta-0.5-alpha-10.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0704.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0704.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0704.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0704.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0704.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0704.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0704.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0704.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0704.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0704.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0704.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0704.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="lda100-js">D0704.lda100-js.system.html</P>
 <P ID="lda100-kl">D0704.lda100-kl.system.html</P>
 <P ID="lda100">D0704.lda100.system.html</P>
@@ -190,7 +338,6 @@
 <P ID="max-reward-Rouge-Words-no-filter">D0704.max-reward-Rouge-Words-no-filter.system.html</P>
 <P ID="max-reward-with-both-nws">D0704.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0704.max-reward-with-filter-after-and-both-nws.system.html</P>
-<P ID="max-reward-with-filter-and-both-nws">D0704.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0704.max-reward-with-filter.system.html</P>
 <P ID="max-reward-with-high-alpha">D0704.max-reward-with-high-alpha.system.html</P>
 <P ID="max-reward-with-high-BETA">D0704.max-reward-with-high-BETA.system.html</P>
@@ -203,8 +350,13 @@
 <P ID="r-is-0.2">D0704.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0704.r-is-0.5.system.html</P>
 <P ID="r-is-1">D0704.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0704.short10.system.html</P>
 <P ID="synset-expansion">D0704.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="synset-expansion">D0704.synset-expansion.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0704.max-reward-with-filter-and-both-nws.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -214,14 +366,13 @@
 <M ID="4">D0704.4.gold.html</M>
 </MODELS>
 	</EVAL>
-<EVAL ID="5">
+<EVAL ID="6">
 <PEER-ROOT>systems</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
 <PEERS>
 <P ID="baseline-js">D0705.baseline-js.system.html</P>
 <P ID="baseline-kl">D0705.baseline-kl.system.html</P>
-<P ID="baseline-ss">D0705.baseline-ss.system.html</P>
 <P ID="baseline">D0705.baseline.system.html</P>
 <P ID="div10">D0705.div10.system.html</P>
 <P ID="div3">D0705.div3.system.html</P>
@@ -230,6 +381,7 @@
 <P ID="fuzzy1">D0705.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0705.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0705.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0705.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0705.lambda-6-beta-0.5-alpha-10.system.html</P>
 <P ID="lda100-js">D0705.lda100-js.system.html</P>
@@ -241,6 +393,13 @@
 <P ID="lda200-ss">D0705.lda200-ss.system.html</P>
 <P ID="lda200">D0705.lda200.system.html</P>
 <P ID="max-reward-Rouge-Words-no-filter">D0705.max-reward-Rouge-Words-no-filter.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0705.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0705.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0705.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0705.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0705.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="max-reward-with-both-nws">D0705.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0705.max-reward-with-filter-after-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter-and-both-nws">D0705.max-reward-with-filter-and-both-nws.system.html</P>
@@ -255,19 +414,42 @@
 <P ID="porter-stemmer">D0705.porter-stemmer.system.html</P>
 <P ID="r-is-0.2">D0705.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0705.r-is-0.5.system.html</P>
+<<<<<<< HEAD
 <P ID="r-is-1">D0705.r-is-1.system.html</P>
 <P ID="short10">D0705.short10.system.html</P>
 <P ID="synset-expansion">D0705.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0705.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0705.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0705.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0705.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0705.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0705.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0705.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+<P ID="lda100-js">D0705.lda100-js.system.html</P>
+<P ID="lda100-kl">D0705.lda100-kl.system.html</P>
+<P ID="lda100">D0705.lda100.system.html</P>
+<P ID="lda200-dthreash00001">D0705.lda200-dthreash00001.system.html</P>
+<P ID="lda200-dthresh00005">D0705.lda200-dthresh00005.system.html</P>
+<P ID="lda200-dthresh0005">D0705.lda200-dthresh0005.system.html</P>
+<P ID="lda200-ss">D0705.lda200-ss.system.html</P>
+<P ID="lda200">D0705.lda200.system.html</P>
+<P ID="synset-expansion">D0705.synset-expansion.system.html</P>
+<P ID="baseline-ss">D0705.baseline-ss.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0705.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0705.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="r-is-1">D0705.r-is-1.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
-<M ID="1">D0705.1.gold.html</M>
-<M ID="2">D0705.2.gold.html</M>
-<M ID="3">D0705.3.gold.html</M>
-<M ID="4">D0705.4.gold.html</M>
+<M ID="1">D0705.2.gold.html</M>
+<M ID="2">D0705.3.gold.html</M>
+<M ID="3">D0705.4.gold.html</M>
+<M ID="4">D0705.1.gold.html</M>
 </MODELS>
 	</EVAL>
-<EVAL ID="6">
+<EVAL ID="7">
 <PEER-ROOT>systems</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
@@ -283,8 +465,23 @@
 <P ID="fuzzy1">D0706.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0706.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0706.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0706.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0706.lambda-6-beta-0.5-alpha-10.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0706.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0706.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0706.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0706.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0706.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0706.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0706.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0706.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0706.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0706.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0706.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0706.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="lda100-js">D0706.lda100-js.system.html</P>
 <P ID="lda100-kl">D0706.lda100-kl.system.html</P>
 <P ID="lda100">D0706.lda100.system.html</P>
@@ -296,7 +493,6 @@
 <P ID="max-reward-Rouge-Words-no-filter">D0706.max-reward-Rouge-Words-no-filter.system.html</P>
 <P ID="max-reward-with-both-nws">D0706.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0706.max-reward-with-filter-after-and-both-nws.system.html</P>
-<P ID="max-reward-with-filter-and-both-nws">D0706.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0706.max-reward-with-filter.system.html</P>
 <P ID="max-reward-with-high-alpha">D0706.max-reward-with-high-alpha.system.html</P>
 <P ID="max-reward-with-high-BETA">D0706.max-reward-with-high-BETA.system.html</P>
@@ -309,8 +505,14 @@
 <P ID="r-is-0.2">D0706.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0706.r-is-0.5.system.html</P>
 <P ID="r-is-1">D0706.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0706.short10.system.html</P>
 <P ID="synset-expansion">D0706.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="synset-expansion">D0706.synset-expansion.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0706.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0706.max-reward-with-filter-and-both-nws.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -320,14 +522,13 @@
 <M ID="4">D0706.4.gold.html</M>
 </MODELS>
 	</EVAL>
-<EVAL ID="7">
+<EVAL ID="8">
 <PEER-ROOT>systems</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
 <PEERS>
 <P ID="baseline-js">D0707.baseline-js.system.html</P>
 <P ID="baseline-kl">D0707.baseline-kl.system.html</P>
-<P ID="baseline-ss">D0707.baseline-ss.system.html</P>
 <P ID="baseline">D0707.baseline.system.html</P>
 <P ID="div10">D0707.div10.system.html</P>
 <P ID="div3">D0707.div3.system.html</P>
@@ -336,6 +537,7 @@
 <P ID="fuzzy1">D0707.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0707.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0707.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0707.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0707.lambda-6-beta-0.5-alpha-10.system.html</P>
 <P ID="lda100-js">D0707.lda100-js.system.html</P>
@@ -347,6 +549,13 @@
 <P ID="lda200-ss">D0707.lda200-ss.system.html</P>
 <P ID="lda200">D0707.lda200.system.html</P>
 <P ID="max-reward-Rouge-Words-no-filter">D0707.max-reward-Rouge-Words-no-filter.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0707.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0707.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0707.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0707.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0707.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="max-reward-with-both-nws">D0707.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0707.max-reward-with-filter-after-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter-and-both-nws">D0707.max-reward-with-filter-and-both-nws.system.html</P>
@@ -361,8 +570,29 @@
 <P ID="porter-stemmer">D0707.porter-stemmer.system.html</P>
 <P ID="r-is-0.2">D0707.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0707.r-is-0.5.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0707.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0707.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0707.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0707.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0707.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0707.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0707.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+<P ID="lda100-js">D0707.lda100-js.system.html</P>
+<P ID="lda100-kl">D0707.lda100-kl.system.html</P>
+<P ID="lda100">D0707.lda100.system.html</P>
+<P ID="lda200-dthreash00001">D0707.lda200-dthreash00001.system.html</P>
+<P ID="lda200-dthresh00005">D0707.lda200-dthresh00005.system.html</P>
+<P ID="lda200-dthresh0005">D0707.lda200-dthresh0005.system.html</P>
+<P ID="lda200-ss">D0707.lda200-ss.system.html</P>
+<P ID="lda200">D0707.lda200.system.html</P>
+<P ID="baseline-ss">D0707.baseline-ss.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0707.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0707.max-reward-Rouge-Words-no-filter.system.html</P>
 <P ID="r-is-1">D0707.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0707.short10.system.html</P>
+=======
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="synset-expansion">D0707.synset-expansion.system.html</P></PEERS>
 
 	<MODELS>
@@ -373,7 +603,7 @@
 <M ID="4">D0707.4.gold.html</M>
 </MODELS>
 	</EVAL>
-<EVAL ID="8">
+<EVAL ID="9">
 <PEER-ROOT>systems</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
@@ -389,8 +619,23 @@
 <P ID="fuzzy1">D0708.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0708.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0708.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0708.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0708.lambda-6-beta-0.5-alpha-10.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0708.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0708.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0708.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0708.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0708.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0708.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0708.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0708.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0708.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0708.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0708.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0708.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="lda100-js">D0708.lda100-js.system.html</P>
 <P ID="lda100-kl">D0708.lda100-kl.system.html</P>
 <P ID="lda100">D0708.lda100.system.html</P>
@@ -402,7 +647,6 @@
 <P ID="max-reward-Rouge-Words-no-filter">D0708.max-reward-Rouge-Words-no-filter.system.html</P>
 <P ID="max-reward-with-both-nws">D0708.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0708.max-reward-with-filter-after-and-both-nws.system.html</P>
-<P ID="max-reward-with-filter-and-both-nws">D0708.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0708.max-reward-with-filter.system.html</P>
 <P ID="max-reward-with-high-alpha">D0708.max-reward-with-high-alpha.system.html</P>
 <P ID="max-reward-with-high-BETA">D0708.max-reward-with-high-BETA.system.html</P>
@@ -415,8 +659,14 @@
 <P ID="r-is-0.2">D0708.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0708.r-is-0.5.system.html</P>
 <P ID="r-is-1">D0708.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0708.short10.system.html</P>
 <P ID="synset-expansion">D0708.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="synset-expansion">D0708.synset-expansion.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0708.max-reward-with-filter-and-both-nws.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0708.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -426,14 +676,13 @@
 <M ID="4">D0708.4.gold.html</M>
 </MODELS>
 	</EVAL>
-<EVAL ID="9">
+<EVAL ID="10">
 <PEER-ROOT>systems</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
 <PEERS>
 <P ID="baseline-js">D0709.baseline-js.system.html</P>
 <P ID="baseline-kl">D0709.baseline-kl.system.html</P>
-<P ID="baseline-ss">D0709.baseline-ss.system.html</P>
 <P ID="baseline">D0709.baseline.system.html</P>
 <P ID="div10">D0709.div10.system.html</P>
 <P ID="div3">D0709.div3.system.html</P>
@@ -442,6 +691,7 @@
 <P ID="fuzzy1">D0709.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0709.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0709.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0709.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0709.lambda-6-beta-0.5-alpha-10.system.html</P>
 <P ID="lda100-js">D0709.lda100-js.system.html</P>
@@ -453,6 +703,13 @@
 <P ID="lda200-ss">D0709.lda200-ss.system.html</P>
 <P ID="lda200">D0709.lda200.system.html</P>
 <P ID="max-reward-Rouge-Words-no-filter">D0709.max-reward-Rouge-Words-no-filter.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0709.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0709.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0709.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0709.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0709.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="max-reward-with-both-nws">D0709.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0709.max-reward-with-filter-after-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter-and-both-nws">D0709.max-reward-with-filter-and-both-nws.system.html</P>
@@ -467,19 +724,42 @@
 <P ID="porter-stemmer">D0709.porter-stemmer.system.html</P>
 <P ID="r-is-0.2">D0709.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0709.r-is-0.5.system.html</P>
+<<<<<<< HEAD
 <P ID="r-is-1">D0709.r-is-1.system.html</P>
 <P ID="short10">D0709.short10.system.html</P>
 <P ID="synset-expansion">D0709.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0709.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0709.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0709.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0709.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0709.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0709.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0709.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+<P ID="lda100-js">D0709.lda100-js.system.html</P>
+<P ID="lda100-kl">D0709.lda100-kl.system.html</P>
+<P ID="lda100">D0709.lda100.system.html</P>
+<P ID="lda200-dthreash00001">D0709.lda200-dthreash00001.system.html</P>
+<P ID="lda200-dthresh00005">D0709.lda200-dthresh00005.system.html</P>
+<P ID="lda200-dthresh0005">D0709.lda200-dthresh0005.system.html</P>
+<P ID="lda200-ss">D0709.lda200-ss.system.html</P>
+<P ID="lda200">D0709.lda200.system.html</P>
+<P ID="synset-expansion">D0709.synset-expansion.system.html</P>
+<P ID="baseline-ss">D0709.baseline-ss.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0709.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0709.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="r-is-1">D0709.r-is-1.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
 <M ID="1">D0709.1.gold.html</M>
-<M ID="2">D0709.2.gold.html</M>
-<M ID="3">D0709.3.gold.html</M>
-<M ID="4">D0709.4.gold.html</M>
+<M ID="2">D0709.3.gold.html</M>
+<M ID="3">D0709.4.gold.html</M>
+<M ID="4">D0709.2.gold.html</M>
 </MODELS>
 	</EVAL>
-<EVAL ID="10">
+<EVAL ID="11">
 <PEER-ROOT>systems</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
@@ -495,8 +775,23 @@
 <P ID="fuzzy1">D0710.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0710.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0710.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0710.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0710.lambda-6-beta-0.5-alpha-10.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0710.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0710.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0710.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0710.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0710.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0710.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0710.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0710.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0710.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0710.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0710.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0710.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="lda100-js">D0710.lda100-js.system.html</P>
 <P ID="lda100-kl">D0710.lda100-kl.system.html</P>
 <P ID="lda100">D0710.lda100.system.html</P>
@@ -508,7 +803,6 @@
 <P ID="max-reward-Rouge-Words-no-filter">D0710.max-reward-Rouge-Words-no-filter.system.html</P>
 <P ID="max-reward-with-both-nws">D0710.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0710.max-reward-with-filter-after-and-both-nws.system.html</P>
-<P ID="max-reward-with-filter-and-both-nws">D0710.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0710.max-reward-with-filter.system.html</P>
 <P ID="max-reward-with-high-alpha">D0710.max-reward-with-high-alpha.system.html</P>
 <P ID="max-reward-with-high-BETA">D0710.max-reward-with-high-BETA.system.html</P>
@@ -521,8 +815,14 @@
 <P ID="r-is-0.2">D0710.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0710.r-is-0.5.system.html</P>
 <P ID="r-is-1">D0710.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0710.short10.system.html</P>
 <P ID="synset-expansion">D0710.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="synset-expansion">D0710.synset-expansion.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0710.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0710.max-reward-with-filter-and-both-nws.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -532,14 +832,13 @@
 <M ID="4">D0710.4.gold.html</M>
 </MODELS>
 	</EVAL>
-<EVAL ID="11">
+<EVAL ID="12">
 <PEER-ROOT>systems</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
 <PEERS>
 <P ID="baseline-js">D0711.baseline-js.system.html</P>
 <P ID="baseline-kl">D0711.baseline-kl.system.html</P>
-<P ID="baseline-ss">D0711.baseline-ss.system.html</P>
 <P ID="baseline">D0711.baseline.system.html</P>
 <P ID="div10">D0711.div10.system.html</P>
 <P ID="div3">D0711.div3.system.html</P>
@@ -548,6 +847,7 @@
 <P ID="fuzzy1">D0711.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0711.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0711.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0711.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0711.lambda-6-beta-0.5-alpha-10.system.html</P>
 <P ID="lda100-js">D0711.lda100-js.system.html</P>
@@ -559,6 +859,13 @@
 <P ID="lda200-ss">D0711.lda200-ss.system.html</P>
 <P ID="lda200">D0711.lda200.system.html</P>
 <P ID="max-reward-Rouge-Words-no-filter">D0711.max-reward-Rouge-Words-no-filter.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0711.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0711.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0711.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0711.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0711.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="max-reward-with-both-nws">D0711.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0711.max-reward-with-filter-after-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter-and-both-nws">D0711.max-reward-with-filter-and-both-nws.system.html</P>
@@ -573,8 +880,29 @@
 <P ID="porter-stemmer">D0711.porter-stemmer.system.html</P>
 <P ID="r-is-0.2">D0711.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0711.r-is-0.5.system.html</P>
+<P ID="baseline-ss">D0711.baseline-ss.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0711.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0711.max-reward-Rouge-Words-no-filter.system.html</P>
 <P ID="r-is-1">D0711.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0711.short10.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0711.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0711.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0711.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0711.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0711.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0711.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0711.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+<P ID="lda100-js">D0711.lda100-js.system.html</P>
+<P ID="lda100-kl">D0711.lda100-kl.system.html</P>
+<P ID="lda100">D0711.lda100.system.html</P>
+<P ID="lda200-dthreash00001">D0711.lda200-dthreash00001.system.html</P>
+<P ID="lda200-dthresh00005">D0711.lda200-dthresh00005.system.html</P>
+<P ID="lda200-dthresh0005">D0711.lda200-dthresh0005.system.html</P>
+<P ID="lda200-ss">D0711.lda200-ss.system.html</P>
+<P ID="lda200">D0711.lda200.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="synset-expansion">D0711.synset-expansion.system.html</P></PEERS>
 
 	<MODELS>
@@ -585,11 +913,12 @@
 <M ID="4">D0711.4.gold.html</M>
 </MODELS>
 	</EVAL>
-<EVAL ID="12">
+<EVAL ID="13">
 <PEER-ROOT>systems</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
 <PEERS>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0712.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
 <P ID="baseline-js">D0712.baseline-js.system.html</P>
 <P ID="baseline-kl">D0712.baseline-kl.system.html</P>
 <P ID="baseline-ss">D0712.baseline-ss.system.html</P>
@@ -601,8 +930,23 @@
 <P ID="fuzzy1">D0712.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0712.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0712.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0712.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0712.lambda-6-beta-0.5-alpha-10.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0712.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0712.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0712.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0712.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0712.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0712.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0712.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0712.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0712.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0712.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0712.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0712.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="lda100-js">D0712.lda100-js.system.html</P>
 <P ID="lda100-kl">D0712.lda100-kl.system.html</P>
 <P ID="lda100">D0712.lda100.system.html</P>
@@ -614,7 +958,6 @@
 <P ID="max-reward-Rouge-Words-no-filter">D0712.max-reward-Rouge-Words-no-filter.system.html</P>
 <P ID="max-reward-with-both-nws">D0712.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0712.max-reward-with-filter-after-and-both-nws.system.html</P>
-<P ID="max-reward-with-filter-and-both-nws">D0712.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0712.max-reward-with-filter.system.html</P>
 <P ID="max-reward-with-high-alpha">D0712.max-reward-with-high-alpha.system.html</P>
 <P ID="max-reward-with-high-BETA">D0712.max-reward-with-high-BETA.system.html</P>
@@ -627,8 +970,13 @@
 <P ID="r-is-0.2">D0712.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0712.r-is-0.5.system.html</P>
 <P ID="r-is-1">D0712.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0712.short10.system.html</P>
 <P ID="synset-expansion">D0712.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="synset-expansion">D0712.synset-expansion.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0712.max-reward-with-filter-and-both-nws.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -638,14 +986,13 @@
 <M ID="4">D0712.4.gold.html</M>
 </MODELS>
 	</EVAL>
-<EVAL ID="13">
+<EVAL ID="14">
 <PEER-ROOT>systems</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
 <PEERS>
 <P ID="baseline-js">D0713.baseline-js.system.html</P>
 <P ID="baseline-kl">D0713.baseline-kl.system.html</P>
-<P ID="baseline-ss">D0713.baseline-ss.system.html</P>
 <P ID="baseline">D0713.baseline.system.html</P>
 <P ID="div10">D0713.div10.system.html</P>
 <P ID="div3">D0713.div3.system.html</P>
@@ -654,6 +1001,7 @@
 <P ID="fuzzy1">D0713.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0713.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0713.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0713.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0713.lambda-6-beta-0.5-alpha-10.system.html</P>
 <P ID="lda100-js">D0713.lda100-js.system.html</P>
@@ -665,6 +1013,13 @@
 <P ID="lda200">D0713.lda200.system.html</P>
 <P ID="max-reward-Rouge-Words-no-filter">D0713.max-reward-Rouge-Words-no-filter.system.html</P>
 <P ID="max-reward-with-both-nws">D0713.max-reward-with-both-nws.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0713.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0713.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0713.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0713.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0713.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="max-reward-with-filter-after-and-both-nws">D0713.max-reward-with-filter-after-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter-and-both-nws">D0713.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0713.max-reward-with-filter.system.html</P>
@@ -679,18 +1034,39 @@
 <P ID="r-is-0.2">D0713.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0713.r-is-0.5.system.html</P>
 <P ID="r-is-1">D0713.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0713.short10.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0713.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0713.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0713.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0713.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0713.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0713.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0713.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+<P ID="lda100-js">D0713.lda100-js.system.html</P>
+<P ID="lda100-kl">D0713.lda100-kl.system.html</P>
+<P ID="lda100">D0713.lda100.system.html</P>
+<P ID="lda200-dthreash00001">D0713.lda200-dthreash00001.system.html</P>
+<P ID="lda200-dthresh00005">D0713.lda200-dthresh00005.system.html</P>
+<P ID="lda200-dthresh0005">D0713.lda200-dthresh0005.system.html</P>
+<P ID="lda200">D0713.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0713.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="baseline-ss">D0713.baseline-ss.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0713.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="max-reward-with-both-nws">D0713.max-reward-with-both-nws.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="synset-expansion">D0713.synset-expansion.system.html</P></PEERS>
 
 	<MODELS>
 
 <M ID="1">D0713.1.gold.html</M>
 <M ID="2">D0713.2.gold.html</M>
-<M ID="3">D0713.3.gold.html</M>
-<M ID="4">D0713.4.gold.html</M>
+<M ID="3">D0713.4.gold.html</M>
+<M ID="4">D0713.3.gold.html</M>
 </MODELS>
 	</EVAL>
-<EVAL ID="14">
+<EVAL ID="15">
 <PEER-ROOT>systems</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
@@ -706,6 +1082,7 @@
 <P ID="fuzzy1">D0714.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0714.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0714.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0714.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0714.lambda-6-beta-0.5-alpha-10.system.html</P>
 <P ID="lda100-js">D0714.lda100-js.system.html</P>
@@ -714,6 +1091,9 @@
 <P ID="lda200-dthreash00001">D0714.lda200-dthreash00001.system.html</P>
 <P ID="lda200-dthresh00005">D0714.lda200-dthresh00005.system.html</P>
 <P ID="lda200-dthresh0005">D0714.lda200-dthresh0005.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0714.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="lda200-ss">D0714.lda200-ss.system.html</P>
 <P ID="lda200">D0714.lda200.system.html</P>
 <P ID="max-reward-Rouge-Words-no-filter">D0714.max-reward-Rouge-Words-no-filter.system.html</P>
@@ -727,6 +1107,7 @@
 <P ID="max-reward-with-low-BETA">D0714.max-reward-with-low-BETA.system.html</P>
 <P ID="max-reward">D0714.max-reward.system.html</P>
 <P ID="normalized-reward">D0714.normalized-reward.system.html</P>
+<<<<<<< HEAD
 <P ID="normalized-vals">D0714.normalized-vals.system.html</P>
 <P ID="porter-stemmer">D0714.porter-stemmer.system.html</P>
 <P ID="r-is-0.2">D0714.r-is-0.2.system.html</P>
@@ -734,6 +1115,30 @@
 <P ID="r-is-1">D0714.r-is-1.system.html</P>
 <P ID="short10">D0714.short10.system.html</P>
 <P ID="synset-expansion">D0714.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0714.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0714.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0714.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0714.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0714.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0714.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0714.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0714.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0714.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0714.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0714.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+<P ID="lda100-js">D0714.lda100-js.system.html</P>
+<P ID="lda100-kl">D0714.lda100-kl.system.html</P>
+<P ID="lda100">D0714.lda100.system.html</P>
+<P ID="lda200-dthreash00001">D0714.lda200-dthreash00001.system.html</P>
+<P ID="lda200-dthresh00005">D0714.lda200-dthresh00005.system.html</P>
+<P ID="r-is-0.5">D0714.r-is-0.5.system.html</P>
+<P ID="r-is-1">D0714.r-is-1.system.html</P>
+<P ID="synset-expansion">D0714.synset-expansion.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0714.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lda200-dthresh0005">D0714.lda200-dthresh0005.system.html</P>
+<P ID="r-is-0.2">D0714.r-is-0.2.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -743,7 +1148,7 @@
 <M ID="4">D0714.4.gold.html</M>
 </MODELS>
 	</EVAL>
-<EVAL ID="15">
+<EVAL ID="16">
 <PEER-ROOT>systems</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
@@ -758,7 +1163,20 @@
 <P ID="div7">D0715.div7.system.html</P>
 <P ID="fuzzy1">D0715.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0715.js-thresh01.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0715.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0715.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0715.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0715.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0715.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0715.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0715.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0715.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0715.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0715.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0715.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0715.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
 <P ID="js-thresh02">D0715.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0715.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0715.lambda-6-beta-0.5-alpha-10.system.html</P>
 <P ID="lda100-js">D0715.lda100-js.system.html</P>
@@ -772,6 +1190,9 @@
 <P ID="max-reward-Rouge-Words-no-filter">D0715.max-reward-Rouge-Words-no-filter.system.html</P>
 <P ID="max-reward-with-both-nws">D0715.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0715.max-reward-with-filter-after-and-both-nws.system.html</P>
+=======
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0715.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="max-reward-with-filter-and-both-nws">D0715.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0715.max-reward-with-filter.system.html</P>
 <P ID="max-reward-with-high-alpha">D0715.max-reward-with-high-alpha.system.html</P>
@@ -785,8 +1206,23 @@
 <P ID="r-is-0.2">D0715.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0715.r-is-0.5.system.html</P>
 <P ID="r-is-1">D0715.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0715.short10.system.html</P>
 <P ID="synset-expansion">D0715.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="synset-expansion">D0715.synset-expansion.system.html</P>
+<P ID="lda100-js">D0715.lda100-js.system.html</P>
+<P ID="lda100-kl">D0715.lda100-kl.system.html</P>
+<P ID="lda100">D0715.lda100.system.html</P>
+<P ID="lda200-dthreash00001">D0715.lda200-dthreash00001.system.html</P>
+<P ID="lda200-dthresh00005">D0715.lda200-dthresh00005.system.html</P>
+<P ID="lda200-dthresh0005">D0715.lda200-dthresh0005.system.html</P>
+<P ID="lda200-ss">D0715.lda200-ss.system.html</P>
+<P ID="lda200">D0715.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0715.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0715.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0715.max-reward-with-filter-after-and-both-nws.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -796,14 +1232,14 @@
 <M ID="4">D0715.4.gold.html</M>
 </MODELS>
 	</EVAL>
-<EVAL ID="16">
+<EVAL ID="17">
 <PEER-ROOT>systems</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
 <PEERS>
+<P ID="baseline-ss">D0716.baseline-ss.system.html</P>
 <P ID="baseline-js">D0716.baseline-js.system.html</P>
 <P ID="baseline-kl">D0716.baseline-kl.system.html</P>
-<P ID="baseline-ss">D0716.baseline-ss.system.html</P>
 <P ID="baseline">D0716.baseline.system.html</P>
 <P ID="div10">D0716.div10.system.html</P>
 <P ID="div3">D0716.div3.system.html</P>
@@ -812,6 +1248,7 @@
 <P ID="fuzzy1">D0716.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0716.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0716.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0716.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0716.lambda-6-beta-0.5-alpha-10.system.html</P>
 <P ID="lda100-js">D0716.lda100-js.system.html</P>
@@ -823,6 +1260,13 @@
 <P ID="lda200-ss">D0716.lda200-ss.system.html</P>
 <P ID="lda200">D0716.lda200.system.html</P>
 <P ID="max-reward-Rouge-Words-no-filter">D0716.max-reward-Rouge-Words-no-filter.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0716.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0716.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0716.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0716.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0716.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="max-reward-with-both-nws">D0716.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0716.max-reward-with-filter-after-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter-and-both-nws">D0716.max-reward-with-filter-and-both-nws.system.html</P>
@@ -837,9 +1281,31 @@
 <P ID="porter-stemmer">D0716.porter-stemmer.system.html</P>
 <P ID="r-is-0.2">D0716.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0716.r-is-0.5.system.html</P>
+<<<<<<< HEAD
 <P ID="r-is-1">D0716.r-is-1.system.html</P>
 <P ID="short10">D0716.short10.system.html</P>
 <P ID="synset-expansion">D0716.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0716.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0716.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0716.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0716.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0716.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0716.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0716.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+<P ID="lda100-js">D0716.lda100-js.system.html</P>
+<P ID="lda100-kl">D0716.lda100-kl.system.html</P>
+<P ID="lda100">D0716.lda100.system.html</P>
+<P ID="lda200-dthreash00001">D0716.lda200-dthreash00001.system.html</P>
+<P ID="lda200-dthresh00005">D0716.lda200-dthresh00005.system.html</P>
+<P ID="lda200-dthresh0005">D0716.lda200-dthresh0005.system.html</P>
+<P ID="lda200-ss">D0716.lda200-ss.system.html</P>
+<P ID="lda200">D0716.lda200.system.html</P>
+<P ID="synset-expansion">D0716.synset-expansion.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0716.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0716.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="r-is-1">D0716.r-is-1.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -849,7 +1315,7 @@
 <M ID="4">D0716.4.gold.html</M>
 </MODELS>
 	</EVAL>
-<EVAL ID="17">
+<EVAL ID="18">
 <PEER-ROOT>systems</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
@@ -865,8 +1331,23 @@
 <P ID="fuzzy1">D0717.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0717.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0717.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0717.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0717.lambda-6-beta-0.5-alpha-10.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0717.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0717.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0717.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0717.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0717.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0717.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0717.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0717.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0717.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0717.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0717.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0717.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="lda100-js">D0717.lda100-js.system.html</P>
 <P ID="lda100-kl">D0717.lda100-kl.system.html</P>
 <P ID="lda100">D0717.lda100.system.html</P>
@@ -878,7 +1359,6 @@
 <P ID="max-reward-Rouge-Words-no-filter">D0717.max-reward-Rouge-Words-no-filter.system.html</P>
 <P ID="max-reward-with-both-nws">D0717.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0717.max-reward-with-filter-after-and-both-nws.system.html</P>
-<P ID="max-reward-with-filter-and-both-nws">D0717.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0717.max-reward-with-filter.system.html</P>
 <P ID="max-reward-with-high-alpha">D0717.max-reward-with-high-alpha.system.html</P>
 <P ID="max-reward-with-high-BETA">D0717.max-reward-with-high-BETA.system.html</P>
@@ -891,8 +1371,14 @@
 <P ID="r-is-0.2">D0717.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0717.r-is-0.5.system.html</P>
 <P ID="r-is-1">D0717.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0717.short10.system.html</P>
 <P ID="synset-expansion">D0717.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="synset-expansion">D0717.synset-expansion.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0717.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0717.max-reward-with-filter-and-both-nws.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -902,14 +1388,13 @@
 <M ID="4">D0717.4.gold.html</M>
 </MODELS>
 	</EVAL>
-<EVAL ID="18">
+<EVAL ID="19">
 <PEER-ROOT>systems</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
 <PEERS>
 <P ID="baseline-js">D0718.baseline-js.system.html</P>
 <P ID="baseline-kl">D0718.baseline-kl.system.html</P>
-<P ID="baseline-ss">D0718.baseline-ss.system.html</P>
 <P ID="baseline">D0718.baseline.system.html</P>
 <P ID="div10">D0718.div10.system.html</P>
 <P ID="div3">D0718.div3.system.html</P>
@@ -918,6 +1403,7 @@
 <P ID="fuzzy1">D0718.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0718.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0718.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0718.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0718.lambda-6-beta-0.5-alpha-10.system.html</P>
 <P ID="lda100-js">D0718.lda100-js.system.html</P>
@@ -929,6 +1415,13 @@
 <P ID="lda200-ss">D0718.lda200-ss.system.html</P>
 <P ID="lda200">D0718.lda200.system.html</P>
 <P ID="max-reward-Rouge-Words-no-filter">D0718.max-reward-Rouge-Words-no-filter.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0718.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0718.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0718.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0718.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0718.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="max-reward-with-both-nws">D0718.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0718.max-reward-with-filter-after-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter-and-both-nws">D0718.max-reward-with-filter-and-both-nws.system.html</P>
@@ -943,9 +1436,32 @@
 <P ID="porter-stemmer">D0718.porter-stemmer.system.html</P>
 <P ID="r-is-0.2">D0718.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0718.r-is-0.5.system.html</P>
+<<<<<<< HEAD
 <P ID="r-is-1">D0718.r-is-1.system.html</P>
 <P ID="short10">D0718.short10.system.html</P>
 <P ID="synset-expansion">D0718.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0718.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0718.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0718.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0718.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0718.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0718.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0718.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+<P ID="lda100-js">D0718.lda100-js.system.html</P>
+<P ID="lda100-kl">D0718.lda100-kl.system.html</P>
+<P ID="lda100">D0718.lda100.system.html</P>
+<P ID="lda200-dthreash00001">D0718.lda200-dthreash00001.system.html</P>
+<P ID="lda200-dthresh00005">D0718.lda200-dthresh00005.system.html</P>
+<P ID="lda200-dthresh0005">D0718.lda200-dthresh0005.system.html</P>
+<P ID="lda200-ss">D0718.lda200-ss.system.html</P>
+<P ID="lda200">D0718.lda200.system.html</P>
+<P ID="synset-expansion">D0718.synset-expansion.system.html</P>
+<P ID="baseline-ss">D0718.baseline-ss.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0718.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0718.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="r-is-1">D0718.r-is-1.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -955,11 +1471,12 @@
 <M ID="4">D0718.4.gold.html</M>
 </MODELS>
 	</EVAL>
-<EVAL ID="19">
+<EVAL ID="20">
 <PEER-ROOT>systems</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
 <PEERS>
+<P ID="max-reward-with-filter-and-both-nws">D0719.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="baseline-js">D0719.baseline-js.system.html</P>
 <P ID="baseline-kl">D0719.baseline-kl.system.html</P>
 <P ID="baseline-ss">D0719.baseline-ss.system.html</P>
@@ -971,8 +1488,24 @@
 <P ID="fuzzy1">D0719.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0719.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0719.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0719.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0719.lambda-6-beta-0.5-alpha-10.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0719.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0719.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0719.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0719.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0719.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0719.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0719.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0719.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0719.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0719.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0719.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0719.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0719.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="lda100-js">D0719.lda100-js.system.html</P>
 <P ID="lda100-kl">D0719.lda100-kl.system.html</P>
 <P ID="lda100">D0719.lda100.system.html</P>
@@ -984,7 +1517,6 @@
 <P ID="max-reward-Rouge-Words-no-filter">D0719.max-reward-Rouge-Words-no-filter.system.html</P>
 <P ID="max-reward-with-both-nws">D0719.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0719.max-reward-with-filter-after-and-both-nws.system.html</P>
-<P ID="max-reward-with-filter-and-both-nws">D0719.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0719.max-reward-with-filter.system.html</P>
 <P ID="max-reward-with-high-alpha">D0719.max-reward-with-high-alpha.system.html</P>
 <P ID="max-reward-with-high-BETA">D0719.max-reward-with-high-BETA.system.html</P>
@@ -997,7 +1529,10 @@
 <P ID="r-is-0.2">D0719.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0719.r-is-0.5.system.html</P>
 <P ID="r-is-1">D0719.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0719.short10.system.html</P>
+=======
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="synset-expansion">D0719.synset-expansion.system.html</P></PEERS>
 
 	<MODELS>
@@ -1008,14 +1543,13 @@
 <M ID="4">D0719.4.gold.html</M>
 </MODELS>
 	</EVAL>
-<EVAL ID="20">
+<EVAL ID="21">
 <PEER-ROOT>systems</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
 <PEERS>
 <P ID="baseline-js">D0720.baseline-js.system.html</P>
 <P ID="baseline-kl">D0720.baseline-kl.system.html</P>
-<P ID="baseline-ss">D0720.baseline-ss.system.html</P>
 <P ID="baseline">D0720.baseline.system.html</P>
 <P ID="div10">D0720.div10.system.html</P>
 <P ID="div3">D0720.div3.system.html</P>
@@ -1024,6 +1558,7 @@
 <P ID="fuzzy1">D0720.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0720.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0720.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0720.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0720.lambda-6-beta-0.5-alpha-10.system.html</P>
 <P ID="lda100-js">D0720.lda100-js.system.html</P>
@@ -1035,6 +1570,13 @@
 <P ID="lda200-ss">D0720.lda200-ss.system.html</P>
 <P ID="lda200">D0720.lda200.system.html</P>
 <P ID="max-reward-Rouge-Words-no-filter">D0720.max-reward-Rouge-Words-no-filter.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0720.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0720.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0720.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0720.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0720.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="max-reward-with-both-nws">D0720.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0720.max-reward-with-filter-after-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter-and-both-nws">D0720.max-reward-with-filter-and-both-nws.system.html</P>
@@ -1050,8 +1592,30 @@
 <P ID="r-is-0.2">D0720.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0720.r-is-0.5.system.html</P>
 <P ID="r-is-1">D0720.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0720.short10.system.html</P>
 <P ID="synset-expansion">D0720.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="synset-expansion">D0720.synset-expansion.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0720.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0720.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0720.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0720.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0720.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0720.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0720.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+<P ID="lda100-js">D0720.lda100-js.system.html</P>
+<P ID="lda100-kl">D0720.lda100-kl.system.html</P>
+<P ID="lda100">D0720.lda100.system.html</P>
+<P ID="lda200-dthreash00001">D0720.lda200-dthreash00001.system.html</P>
+<P ID="lda200-dthresh00005">D0720.lda200-dthresh00005.system.html</P>
+<P ID="lda200-dthresh0005">D0720.lda200-dthresh0005.system.html</P>
+<P ID="lda200-ss">D0720.lda200-ss.system.html</P>
+<P ID="lda200">D0720.lda200.system.html</P>
+<P ID="baseline-ss">D0720.baseline-ss.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0720.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0720.max-reward-Rouge-Words-no-filter.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -1061,6 +1625,7 @@
 <M ID="4">D0720.4.gold.html</M>
 </MODELS>
 	</EVAL>
+<<<<<<< HEAD
 <EVAL ID="21">
 <PEER-ROOT>systems</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
@@ -1114,6 +1679,8 @@
 <M ID="4">D0721.4.gold.html</M>
 </MODELS>
 	</EVAL>
+=======
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <EVAL ID="22">
 <PEER-ROOT>systems</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
@@ -1125,6 +1692,7 @@
 <P ID="baseline">D0722.baseline.system.html</P>
 <P ID="div10">D0722.div10.system.html</P>
 <P ID="div3">D0722.div3.system.html</P>
+<<<<<<< HEAD
 <P ID="div5">D0722.div5.system.html</P>
 <P ID="div7">D0722.div7.system.html</P>
 <P ID="fuzzy1">D0722.fuzzy1.system.html</P>
@@ -1141,6 +1709,18 @@
 <P ID="max-reward-with-both-nws">D0722.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0722.max-reward-with-filter-after-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter-and-both-nws">D0722.max-reward-with-filter-and-both-nws.system.html</P>
+=======
+<P ID="div7">D0722.div7.system.html</P>
+<P ID="js-thresh01">D0722.js-thresh01.system.html</P>
+<P ID="js-thresh02">D0722.js-thresh02.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0722.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0722.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0722.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0722.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0722.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0722.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0722.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="max-reward-with-filter">D0722.max-reward-with-filter.system.html</P>
 <P ID="max-reward-with-high-alpha">D0722.max-reward-with-high-alpha.system.html</P>
 <P ID="max-reward-with-high-BETA">D0722.max-reward-with-high-BETA.system.html</P>
@@ -1153,8 +1733,28 @@
 <P ID="r-is-0.2">D0722.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0722.r-is-0.5.system.html</P>
 <P ID="r-is-1">D0722.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0722.short10.system.html</P>
 <P ID="synset-expansion">D0722.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="synset-expansion">D0722.synset-expansion.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0722.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0722.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0722.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0722.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0722.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+<P ID="lda200-dthreash00001">D0722.lda200-dthreash00001.system.html</P>
+<P ID="lda200-dthresh00005">D0722.lda200-dthresh00005.system.html</P>
+<P ID="lda200-dthresh0005">D0722.lda200-dthresh0005.system.html</P>
+<P ID="lda200-ss">D0722.lda200-ss.system.html</P>
+<P ID="lda200">D0722.lda200.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0722.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="max-reward-with-both-nws">D0722.max-reward-with-both-nws.system.html</P>
+<P ID="max-reward-with-filter-after-and-both-nws">D0722.max-reward-with-filter-after-and-both-nws.system.html</P>
+<P ID="div5">D0722.div5.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0722.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0722.max-reward-with-filter-and-both-nws.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -1169,9 +1769,9 @@
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
 <PEERS>
+<P ID="max-reward-Rouge-Words-no-filter">D0723.max-reward-Rouge-Words-no-filter.system.html</P>
 <P ID="baseline-js">D0723.baseline-js.system.html</P>
 <P ID="baseline-kl">D0723.baseline-kl.system.html</P>
-<P ID="baseline-ss">D0723.baseline-ss.system.html</P>
 <P ID="baseline">D0723.baseline.system.html</P>
 <P ID="div10">D0723.div10.system.html</P>
 <P ID="div3">D0723.div3.system.html</P>
@@ -1180,6 +1780,7 @@
 <P ID="fuzzy1">D0723.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0723.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0723.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0723.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0723.lambda-6-beta-0.5-alpha-10.system.html</P>
 <P ID="lda100-js">D0723.lda100-js.system.html</P>
@@ -1191,6 +1792,13 @@
 <P ID="lda200-ss">D0723.lda200-ss.system.html</P>
 <P ID="lda200">D0723.lda200.system.html</P>
 <P ID="max-reward-Rouge-Words-no-filter">D0723.max-reward-Rouge-Words-no-filter.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0723.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0723.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0723.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0723.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0723.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="max-reward-with-both-nws">D0723.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0723.max-reward-with-filter-after-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter-and-both-nws">D0723.max-reward-with-filter-and-both-nws.system.html</P>
@@ -1205,9 +1813,31 @@
 <P ID="porter-stemmer">D0723.porter-stemmer.system.html</P>
 <P ID="r-is-0.2">D0723.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0723.r-is-0.5.system.html</P>
+<<<<<<< HEAD
 <P ID="r-is-1">D0723.r-is-1.system.html</P>
 <P ID="short10">D0723.short10.system.html</P>
 <P ID="synset-expansion">D0723.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="baseline-ss">D0723.baseline-ss.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0723.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0723.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0723.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0723.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0723.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0723.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0723.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0723.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+<P ID="lda100-js">D0723.lda100-js.system.html</P>
+<P ID="lda100-kl">D0723.lda100-kl.system.html</P>
+<P ID="lda100">D0723.lda100.system.html</P>
+<P ID="lda200-dthreash00001">D0723.lda200-dthreash00001.system.html</P>
+<P ID="lda200-dthresh00005">D0723.lda200-dthresh00005.system.html</P>
+<P ID="lda200-dthresh0005">D0723.lda200-dthresh0005.system.html</P>
+<P ID="lda200-ss">D0723.lda200-ss.system.html</P>
+<P ID="lda200">D0723.lda200.system.html</P>
+<P ID="synset-expansion">D0723.synset-expansion.system.html</P>
+<P ID="r-is-1">D0723.r-is-1.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -1233,8 +1863,23 @@
 <P ID="fuzzy1">D0724.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0724.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0724.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0724.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0724.lambda-6-beta-0.5-alpha-10.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0724.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0724.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0724.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0724.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0724.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0724.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0724.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0724.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0724.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0724.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0724.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0724.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="lda100-js">D0724.lda100-js.system.html</P>
 <P ID="lda100-kl">D0724.lda100-kl.system.html</P>
 <P ID="lda100">D0724.lda100.system.html</P>
@@ -1246,7 +1891,6 @@
 <P ID="max-reward-Rouge-Words-no-filter">D0724.max-reward-Rouge-Words-no-filter.system.html</P>
 <P ID="max-reward-with-both-nws">D0724.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0724.max-reward-with-filter-after-and-both-nws.system.html</P>
-<P ID="max-reward-with-filter-and-both-nws">D0724.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0724.max-reward-with-filter.system.html</P>
 <P ID="max-reward-with-high-alpha">D0724.max-reward-with-high-alpha.system.html</P>
 <P ID="max-reward-with-high-BETA">D0724.max-reward-with-high-BETA.system.html</P>
@@ -1259,8 +1903,14 @@
 <P ID="r-is-0.2">D0724.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0724.r-is-0.5.system.html</P>
 <P ID="r-is-1">D0724.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0724.short10.system.html</P>
 <P ID="synset-expansion">D0724.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="synset-expansion">D0724.synset-expansion.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0724.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0724.max-reward-with-filter-and-both-nws.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -1277,7 +1927,6 @@
 <PEERS>
 <P ID="baseline-js">D0725.baseline-js.system.html</P>
 <P ID="baseline-kl">D0725.baseline-kl.system.html</P>
-<P ID="baseline-ss">D0725.baseline-ss.system.html</P>
 <P ID="baseline">D0725.baseline.system.html</P>
 <P ID="div10">D0725.div10.system.html</P>
 <P ID="div3">D0725.div3.system.html</P>
@@ -1286,6 +1935,7 @@
 <P ID="fuzzy1">D0725.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0725.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0725.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0725.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0725.lambda-6-beta-0.5-alpha-10.system.html</P>
 <P ID="lda100-js">D0725.lda100-js.system.html</P>
@@ -1297,6 +1947,13 @@
 <P ID="lda200-ss">D0725.lda200-ss.system.html</P>
 <P ID="lda200">D0725.lda200.system.html</P>
 <P ID="max-reward-Rouge-Words-no-filter">D0725.max-reward-Rouge-Words-no-filter.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0725.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0725.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0725.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0725.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0725.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="max-reward-with-both-nws">D0725.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0725.max-reward-with-filter-after-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter-and-both-nws">D0725.max-reward-with-filter-and-both-nws.system.html</P>
@@ -1311,9 +1968,32 @@
 <P ID="porter-stemmer">D0725.porter-stemmer.system.html</P>
 <P ID="r-is-0.2">D0725.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0725.r-is-0.5.system.html</P>
+<<<<<<< HEAD
 <P ID="r-is-1">D0725.r-is-1.system.html</P>
 <P ID="short10">D0725.short10.system.html</P>
 <P ID="synset-expansion">D0725.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0725.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0725.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0725.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0725.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0725.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0725.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0725.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+<P ID="lda100-js">D0725.lda100-js.system.html</P>
+<P ID="lda100-kl">D0725.lda100-kl.system.html</P>
+<P ID="lda100">D0725.lda100.system.html</P>
+<P ID="lda200-dthreash00001">D0725.lda200-dthreash00001.system.html</P>
+<P ID="lda200-dthresh00005">D0725.lda200-dthresh00005.system.html</P>
+<P ID="lda200-dthresh0005">D0725.lda200-dthresh0005.system.html</P>
+<P ID="lda200-ss">D0725.lda200-ss.system.html</P>
+<P ID="lda200">D0725.lda200.system.html</P>
+<P ID="synset-expansion">D0725.synset-expansion.system.html</P>
+<P ID="baseline-ss">D0725.baseline-ss.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0725.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0725.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="r-is-1">D0725.r-is-1.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -1339,8 +2019,23 @@
 <P ID="fuzzy1">D0726.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0726.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0726.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0726.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0726.lambda-6-beta-0.5-alpha-10.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0726.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0726.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0726.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0726.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0726.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0726.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0726.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0726.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0726.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0726.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0726.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0726.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="lda100-js">D0726.lda100-js.system.html</P>
 <P ID="lda100-kl">D0726.lda100-kl.system.html</P>
 <P ID="lda100">D0726.lda100.system.html</P>
@@ -1352,7 +2047,6 @@
 <P ID="max-reward-Rouge-Words-no-filter">D0726.max-reward-Rouge-Words-no-filter.system.html</P>
 <P ID="max-reward-with-both-nws">D0726.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0726.max-reward-with-filter-after-and-both-nws.system.html</P>
-<P ID="max-reward-with-filter-and-both-nws">D0726.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0726.max-reward-with-filter.system.html</P>
 <P ID="max-reward-with-high-alpha">D0726.max-reward-with-high-alpha.system.html</P>
 <P ID="max-reward-with-high-BETA">D0726.max-reward-with-high-BETA.system.html</P>
@@ -1365,13 +2059,19 @@
 <P ID="r-is-0.2">D0726.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0726.r-is-0.5.system.html</P>
 <P ID="r-is-1">D0726.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0726.short10.system.html</P>
 <P ID="synset-expansion">D0726.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="synset-expansion">D0726.synset-expansion.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0726.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0726.max-reward-with-filter-and-both-nws.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
-<M ID="1">D0726.1.gold.html</M>
-<M ID="2">D0726.2.gold.html</M>
+<M ID="1">D0726.2.gold.html</M>
+<M ID="2">D0726.1.gold.html</M>
 <M ID="3">D0726.3.gold.html</M>
 <M ID="4">D0726.4.gold.html</M>
 </MODELS>
@@ -1381,9 +2081,9 @@
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
 <PEERS>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0727.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
 <P ID="baseline-js">D0727.baseline-js.system.html</P>
 <P ID="baseline-kl">D0727.baseline-kl.system.html</P>
-<P ID="baseline-ss">D0727.baseline-ss.system.html</P>
 <P ID="baseline">D0727.baseline.system.html</P>
 <P ID="div10">D0727.div10.system.html</P>
 <P ID="div3">D0727.div3.system.html</P>
@@ -1392,6 +2092,7 @@
 <P ID="fuzzy1">D0727.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0727.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0727.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0727.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0727.lambda-6-beta-0.5-alpha-10.system.html</P>
 <P ID="lda100-js">D0727.lda100-js.system.html</P>
@@ -1403,6 +2104,13 @@
 <P ID="lda200-ss">D0727.lda200-ss.system.html</P>
 <P ID="lda200">D0727.lda200.system.html</P>
 <P ID="max-reward-Rouge-Words-no-filter">D0727.max-reward-Rouge-Words-no-filter.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0727.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0727.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0727.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0727.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0727.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="max-reward-with-both-nws">D0727.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0727.max-reward-with-filter-after-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter-and-both-nws">D0727.max-reward-with-filter-and-both-nws.system.html</P>
@@ -1417,9 +2125,31 @@
 <P ID="porter-stemmer">D0727.porter-stemmer.system.html</P>
 <P ID="r-is-0.2">D0727.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0727.r-is-0.5.system.html</P>
+<<<<<<< HEAD
 <P ID="r-is-1">D0727.r-is-1.system.html</P>
 <P ID="short10">D0727.short10.system.html</P>
 <P ID="synset-expansion">D0727.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="baseline-ss">D0727.baseline-ss.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0727.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0727.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0727.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0727.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0727.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0727.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0727.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+<P ID="lda100-js">D0727.lda100-js.system.html</P>
+<P ID="lda100-kl">D0727.lda100-kl.system.html</P>
+<P ID="lda100">D0727.lda100.system.html</P>
+<P ID="lda200-dthreash00001">D0727.lda200-dthreash00001.system.html</P>
+<P ID="lda200-dthresh00005">D0727.lda200-dthresh00005.system.html</P>
+<P ID="lda200-dthresh0005">D0727.lda200-dthresh0005.system.html</P>
+<P ID="lda200-ss">D0727.lda200-ss.system.html</P>
+<P ID="lda200">D0727.lda200.system.html</P>
+<P ID="synset-expansion">D0727.synset-expansion.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0727.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="r-is-1">D0727.r-is-1.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -1445,8 +2175,23 @@
 <P ID="fuzzy1">D0728.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0728.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0728.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0728.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0728.lambda-6-beta-0.5-alpha-10.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0728.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0728.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0728.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0728.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0728.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0728.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0728.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0728.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0728.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0728.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0728.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0728.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="lda100-js">D0728.lda100-js.system.html</P>
 <P ID="lda100-kl">D0728.lda100-kl.system.html</P>
 <P ID="lda100">D0728.lda100.system.html</P>
@@ -1458,7 +2203,6 @@
 <P ID="max-reward-Rouge-Words-no-filter">D0728.max-reward-Rouge-Words-no-filter.system.html</P>
 <P ID="max-reward-with-both-nws">D0728.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0728.max-reward-with-filter-after-and-both-nws.system.html</P>
-<P ID="max-reward-with-filter-and-both-nws">D0728.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0728.max-reward-with-filter.system.html</P>
 <P ID="max-reward-with-high-alpha">D0728.max-reward-with-high-alpha.system.html</P>
 <P ID="max-reward-with-high-BETA">D0728.max-reward-with-high-BETA.system.html</P>
@@ -1471,8 +2215,14 @@
 <P ID="r-is-0.2">D0728.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0728.r-is-0.5.system.html</P>
 <P ID="r-is-1">D0728.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0728.short10.system.html</P>
 <P ID="synset-expansion">D0728.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="synset-expansion">D0728.synset-expansion.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0728.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0728.max-reward-with-filter-and-both-nws.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -1489,7 +2239,6 @@
 <PEERS>
 <P ID="baseline-js">D0729.baseline-js.system.html</P>
 <P ID="baseline-kl">D0729.baseline-kl.system.html</P>
-<P ID="baseline-ss">D0729.baseline-ss.system.html</P>
 <P ID="baseline">D0729.baseline.system.html</P>
 <P ID="div10">D0729.div10.system.html</P>
 <P ID="div3">D0729.div3.system.html</P>
@@ -1498,6 +2247,7 @@
 <P ID="fuzzy1">D0729.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0729.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0729.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0729.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0729.lambda-6-beta-0.5-alpha-10.system.html</P>
 <P ID="lda100-js">D0729.lda100-js.system.html</P>
@@ -1509,6 +2259,13 @@
 <P ID="lda200-ss">D0729.lda200-ss.system.html</P>
 <P ID="lda200">D0729.lda200.system.html</P>
 <P ID="max-reward-Rouge-Words-no-filter">D0729.max-reward-Rouge-Words-no-filter.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0729.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0729.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0729.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0729.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0729.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="max-reward-with-both-nws">D0729.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0729.max-reward-with-filter-after-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter-and-both-nws">D0729.max-reward-with-filter-and-both-nws.system.html</P>
@@ -1523,9 +2280,32 @@
 <P ID="porter-stemmer">D0729.porter-stemmer.system.html</P>
 <P ID="r-is-0.2">D0729.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0729.r-is-0.5.system.html</P>
+<<<<<<< HEAD
 <P ID="r-is-1">D0729.r-is-1.system.html</P>
 <P ID="short10">D0729.short10.system.html</P>
 <P ID="synset-expansion">D0729.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0729.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0729.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0729.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0729.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0729.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0729.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0729.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+<P ID="lda100-js">D0729.lda100-js.system.html</P>
+<P ID="lda100-kl">D0729.lda100-kl.system.html</P>
+<P ID="lda100">D0729.lda100.system.html</P>
+<P ID="lda200-dthreash00001">D0729.lda200-dthreash00001.system.html</P>
+<P ID="lda200-dthresh00005">D0729.lda200-dthresh00005.system.html</P>
+<P ID="lda200-dthresh0005">D0729.lda200-dthresh0005.system.html</P>
+<P ID="lda200-ss">D0729.lda200-ss.system.html</P>
+<P ID="lda200">D0729.lda200.system.html</P>
+<P ID="synset-expansion">D0729.synset-expansion.system.html</P>
+<P ID="baseline-ss">D0729.baseline-ss.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0729.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0729.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="r-is-1">D0729.r-is-1.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -1549,8 +2329,23 @@
 <P ID="fuzzy1">D0730.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0730.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0730.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0730.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0730.lambda-6-beta-0.5-alpha-10.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0730.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0730.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0730.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0730.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0730.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0730.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0730.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0730.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0730.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0730.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0730.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0730.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="lda100-js">D0730.lda100-js.system.html</P>
 <P ID="lda100-kl">D0730.lda100-kl.system.html</P>
 <P ID="lda100">D0730.lda100.system.html</P>
@@ -1562,7 +2357,6 @@
 <P ID="max-reward-Rouge-Words-no-filter">D0730.max-reward-Rouge-Words-no-filter.system.html</P>
 <P ID="max-reward-with-both-nws">D0730.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0730.max-reward-with-filter-after-and-both-nws.system.html</P>
-<P ID="max-reward-with-filter-and-both-nws">D0730.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0730.max-reward-with-filter.system.html</P>
 <P ID="max-reward-with-high-alpha">D0730.max-reward-with-high-alpha.system.html</P>
 <P ID="max-reward-with-high-BETA">D0730.max-reward-with-high-BETA.system.html</P>
@@ -1575,14 +2369,20 @@
 <P ID="r-is-0.2">D0730.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0730.r-is-0.5.system.html</P>
 <P ID="r-is-1">D0730.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0730.short10.system.html</P>
 <P ID="synset-expansion">D0730.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="synset-expansion">D0730.synset-expansion.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0730.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0730.max-reward-with-filter-and-both-nws.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
-<M ID="1">D0730.1.gold.html</M>
-<M ID="2">D0730.2.gold.html</M>
-<M ID="3">D0730.3.gold.html</M>
+<M ID="1">D0730.3.gold.html</M>
+<M ID="2">D0730.1.gold.html</M>
+<M ID="3">D0730.2.gold.html</M>
 <M ID="4">D0730.4.gold.html</M>
 </MODELS>
 	</EVAL>
@@ -1591,9 +2391,9 @@
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
 <PEERS>
+<P ID="baseline-ss">D0731.baseline-ss.system.html</P>
 <P ID="baseline-js">D0731.baseline-js.system.html</P>
 <P ID="baseline-kl">D0731.baseline-kl.system.html</P>
-<P ID="baseline-ss">D0731.baseline-ss.system.html</P>
 <P ID="baseline">D0731.baseline.system.html</P>
 <P ID="div10">D0731.div10.system.html</P>
 <P ID="div3">D0731.div3.system.html</P>
@@ -1602,6 +2402,7 @@
 <P ID="fuzzy1">D0731.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0731.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0731.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0731.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0731.lambda-6-beta-0.5-alpha-10.system.html</P>
 <P ID="lda100-js">D0731.lda100-js.system.html</P>
@@ -1613,6 +2414,13 @@
 <P ID="lda200-ss">D0731.lda200-ss.system.html</P>
 <P ID="lda200">D0731.lda200.system.html</P>
 <P ID="max-reward-Rouge-Words-no-filter">D0731.max-reward-Rouge-Words-no-filter.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0731.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0731.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0731.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0731.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0731.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="max-reward-with-both-nws">D0731.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0731.max-reward-with-filter-after-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter-and-both-nws">D0731.max-reward-with-filter-and-both-nws.system.html</P>
@@ -1627,9 +2435,31 @@
 <P ID="porter-stemmer">D0731.porter-stemmer.system.html</P>
 <P ID="r-is-0.2">D0731.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0731.r-is-0.5.system.html</P>
+<<<<<<< HEAD
 <P ID="r-is-1">D0731.r-is-1.system.html</P>
 <P ID="short10">D0731.short10.system.html</P>
 <P ID="synset-expansion">D0731.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0731.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0731.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0731.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0731.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0731.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0731.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0731.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+<P ID="lda100-js">D0731.lda100-js.system.html</P>
+<P ID="lda100-kl">D0731.lda100-kl.system.html</P>
+<P ID="lda100">D0731.lda100.system.html</P>
+<P ID="lda200-dthreash00001">D0731.lda200-dthreash00001.system.html</P>
+<P ID="lda200-dthresh00005">D0731.lda200-dthresh00005.system.html</P>
+<P ID="lda200-dthresh0005">D0731.lda200-dthresh0005.system.html</P>
+<P ID="lda200-ss">D0731.lda200-ss.system.html</P>
+<P ID="lda200">D0731.lda200.system.html</P>
+<P ID="synset-expansion">D0731.synset-expansion.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0731.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0731.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="r-is-1">D0731.r-is-1.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -1655,8 +2485,23 @@
 <P ID="fuzzy1">D0732.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0732.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0732.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0732.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0732.lambda-6-beta-0.5-alpha-10.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0732.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0732.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0732.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0732.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0732.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0732.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0732.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0732.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0732.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0732.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0732.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0732.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="lda100-js">D0732.lda100-js.system.html</P>
 <P ID="lda100-kl">D0732.lda100-kl.system.html</P>
 <P ID="lda100">D0732.lda100.system.html</P>
@@ -1668,7 +2513,6 @@
 <P ID="max-reward-Rouge-Words-no-filter">D0732.max-reward-Rouge-Words-no-filter.system.html</P>
 <P ID="max-reward-with-both-nws">D0732.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0732.max-reward-with-filter-after-and-both-nws.system.html</P>
-<P ID="max-reward-with-filter-and-both-nws">D0732.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0732.max-reward-with-filter.system.html</P>
 <P ID="max-reward-with-high-alpha">D0732.max-reward-with-high-alpha.system.html</P>
 <P ID="max-reward-with-high-BETA">D0732.max-reward-with-high-BETA.system.html</P>
@@ -1681,8 +2525,14 @@
 <P ID="r-is-0.2">D0732.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0732.r-is-0.5.system.html</P>
 <P ID="r-is-1">D0732.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0732.short10.system.html</P>
 <P ID="synset-expansion">D0732.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="synset-expansion">D0732.synset-expansion.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0732.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0732.max-reward-with-filter-and-both-nws.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -1699,7 +2549,6 @@
 <PEERS>
 <P ID="baseline-js">D0733.baseline-js.system.html</P>
 <P ID="baseline-kl">D0733.baseline-kl.system.html</P>
-<P ID="baseline-ss">D0733.baseline-ss.system.html</P>
 <P ID="baseline">D0733.baseline.system.html</P>
 <P ID="div10">D0733.div10.system.html</P>
 <P ID="div3">D0733.div3.system.html</P>
@@ -1708,6 +2557,7 @@
 <P ID="fuzzy1">D0733.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0733.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0733.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0733.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0733.lambda-6-beta-0.5-alpha-10.system.html</P>
 <P ID="lda100-js">D0733.lda100-js.system.html</P>
@@ -1719,6 +2569,13 @@
 <P ID="lda200-ss">D0733.lda200-ss.system.html</P>
 <P ID="lda200">D0733.lda200.system.html</P>
 <P ID="max-reward-Rouge-Words-no-filter">D0733.max-reward-Rouge-Words-no-filter.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0733.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0733.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0733.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0733.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0733.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="max-reward-with-both-nws">D0733.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0733.max-reward-with-filter-after-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter-and-both-nws">D0733.max-reward-with-filter-and-both-nws.system.html</P>
@@ -1733,9 +2590,32 @@
 <P ID="porter-stemmer">D0733.porter-stemmer.system.html</P>
 <P ID="r-is-0.2">D0733.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0733.r-is-0.5.system.html</P>
+<<<<<<< HEAD
 <P ID="r-is-1">D0733.r-is-1.system.html</P>
 <P ID="short10">D0733.short10.system.html</P>
 <P ID="synset-expansion">D0733.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0733.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0733.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0733.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0733.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0733.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0733.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0733.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+<P ID="lda100-js">D0733.lda100-js.system.html</P>
+<P ID="lda100-kl">D0733.lda100-kl.system.html</P>
+<P ID="lda100">D0733.lda100.system.html</P>
+<P ID="lda200-dthreash00001">D0733.lda200-dthreash00001.system.html</P>
+<P ID="lda200-dthresh00005">D0733.lda200-dthresh00005.system.html</P>
+<P ID="lda200-dthresh0005">D0733.lda200-dthresh0005.system.html</P>
+<P ID="lda200-ss">D0733.lda200-ss.system.html</P>
+<P ID="lda200">D0733.lda200.system.html</P>
+<P ID="synset-expansion">D0733.synset-expansion.system.html</P>
+<P ID="baseline-ss">D0733.baseline-ss.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0733.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0733.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="r-is-1">D0733.r-is-1.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -1750,6 +2630,7 @@
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
 <PEERS>
+<P ID="max-reward-with-filter-and-both-nws">D0734.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="baseline-js">D0734.baseline-js.system.html</P>
 <P ID="baseline-kl">D0734.baseline-kl.system.html</P>
 <P ID="baseline-ss">D0734.baseline-ss.system.html</P>
@@ -1761,8 +2642,23 @@
 <P ID="fuzzy1">D0734.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0734.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0734.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0734.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0734.lambda-6-beta-0.5-alpha-10.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0734.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0734.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0734.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0734.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0734.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0734.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0734.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0734.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0734.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0734.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0734.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0734.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="lda100-js">D0734.lda100-js.system.html</P>
 <P ID="lda100-kl">D0734.lda100-kl.system.html</P>
 <P ID="lda100">D0734.lda100.system.html</P>
@@ -1774,7 +2670,6 @@
 <P ID="max-reward-Rouge-Words-no-filter">D0734.max-reward-Rouge-Words-no-filter.system.html</P>
 <P ID="max-reward-with-both-nws">D0734.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0734.max-reward-with-filter-after-and-both-nws.system.html</P>
-<P ID="max-reward-with-filter-and-both-nws">D0734.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0734.max-reward-with-filter.system.html</P>
 <P ID="max-reward-with-high-alpha">D0734.max-reward-with-high-alpha.system.html</P>
 <P ID="max-reward-with-high-BETA">D0734.max-reward-with-high-BETA.system.html</P>
@@ -1787,15 +2682,20 @@
 <P ID="r-is-0.2">D0734.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0734.r-is-0.5.system.html</P>
 <P ID="r-is-1">D0734.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0734.short10.system.html</P>
 <P ID="synset-expansion">D0734.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="synset-expansion">D0734.synset-expansion.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0734.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
-<M ID="1">D0734.1.gold.html</M>
-<M ID="2">D0734.2.gold.html</M>
-<M ID="3">D0734.3.gold.html</M>
-<M ID="4">D0734.4.gold.html</M>
+<M ID="1">D0734.4.gold.html</M>
+<M ID="2">D0734.1.gold.html</M>
+<M ID="3">D0734.2.gold.html</M>
+<M ID="4">D0734.3.gold.html</M>
 </MODELS>
 	</EVAL>
 <EVAL ID="35">
@@ -1805,7 +2705,6 @@
 <PEERS>
 <P ID="baseline-js">D0735.baseline-js.system.html</P>
 <P ID="baseline-kl">D0735.baseline-kl.system.html</P>
-<P ID="baseline-ss">D0735.baseline-ss.system.html</P>
 <P ID="baseline">D0735.baseline.system.html</P>
 <P ID="div10">D0735.div10.system.html</P>
 <P ID="div3">D0735.div3.system.html</P>
@@ -1814,6 +2713,7 @@
 <P ID="fuzzy1">D0735.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0735.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0735.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0735.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0735.lambda-6-beta-0.5-alpha-10.system.html</P>
 <P ID="lda100-js">D0735.lda100-js.system.html</P>
@@ -1825,6 +2725,13 @@
 <P ID="lda200-ss">D0735.lda200-ss.system.html</P>
 <P ID="lda200">D0735.lda200.system.html</P>
 <P ID="max-reward-Rouge-Words-no-filter">D0735.max-reward-Rouge-Words-no-filter.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0735.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0735.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0735.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0735.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0735.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="max-reward-with-both-nws">D0735.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0735.max-reward-with-filter-after-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter-and-both-nws">D0735.max-reward-with-filter-and-both-nws.system.html</P>
@@ -1839,9 +2746,32 @@
 <P ID="porter-stemmer">D0735.porter-stemmer.system.html</P>
 <P ID="r-is-0.2">D0735.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0735.r-is-0.5.system.html</P>
+<<<<<<< HEAD
 <P ID="r-is-1">D0735.r-is-1.system.html</P>
 <P ID="short10">D0735.short10.system.html</P>
 <P ID="synset-expansion">D0735.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0735.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0735.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0735.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0735.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0735.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0735.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0735.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+<P ID="lda100-js">D0735.lda100-js.system.html</P>
+<P ID="lda100-kl">D0735.lda100-kl.system.html</P>
+<P ID="lda100">D0735.lda100.system.html</P>
+<P ID="lda200-dthreash00001">D0735.lda200-dthreash00001.system.html</P>
+<P ID="lda200-dthresh00005">D0735.lda200-dthresh00005.system.html</P>
+<P ID="lda200-dthresh0005">D0735.lda200-dthresh0005.system.html</P>
+<P ID="lda200-ss">D0735.lda200-ss.system.html</P>
+<P ID="lda200">D0735.lda200.system.html</P>
+<P ID="synset-expansion">D0735.synset-expansion.system.html</P>
+<P ID="baseline-ss">D0735.baseline-ss.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0735.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0735.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="r-is-1">D0735.r-is-1.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -1867,8 +2797,23 @@
 <P ID="fuzzy1">D0736.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0736.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0736.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0736.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0736.lambda-6-beta-0.5-alpha-10.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0736.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0736.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0736.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0736.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0736.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0736.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0736.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0736.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0736.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0736.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0736.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0736.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="lda100-js">D0736.lda100-js.system.html</P>
 <P ID="lda100-kl">D0736.lda100-kl.system.html</P>
 <P ID="lda100">D0736.lda100.system.html</P>
@@ -1880,7 +2825,6 @@
 <P ID="max-reward-Rouge-Words-no-filter">D0736.max-reward-Rouge-Words-no-filter.system.html</P>
 <P ID="max-reward-with-both-nws">D0736.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0736.max-reward-with-filter-after-and-both-nws.system.html</P>
-<P ID="max-reward-with-filter-and-both-nws">D0736.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0736.max-reward-with-filter.system.html</P>
 <P ID="max-reward-with-high-alpha">D0736.max-reward-with-high-alpha.system.html</P>
 <P ID="max-reward-with-high-BETA">D0736.max-reward-with-high-BETA.system.html</P>
@@ -1893,8 +2837,14 @@
 <P ID="r-is-0.2">D0736.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0736.r-is-0.5.system.html</P>
 <P ID="r-is-1">D0736.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0736.short10.system.html</P>
 <P ID="synset-expansion">D0736.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="synset-expansion">D0736.synset-expansion.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0736.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0736.max-reward-with-filter-and-both-nws.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -1911,7 +2861,6 @@
 <PEERS>
 <P ID="baseline-js">D0737.baseline-js.system.html</P>
 <P ID="baseline-kl">D0737.baseline-kl.system.html</P>
-<P ID="baseline-ss">D0737.baseline-ss.system.html</P>
 <P ID="baseline">D0737.baseline.system.html</P>
 <P ID="div10">D0737.div10.system.html</P>
 <P ID="div3">D0737.div3.system.html</P>
@@ -1920,6 +2869,7 @@
 <P ID="fuzzy1">D0737.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0737.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0737.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0737.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0737.lambda-6-beta-0.5-alpha-10.system.html</P>
 <P ID="lda100-js">D0737.lda100-js.system.html</P>
@@ -1931,6 +2881,13 @@
 <P ID="lda200-ss">D0737.lda200-ss.system.html</P>
 <P ID="lda200">D0737.lda200.system.html</P>
 <P ID="max-reward-Rouge-Words-no-filter">D0737.max-reward-Rouge-Words-no-filter.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0737.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0737.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0737.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0737.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0737.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="max-reward-with-both-nws">D0737.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0737.max-reward-with-filter-after-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter-and-both-nws">D0737.max-reward-with-filter-and-both-nws.system.html</P>
@@ -1945,9 +2902,32 @@
 <P ID="porter-stemmer">D0737.porter-stemmer.system.html</P>
 <P ID="r-is-0.2">D0737.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0737.r-is-0.5.system.html</P>
+<<<<<<< HEAD
 <P ID="r-is-1">D0737.r-is-1.system.html</P>
 <P ID="short10">D0737.short10.system.html</P>
 <P ID="synset-expansion">D0737.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0737.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0737.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0737.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0737.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0737.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0737.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0737.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+<P ID="lda100-js">D0737.lda100-js.system.html</P>
+<P ID="lda100-kl">D0737.lda100-kl.system.html</P>
+<P ID="lda100">D0737.lda100.system.html</P>
+<P ID="lda200-dthreash00001">D0737.lda200-dthreash00001.system.html</P>
+<P ID="lda200-dthresh00005">D0737.lda200-dthresh00005.system.html</P>
+<P ID="lda200-dthresh0005">D0737.lda200-dthresh0005.system.html</P>
+<P ID="lda200-ss">D0737.lda200-ss.system.html</P>
+<P ID="lda200">D0737.lda200.system.html</P>
+<P ID="synset-expansion">D0737.synset-expansion.system.html</P>
+<P ID="baseline-ss">D0737.baseline-ss.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0737.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0737.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="r-is-1">D0737.r-is-1.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -1962,6 +2942,7 @@
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
 <PEERS>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0738.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
 <P ID="baseline-js">D0738.baseline-js.system.html</P>
 <P ID="baseline-kl">D0738.baseline-kl.system.html</P>
 <P ID="baseline-ss">D0738.baseline-ss.system.html</P>
@@ -1973,8 +2954,23 @@
 <P ID="fuzzy1">D0738.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0738.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0738.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0738.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0738.lambda-6-beta-0.5-alpha-10.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0738.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0738.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0738.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0738.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0738.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0738.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0738.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0738.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0738.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0738.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0738.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0738.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="lda100-js">D0738.lda100-js.system.html</P>
 <P ID="lda100-kl">D0738.lda100-kl.system.html</P>
 <P ID="lda100">D0738.lda100.system.html</P>
@@ -1986,7 +2982,6 @@
 <P ID="max-reward-Rouge-Words-no-filter">D0738.max-reward-Rouge-Words-no-filter.system.html</P>
 <P ID="max-reward-with-both-nws">D0738.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0738.max-reward-with-filter-after-and-both-nws.system.html</P>
-<P ID="max-reward-with-filter-and-both-nws">D0738.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0738.max-reward-with-filter.system.html</P>
 <P ID="max-reward-with-high-alpha">D0738.max-reward-with-high-alpha.system.html</P>
 <P ID="max-reward-with-high-BETA">D0738.max-reward-with-high-BETA.system.html</P>
@@ -1999,8 +2994,13 @@
 <P ID="r-is-0.2">D0738.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0738.r-is-0.5.system.html</P>
 <P ID="r-is-1">D0738.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0738.short10.system.html</P>
 <P ID="synset-expansion">D0738.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="synset-expansion">D0738.synset-expansion.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0738.max-reward-with-filter-and-both-nws.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -2017,7 +3017,6 @@
 <PEERS>
 <P ID="baseline-js">D0739.baseline-js.system.html</P>
 <P ID="baseline-kl">D0739.baseline-kl.system.html</P>
-<P ID="baseline-ss">D0739.baseline-ss.system.html</P>
 <P ID="baseline">D0739.baseline.system.html</P>
 <P ID="div10">D0739.div10.system.html</P>
 <P ID="div3">D0739.div3.system.html</P>
@@ -2026,6 +3025,7 @@
 <P ID="fuzzy1">D0739.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0739.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0739.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0739.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0739.lambda-6-beta-0.5-alpha-10.system.html</P>
 <P ID="lda100-js">D0739.lda100-js.system.html</P>
@@ -2037,6 +3037,13 @@
 <P ID="lda200-ss">D0739.lda200-ss.system.html</P>
 <P ID="lda200">D0739.lda200.system.html</P>
 <P ID="max-reward-Rouge-Words-no-filter">D0739.max-reward-Rouge-Words-no-filter.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0739.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0739.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0739.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0739.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0739.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="max-reward-with-both-nws">D0739.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0739.max-reward-with-filter-after-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter-and-both-nws">D0739.max-reward-with-filter-and-both-nws.system.html</P>
@@ -2051,9 +3058,32 @@
 <P ID="porter-stemmer">D0739.porter-stemmer.system.html</P>
 <P ID="r-is-0.2">D0739.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0739.r-is-0.5.system.html</P>
+<<<<<<< HEAD
 <P ID="r-is-1">D0739.r-is-1.system.html</P>
 <P ID="short10">D0739.short10.system.html</P>
 <P ID="synset-expansion">D0739.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0739.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0739.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0739.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0739.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0739.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0739.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0739.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+<P ID="lda100-js">D0739.lda100-js.system.html</P>
+<P ID="lda100-kl">D0739.lda100-kl.system.html</P>
+<P ID="lda100">D0739.lda100.system.html</P>
+<P ID="lda200-dthreash00001">D0739.lda200-dthreash00001.system.html</P>
+<P ID="lda200-dthresh00005">D0739.lda200-dthresh00005.system.html</P>
+<P ID="lda200-dthresh0005">D0739.lda200-dthresh0005.system.html</P>
+<P ID="lda200-ss">D0739.lda200-ss.system.html</P>
+<P ID="lda200">D0739.lda200.system.html</P>
+<P ID="synset-expansion">D0739.synset-expansion.system.html</P>
+<P ID="baseline-ss">D0739.baseline-ss.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0739.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0739.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="r-is-1">D0739.r-is-1.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -2079,8 +3109,23 @@
 <P ID="fuzzy1">D0740.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0740.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0740.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0740.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0740.lambda-6-beta-0.5-alpha-10.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0740.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0740.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0740.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0740.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0740.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0740.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0740.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0740.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0740.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0740.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0740.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0740.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="lda100-js">D0740.lda100-js.system.html</P>
 <P ID="lda100-kl">D0740.lda100-kl.system.html</P>
 <P ID="lda100">D0740.lda100.system.html</P>
@@ -2092,7 +3137,6 @@
 <P ID="max-reward-Rouge-Words-no-filter">D0740.max-reward-Rouge-Words-no-filter.system.html</P>
 <P ID="max-reward-with-both-nws">D0740.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0740.max-reward-with-filter-after-and-both-nws.system.html</P>
-<P ID="max-reward-with-filter-and-both-nws">D0740.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0740.max-reward-with-filter.system.html</P>
 <P ID="max-reward-with-high-alpha">D0740.max-reward-with-high-alpha.system.html</P>
 <P ID="max-reward-with-high-BETA">D0740.max-reward-with-high-BETA.system.html</P>
@@ -2105,8 +3149,14 @@
 <P ID="r-is-0.2">D0740.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0740.r-is-0.5.system.html</P>
 <P ID="r-is-1">D0740.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0740.short10.system.html</P>
 <P ID="synset-expansion">D0740.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="synset-expansion">D0740.synset-expansion.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0740.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0740.max-reward-with-filter-and-both-nws.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -2121,9 +3171,9 @@
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SEE"></INPUT-FORMAT>
 <PEERS>
+<P ID="r-is-1">D0741.r-is-1.system.html</P>
 <P ID="baseline-js">D0741.baseline-js.system.html</P>
 <P ID="baseline-kl">D0741.baseline-kl.system.html</P>
-<P ID="baseline-ss">D0741.baseline-ss.system.html</P>
 <P ID="baseline">D0741.baseline.system.html</P>
 <P ID="div10">D0741.div10.system.html</P>
 <P ID="div3">D0741.div3.system.html</P>
@@ -2132,6 +3182,7 @@
 <P ID="fuzzy1">D0741.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0741.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0741.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0741.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0741.lambda-6-beta-0.5-alpha-10.system.html</P>
 <P ID="lda100-js">D0741.lda100-js.system.html</P>
@@ -2143,6 +3194,13 @@
 <P ID="lda200-ss">D0741.lda200-ss.system.html</P>
 <P ID="lda200">D0741.lda200.system.html</P>
 <P ID="max-reward-Rouge-Words-no-filter">D0741.max-reward-Rouge-Words-no-filter.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0741.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0741.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0741.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0741.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0741.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="max-reward-with-both-nws">D0741.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0741.max-reward-with-filter-after-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter-and-both-nws">D0741.max-reward-with-filter-and-both-nws.system.html</P>
@@ -2157,9 +3215,31 @@
 <P ID="porter-stemmer">D0741.porter-stemmer.system.html</P>
 <P ID="r-is-0.2">D0741.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0741.r-is-0.5.system.html</P>
+<<<<<<< HEAD
 <P ID="r-is-1">D0741.r-is-1.system.html</P>
 <P ID="short10">D0741.short10.system.html</P>
 <P ID="synset-expansion">D0741.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0741.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0741.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0741.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0741.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0741.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0741.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0741.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+<P ID="lda100-js">D0741.lda100-js.system.html</P>
+<P ID="lda100-kl">D0741.lda100-kl.system.html</P>
+<P ID="lda100">D0741.lda100.system.html</P>
+<P ID="lda200-dthreash00001">D0741.lda200-dthreash00001.system.html</P>
+<P ID="lda200-dthresh00005">D0741.lda200-dthresh00005.system.html</P>
+<P ID="lda200-dthresh0005">D0741.lda200-dthresh0005.system.html</P>
+<P ID="lda200-ss">D0741.lda200-ss.system.html</P>
+<P ID="lda200">D0741.lda200.system.html</P>
+<P ID="synset-expansion">D0741.synset-expansion.system.html</P>
+<P ID="baseline-ss">D0741.baseline-ss.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0741.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0741.max-reward-Rouge-Words-no-filter.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -2185,8 +3265,23 @@
 <P ID="fuzzy1">D0742.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0742.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0742.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0742.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0742.lambda-6-beta-0.5-alpha-10.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0742.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0742.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0742.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0742.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0742.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0742.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0742.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0742.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0742.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0742.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0742.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0742.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="lda100-js">D0742.lda100-js.system.html</P>
 <P ID="lda100-kl">D0742.lda100-kl.system.html</P>
 <P ID="lda100">D0742.lda100.system.html</P>
@@ -2198,7 +3293,6 @@
 <P ID="max-reward-Rouge-Words-no-filter">D0742.max-reward-Rouge-Words-no-filter.system.html</P>
 <P ID="max-reward-with-both-nws">D0742.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0742.max-reward-with-filter-after-and-both-nws.system.html</P>
-<P ID="max-reward-with-filter-and-both-nws">D0742.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0742.max-reward-with-filter.system.html</P>
 <P ID="max-reward-with-high-alpha">D0742.max-reward-with-high-alpha.system.html</P>
 <P ID="max-reward-with-high-BETA">D0742.max-reward-with-high-BETA.system.html</P>
@@ -2211,8 +3305,14 @@
 <P ID="r-is-0.2">D0742.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0742.r-is-0.5.system.html</P>
 <P ID="r-is-1">D0742.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0742.short10.system.html</P>
 <P ID="synset-expansion">D0742.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="synset-expansion">D0742.synset-expansion.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0742.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0742.max-reward-with-filter-and-both-nws.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -2229,7 +3329,6 @@
 <PEERS>
 <P ID="baseline-js">D0743.baseline-js.system.html</P>
 <P ID="baseline-kl">D0743.baseline-kl.system.html</P>
-<P ID="baseline-ss">D0743.baseline-ss.system.html</P>
 <P ID="baseline">D0743.baseline.system.html</P>
 <P ID="div10">D0743.div10.system.html</P>
 <P ID="div3">D0743.div3.system.html</P>
@@ -2238,6 +3337,7 @@
 <P ID="fuzzy1">D0743.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0743.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0743.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0743.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0743.lambda-6-beta-0.5-alpha-10.system.html</P>
 <P ID="lda100-js">D0743.lda100-js.system.html</P>
@@ -2249,6 +3349,13 @@
 <P ID="lda200-ss">D0743.lda200-ss.system.html</P>
 <P ID="lda200">D0743.lda200.system.html</P>
 <P ID="max-reward-Rouge-Words-no-filter">D0743.max-reward-Rouge-Words-no-filter.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0743.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0743.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0743.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0743.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0743.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="max-reward-with-both-nws">D0743.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0743.max-reward-with-filter-after-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter-and-both-nws">D0743.max-reward-with-filter-and-both-nws.system.html</P>
@@ -2263,9 +3370,32 @@
 <P ID="porter-stemmer">D0743.porter-stemmer.system.html</P>
 <P ID="r-is-0.2">D0743.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0743.r-is-0.5.system.html</P>
+<<<<<<< HEAD
 <P ID="r-is-1">D0743.r-is-1.system.html</P>
 <P ID="short10">D0743.short10.system.html</P>
 <P ID="synset-expansion">D0743.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0743.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0743.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0743.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0743.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0743.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0743.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0743.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+<P ID="lda100-js">D0743.lda100-js.system.html</P>
+<P ID="lda100-kl">D0743.lda100-kl.system.html</P>
+<P ID="lda100">D0743.lda100.system.html</P>
+<P ID="lda200-dthreash00001">D0743.lda200-dthreash00001.system.html</P>
+<P ID="lda200-dthresh00005">D0743.lda200-dthresh00005.system.html</P>
+<P ID="lda200-dthresh0005">D0743.lda200-dthresh0005.system.html</P>
+<P ID="lda200-ss">D0743.lda200-ss.system.html</P>
+<P ID="lda200">D0743.lda200.system.html</P>
+<P ID="synset-expansion">D0743.synset-expansion.system.html</P>
+<P ID="baseline-ss">D0743.baseline-ss.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0743.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0743.max-reward-Rouge-Words-no-filter.system.html</P>
+<P ID="r-is-1">D0743.r-is-1.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -2291,8 +3421,23 @@
 <P ID="fuzzy1">D0744.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0744.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0744.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0744.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0744.lambda-6-beta-0.5-alpha-10.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0744.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0744.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0744.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0744.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0744.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0744.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0744.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0744.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0744.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0744.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0744.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0744.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="lda100-js">D0744.lda100-js.system.html</P>
 <P ID="lda100-kl">D0744.lda100-kl.system.html</P>
 <P ID="lda100">D0744.lda100.system.html</P>
@@ -2304,7 +3449,6 @@
 <P ID="max-reward-Rouge-Words-no-filter">D0744.max-reward-Rouge-Words-no-filter.system.html</P>
 <P ID="max-reward-with-both-nws">D0744.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0744.max-reward-with-filter-after-and-both-nws.system.html</P>
-<P ID="max-reward-with-filter-and-both-nws">D0744.max-reward-with-filter-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter">D0744.max-reward-with-filter.system.html</P>
 <P ID="max-reward-with-high-alpha">D0744.max-reward-with-high-alpha.system.html</P>
 <P ID="max-reward-with-high-BETA">D0744.max-reward-with-high-BETA.system.html</P>
@@ -2317,8 +3461,14 @@
 <P ID="r-is-0.2">D0744.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0744.r-is-0.5.system.html</P>
 <P ID="r-is-1">D0744.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0744.short10.system.html</P>
 <P ID="synset-expansion">D0744.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="synset-expansion">D0744.synset-expansion.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0744.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="max-reward-with-filter-and-both-nws">D0744.max-reward-with-filter-and-both-nws.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 
@@ -2335,7 +3485,6 @@
 <PEERS>
 <P ID="baseline-js">D0745.baseline-js.system.html</P>
 <P ID="baseline-kl">D0745.baseline-kl.system.html</P>
-<P ID="baseline-ss">D0745.baseline-ss.system.html</P>
 <P ID="baseline">D0745.baseline.system.html</P>
 <P ID="div10">D0745.div10.system.html</P>
 <P ID="div3">D0745.div3.system.html</P>
@@ -2344,6 +3493,7 @@
 <P ID="fuzzy1">D0745.fuzzy1.system.html</P>
 <P ID="js-thresh01">D0745.js-thresh01.system.html</P>
 <P ID="js-thresh02">D0745.js-thresh02.system.html</P>
+<<<<<<< HEAD
 <P ID="lambda-6-beta-0.3-alpha-10">D0745.lambda-6-beta-0.3-alpha-10.system.html</P>
 <P ID="lambda-6-beta-0.5-alpha-10">D0745.lambda-6-beta-0.5-alpha-10.system.html</P>
 <P ID="lda100-js">D0745.lda100-js.system.html</P>
@@ -2355,6 +3505,13 @@
 <P ID="lda200-ss">D0745.lda200-ss.system.html</P>
 <P ID="lda200">D0745.lda200.system.html</P>
 <P ID="max-reward-Rouge-Words-no-filter">D0745.max-reward-Rouge-Words-no-filter.system.html</P>
+=======
+<P ID="lambda-1-beta-0.1-alpha-10-r-0-min-length-0">D0745.lambda-1-beta-0.1-alpha-10-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0">D0745.lambda-1-beta-0.1-alpha-10-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0">D0745.lambda-1-beta-0.1-alpha-10-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0">D0745.lambda-1-beta-0.1-alpha-10-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0">D0745.lambda-1-beta-0.1-alpha-10-r-0.7-min-length-0.system.html</P>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 <P ID="max-reward-with-both-nws">D0745.max-reward-with-both-nws.system.html</P>
 <P ID="max-reward-with-filter-after-and-both-nws">D0745.max-reward-with-filter-after-and-both-nws.system.html</P>
 <P ID="max-reward-with-filter-and-both-nws">D0745.max-reward-with-filter-and-both-nws.system.html</P>
@@ -2370,8 +3527,30 @@
 <P ID="r-is-0.2">D0745.r-is-0.2.system.html</P>
 <P ID="r-is-0.5">D0745.r-is-0.5.system.html</P>
 <P ID="r-is-1">D0745.r-is-1.system.html</P>
+<<<<<<< HEAD
 <P ID="short10">D0745.short10.system.html</P>
 <P ID="synset-expansion">D0745.synset-expansion.system.html</P></PEERS>
+=======
+<P ID="synset-expansion">D0745.synset-expansion.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0-min-length-0">D0745.lambda-1-beta-0.1-alpha-12-r-0-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0">D0745.lambda-1-beta-0.1-alpha-12-r-0.2-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0">D0745.lambda-1-beta-0.1-alpha-12-r-0.3-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0">D0745.lambda-1-beta-0.1-alpha-12-r-0.5-min-length-0.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0">D0745.lambda-1-beta-0.1-alpha-12-r-0.7-min-length-0.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0-cody">D0745.lambda-6-beta-0.5-alpha-12-r-0-cody.system.html</P>
+<P ID="lambda-6-beta-0.5-alpha-12-r-0.2-cody">D0745.lambda-6-beta-0.5-alpha-12-r-0.2-cody.system.html</P>
+<P ID="lda100-js">D0745.lda100-js.system.html</P>
+<P ID="lda100-kl">D0745.lda100-kl.system.html</P>
+<P ID="lda100">D0745.lda100.system.html</P>
+<P ID="lda200-dthreash00001">D0745.lda200-dthreash00001.system.html</P>
+<P ID="lda200-dthresh00005">D0745.lda200-dthresh00005.system.html</P>
+<P ID="lda200-dthresh0005">D0745.lda200-dthresh0005.system.html</P>
+<P ID="lda200-ss">D0745.lda200-ss.system.html</P>
+<P ID="lda200">D0745.lda200.system.html</P>
+<P ID="baseline-ss">D0745.baseline-ss.system.html</P>
+<P ID="lambda-1-beta-0.1-alpha-10-r-1-min-length-0">D0745.lambda-1-beta-0.1-alpha-10-r-1-min-length-0.system.html</P>
+<P ID="max-reward-Rouge-Words-no-filter">D0745.max-reward-Rouge-Words-no-filter.system.html</P></PEERS>
+>>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 	<MODELS>
 

@@ -23,6 +23,8 @@ def greedy(elements, reward, cost, budget=250, r=0.0): #reward is a function
         spent += cost[max_gain_idx]
 
     vstar = argmax(lambda x: reward([x]), range(elements.shape[0]))
-    if reward([vstar]) > scoret:
+    vsrw = reward([vstar])
+    strw = reward(st)
+    if reward([vstar]) > reward(st):
         return [vstar]
     return st

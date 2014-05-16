@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-$ROUGE="../ROUGE-RELEASE-1.5.5/ROUGE-1.5.5.pl";
+$ROUGE="perl ../ROUGE-RELEASE-1.5.5/ROUGE-1.5.5.pl";
 
 # DUC-2006 and DUC-2007
 $cmd="$ROUGE -e ../ROUGE-RELEASE-1.5.5/data -n 2 -x -m -2 4 -u -c 95 -r 1000 -f A -p 0.5 -t 0 -l 250 -a settings.xml > ROUGE.out";

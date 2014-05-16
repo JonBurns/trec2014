@@ -41,7 +41,7 @@ while iter_sys < len(sys.argv):
     if iter_sys == 5: 
         r_passed = float(sys.argv[5])
     iter_sys += 1
-    
+
 # def reward(s, sim_matrix, corpus_sums, groups, rqj):
 #     return l1(s, sim_matrix, corpus_sums) + (6 * r1(s, corpus_sums, groups, rqj))
 
@@ -65,7 +65,7 @@ def split_into_sentences(docs, use_splitter = False):
     if not use_splitter:
         for doc in docs:
             for sentence in doc.split('\n'):
-                if len(sentence) > 25 and not re.match(".*``.*", sentence) and not re.match(".*''.*", sentence): 
+                if len(sentence) > 0 and not re.match(".*``.*", sentence) and not re.match(".*''.*", sentence): 
                     sentences.append(sentence)
         return list(set(sentences))
 
@@ -124,7 +124,7 @@ if __name__ == '__main__':
 
     sim_matrix = pairwise_kernels(tfidf.todense(), metric = 'cosine')
 
-    kcluster = KMeans(init = 'k-means++', n_init = 10, n_clusters = len(sentences)/5) #n-clusters is K
+    kcluster = KMeans(init = 'k-means++', n_init = 10, n_clusters = len(sentences)/5, n_jobs=-1) #n-clusters is K
     clusters = kcluster.fit_predict(tfidf.todense())
 
     groups = create_groups(clusters) #[map(lambda x: x[0], g) for k, g in groupby(c1, lambda x: x[1])]
@@ -143,7 +143,7 @@ if __name__ == '__main__':
     reward_r1 = partial(r1, corpus_sums = corpus_sums, groups = groups, rqj = rqj, beta = beta_passed)
 
     filled_reward = partial(reward, l1 = reward_l1, r1 = reward_r1, lambda_var = lambda_passed)
-    idxs = greedy(sim_matrix, filled_reward, lengths, r_passsed)
+    idxs = greedy(sim_matrix, filled_reward, lengths, budget=250, r=r_passed)
 
     for idx in idxs:
         print replace_all(sentences[idx])

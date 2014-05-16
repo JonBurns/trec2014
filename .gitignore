@@ -9,5 +9,6 @@ remove_all.py
 
 ROUGE/DUC-2007/SYSTEM/
 hadoopStuff/*.txt
+hadoopStuff/D0701A/*
 *.jar
 *.p

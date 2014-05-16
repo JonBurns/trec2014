@@ -8,17 +8,14 @@ path2 = 'ROUGE/DUC-2007/'
 
 lines = os.listdir(path)
 
+lines = lines[1:]
+
 alpha_values = [12]
-<<<<<<< HEAD
+
 r_values = [0]
 beta_values = [0.5]
 lambda_values = [6]
-=======
-r_values = [0, 0.1, 0.2, 0.3, 0.4]
-beta_values = [0.5]
-lambda_values = [6]
 run_id = ""
->>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
 
 total_computations = len(alpha_values) * len(beta_values) * len(lambda_values) * len(r_values)
 

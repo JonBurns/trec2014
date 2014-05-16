@@ -2,6 +2,9 @@
 
 import sys
 
+import cPickle as pickle 
+from sklearn.metrics.pairwise import pairwise_kernels
+
 listy = []
 cur_col = 0
 max_words = 0
@@ -13,7 +16,6 @@ for line in sys.stdin:
         first = False;
         continue
 
-    print max_words
     listy.append([0] * max_words)
     values = {}
 
@@ -25,9 +27,10 @@ for line in sys.stdin:
         row, value = item.split(' ')
         listy[cur_col][int(row)] = float(value)
     
-    for i in listy[cur_col]:
-        if i != 0:
-            print 'Yay'
     cur_col += 1
-    print '_____________________________________________________'
+    print '{0}\t{1}'.format(str(cur_col), marker.strip())
+
+sim_matrix = pairwise_kernels(listy, metric = 'cosine')
+
+pickle.dump(sim_matrix, open('sim_matrix.p', 'wb'))
 

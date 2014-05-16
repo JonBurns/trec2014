@@ -143,11 +143,8 @@ if __name__ == '__main__':
     reward_r1 = partial(r1, corpus_sums = corpus_sums, groups = groups, rqj = rqj, beta = beta_passed)
 
     filled_reward = partial(reward, l1 = reward_l1, r1 = reward_r1, lambda_var = lambda_passed)
-<<<<<<< HEAD
-    idxs = greedy(sim_matrix, filled_reward, lengths, r=r_passed)
-=======
     idxs = greedy(sim_matrix, filled_reward, lengths, budget=250, r=r_passed)
->>>>>>> 5f91bb7675488f106a75fb98681c00a8275c30a6
+
 
     for idx in idxs:
         print replace_all(sentences[idx])

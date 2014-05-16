@@ -20,7 +20,7 @@ for line in sys.stdin:
     for i,j,v in zip(data.row, data.col, data.data):
         listy.append(str(j) + ' ' + str(v))
 
-    sys.stdout.write('marker\t')
+    sys.stdout.write('{0}\t'.format(line.strip()))
     for item in listy:
         sys.stdout.write(item)
         sys.stdout.write('\t')

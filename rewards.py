@@ -22,3 +22,10 @@ def r1(s, corpus_sums, groups, rqj, beta = 0.5):
         result += math.sqrt(result2)
 
     return result
+
+def rq2(s, corpus_sums, mu, rqj, beta=0.5):
+    num_k = len(mu[0])
+    n = len(corpus_sums)
+
+    result = 0.0
+

@@ -3,20 +3,20 @@ TEST_NAME                                              ROUGE-2 Average_F:     Di
 max-reward-with-both-nws                                     0.10431            0.0     
 max-reward-with-filter-after-and-both-nws                    0.10358            0.00073 
 max-reward-Rouge-Words-no-filter                             0.10347            0.00084 
-max-reward-Rouge-Words-filter-after                          0.10322            0.00109 
-sysnet-expansion-low-BETA                                    0.10317            0.00114 
 synset-expansion                                             0.10196            0.00235 
 max-reward-with-filter-and-both-nws                          0.10121            0.0031  
-remove-possesion                                             0.10058            0.00373 
-testName                                                     0.10024            0.00407 
-test                                                         0.09956            0.00475 
+porter-stemmer                                               0.10088            0.00343 
+normalized-vals                                              0.10045            0.00386 
+short10                                                      0.10004            0.00427 
+fuzzy1                                                       0.09886            0.00545 
 r-is-0.2                                                     0.09808            0.00623 
 max-reward-with-low-alpha                                    0.09722            0.00709 
 max-reward                                                   0.09678            0.00753 
 max-reward-with-low-BETA                                     0.09637            0.00794 
 max-reward-with-high-alpha                                   0.09625            0.00806 
 max-reward-with-filter                                       0.09616            0.00815 
-max-reward-with-nsw                                          0.09585            0.00846 
+lambda-6-beta-0.3-alpha-10                                   0.09417            0.01014 
+lambda-6-beta-0.5-alpha-10                                   0.09322            0.01109 
 r-is-0.5                                                     0.09312            0.01119 
 max-reward-with-high-BETA                                    0.09123            0.01308 
 ------------------------------------------------------------------------------------------

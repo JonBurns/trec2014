@@ -1,4 +1,4 @@
-#!/Users/jonathanburns/anaconda/bin/python
+#!/usr/bin/env python
 
 import subprocess
 import os
@@ -6,12 +6,12 @@ import os
 path = 'ROUGE/DUC-2007/docs/'
 path2 = 'ROUGE/DUC-2007/'
 
-lines = os.listdir(path)[1:]
+lines = os.listdir(path)
 
-alpha_values = [10]
-r_values = [0, 1]
-beta_values = [0.3, 0.5]
-lambda_values = [1, 6]
+alpha_values = [12]
+r_values = [0]
+beta_values = [0.5]
+lambda_values = [6]
 
 total_computations = len(alpha_values) * len(beta_values) * len(lambda_values) * len(r_values)
 

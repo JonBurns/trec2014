@@ -110,7 +110,7 @@ if __name__ == '__main__':
     docs = [contraction_filter(doc) for doc in docs]
     sentences = split_into_sentences(docs)
 
-    vectorizer = TfidfVectorizer(input = 'content', ngram_range = (1, 2), stop_words = new_stop_words, tokenizer = LemmaTokenizer(), norm = 'l2', smooth_idf = True) #Add Stemming 
+    vectorizer = TfidfVectorizer(input = 'content', ngram_range = (1, 2), stop_words = new_stop_words, tokenizer = LemmaTokenizer(), norm = 'l2', smooth_idf = True, max_features=200) #Add Stemming 
     vectorizer.fit(docs)
     q_vectorizer = CountVectorizer(input = 'content', ngram_range = (1, 2), stop_words = new_stop_words, tokenizer=QuerySynsetExpandingTokenizer())
     with open(path + '/query.txt') as f:
@@ -143,7 +143,7 @@ if __name__ == '__main__':
     reward_r1 = partial(r1, corpus_sums = corpus_sums, groups = groups, rqj = rqj, beta = beta_passed)
 
     filled_reward = partial(reward, l1 = reward_l1, r1 = reward_r1, lambda_var = lambda_passed)
-    idxs = greedy(sim_matrix, filled_reward, lengths, r_passsed)
+    idxs = greedy(sim_matrix, filled_reward, lengths, r=r_passed)
 
     for idx in idxs:
         print replace_all(sentences[idx])

@@ -14,3 +14,11 @@ hadoopStuff/D0701A/*
 *.p
 copy-all.py
 hadoopStuff/jobOutput/*
+hadoopStuff/docs
+hadoopStuff/old_mapper_reducers
+hadoopStuff/test_pickles.py
+hadoopStuff/*.p
+hadoopStuff/DO701A
+hadoopStuff/DataFiles
+hadoopStuff/DataSet
+ROUGE/ROUGE-RELEASE-1.5.5

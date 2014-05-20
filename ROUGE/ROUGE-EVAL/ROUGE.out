@@ -1,0 +1,36 @@
+---------------------------------------------
+lambda-6-beta-0.5-alpha-12-r-0- ROUGE-1 Average_R: 0.37911 (95%-conf.int. 0.36744 - 0.39054)
+lambda-6-beta-0.5-alpha-12-r-0- ROUGE-1 Average_P: 0.41242 (95%-conf.int. 0.39965 - 0.42452)
+lambda-6-beta-0.5-alpha-12-r-0- ROUGE-1 Average_F: 0.39496 (95%-conf.int. 0.38317 - 0.40650)
+---------------------------------------------
+lambda-6-beta-0.5-alpha-12-r-0- ROUGE-2 Average_R: 0.08848 (95%-conf.int. 0.08073 - 0.09662)
+lambda-6-beta-0.5-alpha-12-r-0- ROUGE-2 Average_P: 0.09645 (95%-conf.int. 0.08808 - 0.10523)
+lambda-6-beta-0.5-alpha-12-r-0- ROUGE-2 Average_F: 0.09227 (95%-conf.int. 0.08427 - 0.10050)
+---------------------------------------------
+lambda-6-beta-0.5-alpha-12-r-0- ROUGE-SU4 Average_R: 0.14128 (95%-conf.int. 0.13380 - 0.14893)
+lambda-6-beta-0.5-alpha-12-r-0- ROUGE-SU4 Average_P: 0.15393 (95%-conf.int. 0.14544 - 0.16248)
+lambda-6-beta-0.5-alpha-12-r-0- ROUGE-SU4 Average_F: 0.14729 (95%-conf.int. 0.13939 - 0.15533)
+---------------------------------------------
+lambda-6-beta-0.5-alpha-12-r-0.0- ROUGE-1 Average_R: 0.38233 (95%-conf.int. 0.36883 - 0.39486)
+lambda-6-beta-0.5-alpha-12-r-0.0- ROUGE-1 Average_P: 0.41573 (95%-conf.int. 0.40241 - 0.42888)
+lambda-6-beta-0.5-alpha-12-r-0.0- ROUGE-1 Average_F: 0.39822 (95%-conf.int. 0.38495 - 0.41136)
+---------------------------------------------
+lambda-6-beta-0.5-alpha-12-r-0.0- ROUGE-2 Average_R: 0.09197 (95%-conf.int. 0.08313 - 0.10059)
+lambda-6-beta-0.5-alpha-12-r-0.0- ROUGE-2 Average_P: 0.10011 (95%-conf.int. 0.09063 - 0.10942)
+lambda-6-beta-0.5-alpha-12-r-0.0- ROUGE-2 Average_F: 0.09584 (95%-conf.int. 0.08672 - 0.10478)
+---------------------------------------------
+lambda-6-beta-0.5-alpha-12-r-0.0- ROUGE-SU4 Average_R: 0.14466 (95%-conf.int. 0.13631 - 0.15246)
+lambda-6-beta-0.5-alpha-12-r-0.0- ROUGE-SU4 Average_P: 0.15752 (95%-conf.int. 0.14839 - 0.16637)
+lambda-6-beta-0.5-alpha-12-r-0.0- ROUGE-SU4 Average_F: 0.15078 (95%-conf.int. 0.14205 - 0.15885)
+---------------------------------------------
+lambda-6-beta-0.5-alpha-12-r-0.2- ROUGE-1 Average_R: 0.37965 (95%-conf.int. 0.36696 - 0.39225)
+lambda-6-beta-0.5-alpha-12-r-0.2- ROUGE-1 Average_P: 0.41335 (95%-conf.int. 0.40046 - 0.42611)
+lambda-6-beta-0.5-alpha-12-r-0.2- ROUGE-1 Average_F: 0.39568 (95%-conf.int. 0.38312 - 0.40808)
+---------------------------------------------
+lambda-6-beta-0.5-alpha-12-r-0.2- ROUGE-2 Average_R: 0.09308 (95%-conf.int. 0.08536 - 0.10055)
+lambda-6-beta-0.5-alpha-12-r-0.2- ROUGE-2 Average_P: 0.10142 (95%-conf.int. 0.09318 - 0.10942)
+lambda-6-beta-0.5-alpha-12-r-0.2- ROUGE-2 Average_F: 0.09705 (95%-conf.int. 0.08916 - 0.10485)
+---------------------------------------------
+lambda-6-beta-0.5-alpha-12-r-0.2- ROUGE-SU4 Average_R: 0.14330 (95%-conf.int. 0.13542 - 0.15122)
+lambda-6-beta-0.5-alpha-12-r-0.2- ROUGE-SU4 Average_P: 0.15614 (95%-conf.int. 0.14783 - 0.16471)
+lambda-6-beta-0.5-alpha-12-r-0.2- ROUGE-SU4 Average_F: 0.14941 (95%-conf.int. 0.14128 - 0.15747)

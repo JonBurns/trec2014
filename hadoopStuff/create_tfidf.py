@@ -27,4 +27,4 @@ docs = file_setup(path)
 vectorizer = TfidfVectorizer(input = 'content', ngram_range = (1, 2), stop_words = 'english', tokenizer = LemmaTokenizer(), norm = 'l2', smooth_idf = True)
 vectorizer.fit(docs)
 
-pickle.dump(vectorizer, open('vecotrizer.p', 'wb'))
+pickle.dump(vectorizer, open('vectorizer.p', 'wb'))

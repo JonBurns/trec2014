@@ -22,3 +22,4 @@ hadoopStuff/DO701A
 hadoopStuff/DataFiles
 hadoopStuff/DataSet
 ROUGE/ROUGE-RELEASE-1.5.5
+hadoopStuff/k_means_test.py

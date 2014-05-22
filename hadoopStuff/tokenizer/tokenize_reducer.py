@@ -21,11 +21,9 @@ for line in sys.stdin:
         row, value = item.split(' ')
         listy[cur_col][int(row)] = float(value)
     
-    print '{0}\t{1}'.format(str(cur_col), repr(listy[cur_col]))
-    words_and_idxs.append('{0}\t{1}'.format(str(cur_col), marker.strip()))
+    print '{0}\t{1}\t{2}'.format(str(cur_col), marker.strip(), repr(listy[cur_col]))
+    #words_and_idxs.append('{0}\t{1}'.format(str(cur_col), marker.strip()))
     cur_col += 1
     #print '{0}\t{1}'.format(str(cur_col), marker.strip())
 
-
-pickle.dump(listy, open('q_vectorized_sentences.p', 'wb'))
 

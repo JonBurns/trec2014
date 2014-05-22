@@ -7,6 +7,7 @@ list_of_idxs = []
 k_means = []
 vectorized_sentences = pickle.load(open('vectorized_sentences.p', 'rb'))
 groups = pickle.load(open('kmeans_groups.p', 'rb'))
+groupings = [0] * len(groups)
 
 for line in sys.stdin:
     data = line.split('\t')
@@ -15,7 +16,8 @@ for line in sys.stdin:
 
     if old_key is not None and old_key != new_key:
     #do stuff for changing keys
-        print '{0}\t{1}'.format(old_key, repr(list_of_idxs))
+        
+        groupings[int(old_key)] = list_of_idxs
         avrg_vector = []
         #Stuff for the new k-means
         for i in range(len(vectorized_sentences[0])):
@@ -29,13 +31,16 @@ for line in sys.stdin:
             groups[int(old_key)] = avrg_vector
         else:
             groups[int(old_key)] = groups[int(old_key)]
+
+        print '{0}\t{1}\t{2}'.format(old_key, repr(list_of_idxs), repr(groups[int(old_key)]))
         list_of_idxs = []
+
     
     list_of_idxs.append(idx)
     old_key = new_key
 
 if old_key is not None:
-    print '{0}\t{1}'.format(old_key, repr(list_of_idxs))
+    groupings[int(old_key)] = list_of_idxs
     avrg_vector = []
     #Stuff for the new k-means
     for i in range(len(vectorized_sentences[0])):
@@ -50,4 +55,5 @@ if old_key is not None:
     else:
         groups[int(old_key)] = groups[int(old_key)]
 
-pickle.dump(groups, open('kmeans_groups.p', 'wb'))
+    print '{0}\t{1}\t{2}'.format(old_key, repr(list_of_idxs), repr(groups[int(old_key)]))
+

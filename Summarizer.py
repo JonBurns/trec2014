@@ -46,7 +46,7 @@ while iter_sys < len(sys.argv):
 #     return l1(s, sim_matrix, corpus_sums) + (6 * r1(s, corpus_sums, groups, rqj))
 
 def reward(s, l1, r1, lambda_var = 6):
-    return l1(s) + (lambda_var * r1(s))
+    return l1(s) + (float(lambda_var) * r1(s))
 
 
 def file_setup(path):
@@ -65,7 +65,7 @@ def split_into_sentences(docs, use_splitter = False):
     if not use_splitter:
         for doc in docs:
             for sentence in doc.split('\n'):
-                if len(sentence) > 0 and not re.match(".*``.*", sentence) and not re.match(".*''.*", sentence): 
+                if len(sentence) > 25 and not re.match(".*``.*", sentence) and not re.match(".*''.*", sentence): 
                     sentences.append(sentence)
         return list(set(sentences))
 

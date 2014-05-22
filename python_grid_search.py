@@ -25,7 +25,7 @@ for lambda_val in lambda_values:
         for alpha in alpha_values:
             for r in r_values:
                 print "{0}% complete".format((float(i)/float(total_computations)) * 100)
-                testName = '.lambda-{0}-beta-{1}-alpha-{2}-r-{3}-{4}'.format(str(lambda_val), str(beta), str(alpha), str(r), run_id)
+                testName = '.With-Alpha-Fix-and-length-lambda-{0}-beta-{1}-alpha-{2}-r-{3}-{4}'.format(str(lambda_val), str(beta), str(alpha), str(r), run_id)
                 for cluster in lines:
 
                     print 'python Summarizer.py ' + cluster + ' ' + str(alpha) + ' ' + str(beta) + ' ' + str(lambda_val) + ' ' + str(r)

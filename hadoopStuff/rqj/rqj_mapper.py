@@ -3,7 +3,7 @@
 import sys
 import cPickle as pickle 
 
-listy = []
+
 for line in sys.stdin: #Each line will be 'sent_idx\tvector'
     line = line.split('\t')
     idx = line[0]
@@ -12,6 +12,4 @@ for line in sys.stdin: #Each line will be 'sent_idx\tvector'
     for i in vector:
         sum_vect += int(i)
     print '{0}\t{1}'.format(idx, sum_vect)
-    listy.append(sum_vect)
 
-pickle.dump(listy, open('rqj.p', 'wb'))

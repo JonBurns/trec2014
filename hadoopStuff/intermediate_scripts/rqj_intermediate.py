@@ -23,6 +23,5 @@ list_of_sums = [0] * (highest_idx + 1)
 
 for key in sum_of_vectors:
     list_of_sums[int(key)] = sum_of_vectors[key]
-    print sum_of_vectors[key]
-
+    
 pickle.dump(list_of_sums, open('rqj.p', 'wb'))

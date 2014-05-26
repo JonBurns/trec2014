@@ -20,5 +20,7 @@ vect_sent = [0] * (highest_idx + 1)
 
 for key in vectorized_sentences:
     vect_sent[int(key)] = vectorized_sentences[key]
+    print '{0}\t{1}'.format(str(key), repr(vectorized_sentences[key]))
+
 
 pickle.dump(vect_sent, open('q_vectorized_sentences.p', 'wb'))

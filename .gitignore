@@ -24,3 +24,7 @@ hadoopStuff/DataSet
 ROUGE/ROUGE-RELEASE-1.5.5
 hadoopStuff/k_means_test.py
 *.txt
+hadoopStuff/mapper_test.py
+hadoopStuff/reducer_test.py
+hadoopStuff/nltk_data.zip
+hadoopStuff/map_reduce_folders

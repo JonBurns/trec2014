@@ -4,7 +4,7 @@ import sys
 
 
 for line in sys.stdin:
-    print line
+    print line.strip()
     # data = line.split('\t', 1)
     # idx = data[0]
     # sum_vec = data[1].strip()

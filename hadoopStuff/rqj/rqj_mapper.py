@@ -2,6 +2,7 @@
 
 import sys
 import cPickle as pickle 
+import numpy
 
 
 for line in sys.stdin: #Each line will be 'sent_idx\tvector'

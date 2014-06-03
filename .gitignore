@@ -28,3 +28,4 @@ hadoopStuff/mapper_test.py
 hadoopStuff/reducer_test.py
 hadoopStuff/nltk_data.zip
 hadoopStuff/map_reduce_folders
+mrjob_stuff/*.txt

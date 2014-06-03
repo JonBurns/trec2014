@@ -3,18 +3,13 @@
 import sys
 import cPickle as pickle 
 from sklearn.metrics.pairwise import pairwise_kernels
+import numpy
 
 vector = pickle.load(open('vectorized_sentences.p', 'rb'))
 
 sim_matrix = pairwise_kernels(vector, metric = 'cosine')
 
 i = 0
-
-#for row in sim_matrix:
-    #print '{0}\t{1}'.format(str(i), row)
-    #i += 1
-
-
 for row in sim_matrix:
     sys.stdout.write('{0}\t'.format(str(i)))
     for item in row:
@@ -25,3 +20,4 @@ for row in sim_matrix:
 
 
 pickle.dump(sim_matrix, open('sim_matrix.p', 'wb'))
+

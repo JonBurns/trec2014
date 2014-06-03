@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import sys
 import cPickle as pickle 
+import numpy
 
 #text is coming in as [idx]\t[sentence]\t[vector]
 
@@ -16,7 +17,7 @@ for line in sys.stdin:
     if idx > highest_idx:
         highest_idx = idx
 
-vect_sent = [0] * (highest_idx + 1)
+vect_sent = numpy.empty(highest_idx + 1, dtype = list)
 
 for key in vectorized_sentences:
     vect_sent[int(key)] = vectorized_sentences[key]

@@ -23,7 +23,6 @@ for line in sys.stdin:
         for i in range(len(vectorized_sentences[0])):
             sum = 0.0
             for index in list_of_idxs:
-                #print '{0}\t{1}'.format(i, len(vectorized_sentences))
                 sum += vectorized_sentences[index][i]
             avrg_vector.append(sum/len(list_of_idxs))
 

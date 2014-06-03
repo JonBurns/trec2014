@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import sys
 import cPickle as pickle 
+import numpy
 
 #text is coming in as [idx]\t[sum_of_vector]
 #we want a list such that cs[idx] = sum_of_vector
@@ -20,7 +21,7 @@ for line in sys.stdin:
     if idx > highest_idx:
         highest_idx = idx
 
-list_of_sums = [0] * (highest_idx + 1)
+list_of_sums = numpy.empty(highest_idx + 1)
 
 
 for key in sum_of_vectors:

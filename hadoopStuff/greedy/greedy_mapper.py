@@ -3,6 +3,7 @@
 import cPickle as pickle 
 import sys
 import math
+import numpy
 
 groups = pickle.load(open('kmeans_groupings.p', 'rb'))
 sim_matrix = pickle.load(open('sim_matrix.p', 'rb'))
@@ -39,12 +40,13 @@ def reward(s, lambda_var = 6):
     r1_result = (lambda_var * r1(s, corpus_sums, groups, rqj))
     return l1_result + r1_result
 
+scoret = reward(summary)
+
 for line in sys.stdin:
 #def greedy(elements, reward, cost, budget=250, r=0.0): #reward is a function
     data = line.split('\t')
     idx = int(data[0])
     if idx not in summary:
-        scoret = reward(summary)
         temp = list(summary)
         temp.append(idx)
         gain = (reward(temp) - scoret)

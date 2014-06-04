@@ -37,9 +37,8 @@ class MRBiGrams(MRJob):
         # for i in range(len(words) - 2):
         #     self.increment_counter('n_gram_counters', 'bi-gram', 1)
         #     yield (words[i], words[i + 1], words[i + 2]), 1
-        for i in range(len(words) - 1):
-            self.increment_counter('n_gram_counters', 'bi-gram', 1)
-            if words[i] not in self.stop_words and words[i+1] not in self.stop_words:
+        for i in range(len(words) - 2):
+            if words[i] not in self.stop_words and words[i+1] not in self.stop_words and words[i+2] not in self.stop_words:
                 score = 1
                 in_query_so_far = 0
                 if words[i] in self.query:
@@ -47,7 +46,10 @@ class MRBiGrams(MRJob):
                     in_query_so_far += 1
                 if words[i+1] in self.query:
                     score += 2 + in_query_so_far
-                yield '{0} {1}'.format(words[i], words[i + 1]), score
+                    in_query_so_far += 1
+                if words[i+2] in self.query:
+                    score += 2 + in_query_so_far
+                yield '{0} {1} {2}'.format(words[i], words[i + 1], words[i + 2]), score
             
 
         # for i in range(len(words)):

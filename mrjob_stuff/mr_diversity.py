@@ -1,20 +1,10 @@
 from mrjob.job import MRJob 
 import re
 import operator
-import cPickle as pickle
 import sys
 
-class MRBiGrams(MRJob):
-    
-    def filter(self, ngram):
-        try:
-            value = self.query[ngram] 
-            return value
-        except KeyError:
-            return False 
-
-    def mapper_initial(self):
-        self.query = pickle.load(open('qidx.p', 'rb'))
+class MRDiversity(MRJob):
+    def init_mapper(self):
         self.stop_words = ["a", "about", "above", "across", "after", "afterwards", "again", "against",
     "all", "almost", "alone", "along", "already", "also", "although", "always",
     "am", "among", "amongst", "amoungst", "amount", "an", "and", "another",
@@ -56,66 +46,63 @@ class MRBiGrams(MRJob):
     "who", "whoever", "whole", "whom", "whose", "why", "will", "with",
     "within", "without", "would", "yet", "you", "your", "yours", "yourself",
     "yourselves", 'unto', 'all', 'thou', 'thy', 'shall', 'shallnt', 'when', 'gutenberg', 'tm']
-        if len(self.query) == 0:
-            sys.exit()
-        #self.query = {'of the' : 1, 'sentence is' : 1, 'is fake' : 1}
+        temp = 'Southern Poverty Law Center Describe the activities of Morris Dees and the Southern Poverty Law Center'.lower()
+        self.query = temp.split(' ')
 
-    def pre_mapper(self, _, line):
-        temp_line = line
-        to_replace = {' ,' : ' ', ' .' : ' ', ' ?' : ' ', ' !' : ' ', '$ ' : ' ', ' \'s' : '', '`' : '', ' _' : '', '(' : '', ')' : '', '-' : ' ', '\"' : ''}
-        for i, j in to_replace.iteritems():
-            temp_line = temp_line.replace(i, j)
-        temp_line = temp_line.replace(' nt', 'nt').replace(' s ', '').replace(' \'', '').replace('\'', '').replace('_', '').replace('$', '').replace('.', '').replace(',', '').replace('?', '').replace('!', '')
-
-        words = temp_line.lower().split()
-        score = 0.0
-        for i in range(len(words)):
-            word = '{0}'.format(words[i])
-            value = self.filter(word)
-            if value:
-                score += .5 * value
-
+    def mapper(self, _, line):
+        #Yield each bi-gram
+        line = line.replace('ca nt', 'cant').replace(' s ', '')
+        words = line.split()
+        # for i in range(len(words) - 2):
+        #     self.increment_counter('n_gram_counters', 'bi-gram', 1)
+        #     yield (words[i], words[i + 1], words[i + 2]), 1
         for i in range(len(words) - 1):
-            word = '{0} {1}'.format(words[i], words[i + 1])
-            value = self.filter(word)
-            if value:
-                score += 1.5 * value
+            self.increment_counter('n_gram_counters', 'bi-gram', 1)
+            if words[i] not in self.stop_words and words[i+1] not in self.stop_words:
+                score = 1
+                in_query_so_far = 0
+                if words[i] in self.query:
+                    score += 2
+                    in_query_so_far += 1
+                if words[i+1] in self.query:
+                    score += 2 + in_query_so_far
+                yield '{0} {1}'.format(words[i], words[i + 1]), score
+            
 
-        for i in range(len(words) - 2):
-            word = '{0} {1} {2}'.format(words[i], words[i+1], words[i+2])
-            value = self.filter(word)
-            if value:
-                score += 2 * value
-       
-        #IMPORTANT: WE ARE PASSING THE EDITED LINE HERE
-        yield None, (score, temp_line.lower())
+        # for i in range(len(words)):
+        #     yield words[i], 1
 
+    def combiner(self, word, counts):
+        yield (word, sum(counts))
+
+    def reducer(self, word, counts):
+        yield None, (sum(counts), word)
 
     def reducer_initial(self):
-        self.scores = []
+        self.n_grams = {}
 
-    def reducer(self, _, word_score_pair):
-        for word_score in word_score_pair:
-
-            self.scores.append(word_score)
+    def reducer_find_max_word(self, _, word_count_pairs):
+        for i, j in word_count_pairs:
+            self.n_grams[j] = i
 
     def reducer_fin(self):
-        sorted_scores = self.scores
-        sorted_scores.sort()
-        sorted_scores.reverse()
-        top_10 = len(sorted_scores)/20
-        sorted_scores = sorted_scores[:top_10]
-        for score in sorted_scores:
-            yield score[0], score[1]
+        sorted_x = (sorted(self.n_grams.iteritems(), key=operator.itemgetter(1)))
+        sorted_x.reverse()
+        for x in sorted_x:
+            yield x[0], float(x[1])/len(self.n_grams) * 100
+        #for i,j in self.n_grams.iteritems():
+            #yield i, float(j)/len(self.n_grams) * 100
 
     def steps(self):
         return [
-            self.mr(mapper_init=self.mapper_initial,
-            mapper=self.pre_mapper,#,
-            reducer_init=self.reducer_initial,
-            reducer=self.reducer,
-            reducer_final=self.reducer_fin)
+            self.mr(mapper_init=self.init_mapper,
+                mapper=self.mapper, 
+                combiner=self.combiner,
+                reducer=self.reducer),
+            self.mr(reducer_init=self.reducer_initial,
+                reducer=self.reducer_find_max_word,
+               reducer_final=self.reducer_fin)
             ]
 
 if __name__ == '__main__':
-    MRBiGrams.run()
+    MRDiversity.run()

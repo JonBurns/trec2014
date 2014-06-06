@@ -62,44 +62,53 @@ class MRn_grams(MRJob):
         #Yield each bi-gram
         line = line.replace('ca nt', 'cant').replace(' s ', '')
         words = line.split()
+        ###NEW###
+
         for i in range(len(words)):
-            if words[i] not in self.stop_words:
-                score = 1
-                if words[i] in self.query:
-                    score += 2
-                yield 'u{0}'.format(words[i]), score
+            if words[i] in self.stop_words:
+                continue
 
-        for i in range(len(words) - 1):
-            self.increment_counter('n_gram_counters', 'bi-gram', 1)
-            if words[i] not in self.stop_words and words[i+1] not in self.stop_words:
-                score = 1
-                in_query_so_far = 0
-                if words[i] in self.query:
-                    score += 2
-                    in_query_so_far += 1
-                if words[i+1] in self.query:
-                    score += 2 + in_query_so_far
-                yield 'b{0} {1}'.format(words[i], words[i + 1]), score #math.log1p(score)
+            ##UNIGRAMS
+            score = 1
+            # if words[i] in self.query:
+            #     score += 2
+            yield 'u{0}'.format(words[i]), score
 
-        for i in range(len(words) - 2):
-            if words[i] not in self.stop_words and words[i+1] not in self.stop_words and words[i+2] not in self.stop_words:
-                score = 1
-                in_query_so_far = 0
-                if words[i] in self.query:
-                    score += 2
-                    in_query_so_far += 1
-                if words[i+1] in self.query:
-                    score += 2 + in_query_so_far
-                    in_query_so_far += 1
-                if words[i+2] in self.query:
-                    score += 2 + in_query_so_far
-                yield 't{0} {1} {2}'.format(words[i], words[i + 1], words[i + 2]), score
+            ##BIGRAMS
+            if i >= len(words)-1 or words[i + 1] in self.stop_words:
+                continue
+
+            score = 1
+            # in_query_so_far = 0
+            # if words[i] in self.query:
+            #     score += 2
+            #     in_query_so_far += 1
+            # if words[i+1] in self.query:
+            #     score += 3 + in_query_so_far
+            yield 'b{0} {1}'.format(words[i], words[i + 1]), score
+
+            ##TRIGRAMS
+            if i >= len(words)-2 or words[i + 2] in self.stop_words:
+                continue
+
+            score = 1
+            # in_query_so_far = 0
+            # if words[i] in self.query:
+            #     score += 2
+            #     in_query_so_far += 1
+            # if words[i+1] in self.query:
+            #     score += 3 + in_query_so_far
+            #     in_query_so_far += 1
+            # if words[i+2] in self.query:
+            #     score += 3 + in_query_so_far
+            yield 't{0} {1} {2}'.format(words[i], words[i + 1], words[i + 2]), score
+
 
     def combiner(self, word, counts):
         yield (word, sum(counts))
 
     def reducer(self, word, counts):
-        yield None, (math.pow(sum(counts), 1/1.5), word)
+        yield None, (sum(counts), word)#(math.pow(sum(counts), 1/1.5), word)
 
     def reducer_initial(self):
         self.uni_grams = {}

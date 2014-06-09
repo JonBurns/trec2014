@@ -56,7 +56,7 @@ class MRn_grams(MRJob):
     "within", "without", "would", "yet", "you", "your", "yours", "yourself",
     "yourselves", 'unto', 'all', 'thou', 'thy', 'shall', 'shallnt', 'when', 'gutenberg', 'tm', 'said']
         temp = 'Southern Poverty Law Center Describe the activities of Morris Dees and the Southern Poverty Law Center'.lower()
-        self.query = temp.split(' ')
+        self.query = temp
 
     def mapper(self, _, line):
         #Yield each bi-gram
@@ -114,6 +114,7 @@ class MRn_grams(MRJob):
         self.uni_grams = {}
         self.bi_grams = {}
         self.tri_grams = {}
+
     def reducer_find_max_word(self, _, word_count_pairs):
         for i, j in word_count_pairs:
             if j[0] == 'u':

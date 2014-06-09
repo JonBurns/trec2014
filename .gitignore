@@ -30,3 +30,4 @@ hadoopStuff/nltk_data.zip
 hadoopStuff/map_reduce_folders
 mrjob_stuff/*.txt
 mrjob_stuff/old/
+mrjob_stuff/test.py

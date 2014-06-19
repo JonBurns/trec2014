@@ -1,6 +1,6 @@
 Old_Summarization_Files/ROUGE/ROUGE-EVAL/
 Old_Summarization_Files/wikipedia/
-Old_Summarization_Files/*.pyc
+*.pyc
 Old_Summarization_Files/JonStuff/
 Old_Summarization_Files/RedditComments.py
 Old_Summarization_Files/timinginfo.txt
@@ -10,8 +10,8 @@ Old_Summarization_Files/remove_all.py
 Old_Summarization_Files/ROUGE/DUC-2007/SYSTEM/
 Old_Summarization_Files/hadoopStuff/*.txt
 Old_Summarization_Files/hadoopStuff/D0701A/*
-Old_Summarization_Files/*.jar
-Old_Summarization_Files/*.p
+*.jar
+*.p
 Old_Summarization_Files/copy-all.py
 Old_Summarization_Files/hadoopStuff/jobOutput/*
 Old_Summarization_Files/hadoopStuff/docs
@@ -31,3 +31,5 @@ Old_Summarization_Files/hadoopStuff/map_reduce_folders
 Old_Summarization_Files/mrjob_stuff/*.txt
 Old_Summarization_Files/mrjob_stuff/old/
 Old_Summarization_Files/mrjob_stuff/test.py
+test.txt
+stop_word_creater.py

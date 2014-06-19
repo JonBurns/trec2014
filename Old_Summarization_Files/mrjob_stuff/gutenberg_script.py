@@ -1,6 +1,6 @@
 
 
-with open('./wandp.txt', 'r') as f:
+with open('./DonQui.txt', 'r') as f:
     content = f.readlines()
 
 
@@ -16,6 +16,6 @@ for sentence in content:
 
 
 
-with open('./fixedwandp_t.txt', 'w') as f:
+with open('../../fixedDonQui.txt', 'w') as f:
     for sentence in noDashes:
         f.write(sentence)

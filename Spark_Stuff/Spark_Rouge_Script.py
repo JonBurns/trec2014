@@ -15,7 +15,7 @@ for i in range(0, len(contents) - 1, 3):
 
 ###MAKE CALLS###
 
-test_name = 'Spark_test_1'
+test_name = 'Spark_test_4_with_tri_40_bi_30_uni_60'
 
 subprocess.call('touch summary.txt', shell = True)
 
@@ -31,6 +31,9 @@ for part in data:
 
     subprocess.call('spark-submit Spark_Stuff/Spark_Summarization_Basic.py ' + subdir + ' ' + '\"' + query + '\"', shell = True)
 
-    subprocess.call('mv summary.txt ../Old_Summarization_Files/ROUGE/DUC-2007/SYSTEM/'+ subdir[:-1] +'/'+ subdir[:-1] + '.' + test_name +'.system', shell = True)
+    subprocess.call('mv summary.txt Old_Summarization_Files/ROUGE/DUC-2007/SYSTEM/'+ subdir[:-1] +'/'+ subdir[:-1] + '.' + test_name +'.system', shell = True)
 
     subprocess.call('touch summary.txt', shell = True)
+
+subprocess.call('./Old_Summarization_Files/prepare_results.sh ' + test_name, shell = True)
+subprocess.call('python Old_Summarization_Files/getResults.py ' + test_name, shell = True)

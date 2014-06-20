@@ -3,6 +3,8 @@ from pyspark import SparkContext
 from Stop_words import ENGLISH_STOP_WORDS
 import numpy as np
 import sys
+
+from tokenizers import get_synset
     
 
 def query_filter(line, query):
@@ -22,6 +24,14 @@ def filter_zero_vectors(np_vector):
         return False
     else:
         return True
+
+def query_fancier(alist):
+    new_query = []
+    for word in alist:
+        new_query.append(word)
+        for syn in get_synset(word):
+            new_query.append(syn.lower())
+    return new_query
 
 #Function needs to return a sequence for flatmap
 def uni_grams(line):
@@ -65,6 +75,23 @@ def tri_grams(line):
 
     return sequence
 
+#Function needs to return a sequence for flatmap
+def quad_grams(line):
+    line = line.replace(" n't", "n't").replace(' \' ', '')
+    sequence = []
+    words = line.strip().split(' ')
+    for i in range(len(words) - 3):
+        
+        first_quad_gram = '{0}'.format(words[i]).lower()
+        second_quad_gram = '{0}'.format(words[i + 1]).lower()
+        third_quad_gram = '{0}'.format(words[i + 2]).lower()
+        fourth_quad_gram = '{0}'.format(words[i + 3]).lower()
+        if first_quad_gram not in ENGLISH_STOP_WORDS and second_quad_gram not in ENGLISH_STOP_WORDS and third_quad_gram not in ENGLISH_STOP_WORDS and fourth_quad_gram not in ENGLISH_STOP_WORDS:
+            sequence.append('{0} {1} {2} {3}'.format(first_quad_gram, second_quad_gram, third_quad_gram, fourth_quad_gram))
+
+    return sequence
+
+
 def vector_map(line, n_gram_model):
     new_vect = np.zeros(len(n_gram_model), np.int)
     fixed_line = line.replace(" n't", "n't").replace(' \' ', '').lower()
@@ -96,51 +123,49 @@ if len(sys.argv) < 3:
     query = bi_grams('Describe the activities of Morris Dees and the Southern Poverty Law Center. '.lower())
 else:
     logFile = 'Old_Summarization_Files/ROUGE/DUC-2007/docs/' + sys.argv[1] + '/'
-    query = bi_grams(sys.argv[2].lower())
-
-print logFile
-
-print repr(query)
-
-print '\n\n\n\n\n\n'
-
-# sc = SparkContext("local", "Summarizer App", pyFiles=['Spark_Stuff/Spark_Summarization_Basic.py', 'Spark_Stuff/Stop_words.py'])
-# logData = sc.textFile(logFile).cache()
-
-# #Create Models
-# #unigrams = logData.flatMap(uni_grams).map(lambda word: (word, 1)).reduceByKey(lambda a, b: a + b)
-# bigrams = logData.filter(lambda x: query_filter(x, query)).flatMap(bi_grams).map(lambda word: (word, 1)).reduceByKey(lambda a, b: a + b)
-# trigrams = logData.filter(lambda x: query_filter(x, query)).flatMap(bi_grams).map(lambda word: (word, 1)).reduceByKey(lambda a, b: a + b)
-
-# #Get top 50 
-# #set_of_uni = np.array(unigrams.takeOrdered(30, key=lambda x: -x[1]))
-# set_of_bi = np.array(bigrams.takeOrdered(50, key=lambda x: -x[1]))
-# set_of_tri = np.array(trigrams.takeOrdered(50, key=lambda x: -x[1]))
-
-# model = np.concatenate((set_of_bi, set_of_tri))
-
-# #Blank Summary
-# summary = "", np.zeros(len(model), np.int)
-
-# used = []
-# count = 0
-# #Future: Make is an np array?
-# vect_sent_tuple = logData.filter(lambda x: query_filter(x, query)).map(lambda x: vector_map(x, model)).reduceByKey(lambda a, b: a).filter(lambda x: filter_zero_vectors(x[1])).cache()
+    query = uni_grams(sys.argv[2].lower())
 
 
-# while len(summary[0].split(' ')) < 250:
-#     summary_set = vect_sent_tuple.map(lambda x: summary_mapper(x, summary)).takeOrdered(1, lambda x: -x[2])
-#     new_summary = (summary[0] + summary_set[0][0] + '\n', summary_set[0][1])
-#     score = summary_set[0][2]
+sc = SparkContext("local", "Summarizer App", pyFiles=['Spark_Stuff/Spark_Summarization_Basic.py', 'Spark_Stuff/Stop_words.py', 'Spark_Stuff/tokenizers.py'])
+logData = sc.textFile(logFile).cache()
 
-#     if score < 2:
-#         break
+#query = query_fancier(query)
 
-#     summary = new_summary
-#     count += 1
+#Create Models
+unigrams = logData.filter(lambda x: query_filter(x, query)).flatMap(uni_grams).map(lambda word: (word, 1)).reduceByKey(lambda a, b: a + b)
+bigrams = logData.filter(lambda x: query_filter(x, query)).flatMap(bi_grams).map(lambda word: (word, 1)).reduceByKey(lambda a, b: a + b)
+trigrams = logData.filter(lambda x: query_filter(x, query)).flatMap(tri_grams).map(lambda word: (word, 1)).reduceByKey(lambda a, b: a + b)
+quadgrams = logData.filter(lambda x: query_filter(x, query)).flatMap(quad_grams).map(lambda word: (word, 1)).reduceByKey(lambda a, b: a + b)
 
-# with open('summary.txt', 'w') as f:
-#     f.write(summary[0].replace(' , ', ', ').replace(' .', '.').replace(' n\'t', 'n\'t').replace(' \'s', '\'s'))
+#Get top 50 
+set_of_uni = np.array(unigrams.takeOrdered(50, key=lambda x: -x[1]))
+set_of_bi = np.array(bigrams.takeOrdered(30, key=lambda x: -x[1]))
+set_of_tri = np.array(trigrams.takeOrdered(40, key=lambda x: -x[1]))
+set_of_quad = np.array(trigrams.takeOrdered(5, key=lambda x: -x[1]))
+
+model = np.concatenate((set_of_uni, set_of_bi, set_of_tri, set_of_quad))
+
+#Blank Summary
+summary = "", np.zeros(len(model), np.int)
+
+used = []
+count = 0
+#Future: Make is an np array?
+vect_sent_tuple = logData.filter(lambda x: query_filter(x, query)).map(lambda x: vector_map(x, model)).reduceByKey(lambda a, b: a).filter(lambda x: filter_zero_vectors(x[1])).cache()
+
+while len(summary[0].split(' ')) < 250:
+    summary_set = vect_sent_tuple.map(lambda x: summary_mapper(x, summary)).takeOrdered(1, lambda x: -x[2])
+    new_summary = (summary[0] + summary_set[0][0] + '\n', summary_set[0][1])
+    score = summary_set[0][2]
+
+    if score == 0:
+        break
+
+    summary = new_summary
+    count += 1
+
+with open('summary.txt', 'w') as f:
+    f.write(summary[0].replace(' , ', ', ').replace(' .', '.').replace(' n\'t', 'n\'t').replace(' \'s', '\'s'))
 
 
 

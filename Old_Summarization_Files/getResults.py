@@ -2,7 +2,7 @@ import re
 import sys
 from itertools import groupby
 
-with open('ROUGE/ROUGE-EVAL/ROUGE.out') as f:
+with open('/Users/jonathanburns/Development/SummerResearch/trec2014/Old_Summarization_Files/ROUGE/ROUGE-EVAL/ROUGE.out') as f:
     content = f.readlines()
 
 scores = []

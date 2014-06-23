@@ -17,11 +17,16 @@ class LemmaTokenizer(object):
 #Now also includes hypernyms (Hopefully)
 def get_synset(token):
     syn_sets = wn.synsets(token)
-    nested_lemmas = [s.lemmas for s in syn_sets]
-    lemmas = []
-    for lemma_list in nested_lemmas:
-        for lemma in lemma_list:
-            lemmas.append(lemma.name.replace('_', ' '))
+    # nested_lemmas = [s.lemmas for s in syn_sets]
+    # lemmas = []
+    # for lemma_list in nested_lemmas:
+    #     for lemma in lemma_list:
+    #         lemmas.append(lemma.name.replace('_', ' '))
+
+    if len(syn_sets) == 0:
+        return [token]
+    words = syn_sets[0].lemmas
+    return [word.name for word in words]
 
     # if len(syn_sets) > 1:
     #     holder_for_hypers = syn_sets[0].hypernyms()

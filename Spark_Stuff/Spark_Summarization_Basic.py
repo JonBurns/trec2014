@@ -5,18 +5,14 @@ import numpy as np
 import sys
 
 from tokenizers import get_synset
+
     
 
 def query_filter(line, query):
-    count = 0
     for word in query:
-        if word not in ENGLISH_STOP_WORDS and word in line.lower():
-            count += 1
-
-    if count > 0:
-        return True
-    else:
-        return False
+        if word in line.lower():
+            return True
+    return False
 
 def filter_zero_vectors(np_vector):
     summation = np.sum(np_vector)
@@ -25,13 +21,13 @@ def filter_zero_vectors(np_vector):
     else:
         return True
 
-def query_fancier(alist):
-    new_query = []
-    for word in alist:
-        new_query.append(word)
-        for syn in get_synset(word):
-            new_query.append(syn.lower())
-    return new_query
+# def get_like_words(aword):
+#     synset = wn.synsets(aword)
+#     if len(synset) == 0:
+#         return [aword]
+
+#     words = synset[0].lemmas
+#     return [word.name for word in words]
 
 #Function needs to return a sequence for flatmap
 def uni_grams(line):
@@ -96,10 +92,12 @@ def vector_map(line, n_gram_model):
     new_vect = np.zeros(len(n_gram_model), np.int)
     fixed_line = line.replace(" n't", "n't").replace(' \' ', '').lower()
 
+    #n_gram_model is stored as (word, score)
     for i in range(len(n_gram_model)):
-        if n_gram_model[i][0] in fixed_line:
+        word = n_gram_model[i][0] 
+        if word in fixed_line:
             new_vect[i] = 1
-
+                
     return line, new_vect
 
 def vector_or_adder(vector_one, vector_two):
@@ -111,8 +109,12 @@ def vector_or_adder(vector_one, vector_two):
     return new_vect
 
 def summary_mapper(sentence_vector, summary_vector):
+    #sentence_vector is (sentence, vector)
     addition_vector = vector_or_adder(sentence_vector[1], summary_vector[1])
     score = np.sum(addition_vector) - np.sum(summary_vector[1])
+    for i in range(len(addition_vector)/10):
+        if addition_vector[i] == 1:
+            score += 1
     return sentence_vector[0], addition_vector, score
 
 
@@ -120,16 +122,16 @@ def summary_mapper(sentence_vector, summary_vector):
 
 if len(sys.argv) < 3:
     logFile = "Old_Summarization_Files/ROUGE/DUC-2007/docs/D0701A/"  # Should be some file on your system
-    query = bi_grams('Describe the activities of Morris Dees and the Southern Poverty Law Center. '.lower())
+    query = uni_grams('Describe the activities of Morris Dees and the Southern Poverty Law Center. '.lower())
+    query = [word for word in query if word not in ENGLISH_STOP_WORDS]
 else:
     logFile = 'Old_Summarization_Files/ROUGE/DUC-2007/docs/' + sys.argv[1] + '/'
-    query = uni_grams(sys.argv[2].lower())
+    query = uni_grams(sys.argv[2].lower().replace('.', ''))
+    query = [word for word in query if word not in ENGLISH_STOP_WORDS]
 
 
 sc = SparkContext("local", "Summarizer App", pyFiles=['Spark_Stuff/Spark_Summarization_Basic.py', 'Spark_Stuff/Stop_words.py', 'Spark_Stuff/tokenizers.py'])
 logData = sc.textFile(logFile).cache()
-
-#query = query_fancier(query)
 
 #Create Models
 unigrams = logData.filter(lambda x: query_filter(x, query)).flatMap(uni_grams).map(lambda word: (word, 1)).reduceByKey(lambda a, b: a + b)
@@ -148,7 +150,7 @@ model = np.concatenate((set_of_uni, set_of_bi, set_of_tri, set_of_quad))
 #Blank Summary
 summary = "", np.zeros(len(model), np.int)
 
-used = []
+
 count = 0
 #Future: Make is an np array?
 vect_sent_tuple = logData.filter(lambda x: query_filter(x, query)).map(lambda x: vector_map(x, model)).reduceByKey(lambda a, b: a).filter(lambda x: filter_zero_vectors(x[1])).cache()
@@ -162,7 +164,6 @@ while len(summary[0].split(' ')) < 250:
         break
 
     summary = new_summary
-    count += 1
 
 with open('summary.txt', 'w') as f:
     f.write(summary[0].replace(' , ', ', ').replace(' .', '.').replace(' n\'t', 'n\'t').replace(' \'s', '\'s'))

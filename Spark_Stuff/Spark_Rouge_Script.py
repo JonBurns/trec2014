@@ -15,7 +15,7 @@ for i in range(0, len(contents) - 1, 3):
 
 ###MAKE CALLS###
 
-test_name = 'Spark_test_4_with_tri_40_bi_30_uni_60'
+test_name = 'Spark_Index_Pos_Reward_1'
 
 subprocess.call('touch summary.txt', shell = True)
 

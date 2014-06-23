@@ -34,3 +34,4 @@ Old_Summarization_Files/mrjob_stuff/old/
 Old_Summarization_Files/mrjob_stuff/test.py
 test.txt
 stop_word_creater.py
+*.txt

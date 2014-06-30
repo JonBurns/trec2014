@@ -7,7 +7,6 @@ import sys
 from tokenizers import get_synset
 
     
-
 def query_filter(line, query):
     for word in query:
         if word in line.lower():
@@ -21,15 +20,6 @@ def filter_zero_vectors(np_vector):
     else:
         return True
 
-# def get_like_words(aword):
-#     synset = wn.synsets(aword)
-#     if len(synset) == 0:
-#         return [aword]
-
-#     words = synset[0].lemmas
-#     return [word.name for word in words]
-
-#Function needs to return a sequence for flatmap
 def uni_grams(line):
     line = line.replace(" n't", "n't").replace(' \' ', '')
     sequence = []
@@ -117,14 +107,23 @@ def summary_mapper(sentence_vector, summary_vector):
             score += 1
     return sentence_vector[0], addition_vector, score
 
-
+if len(sys.argv) < 6:
+    uni_perc = .04
+    bi_perc = .035
+    tri_perc = .11
+else:
+    uni_perc = float(sys.argv[3])
+    bi_perc = float(sys.argv[4])
+    tri_perc = float(sys.argv[5])
 
 
 if len(sys.argv) < 3:
+    title = 'D0701A'
     logFile = "Old_Summarization_Files/ROUGE/DUC-2007/docs/D0701A/"  # Should be some file on your system
     query = uni_grams('Describe the activities of Morris Dees and the Southern Poverty Law Center. '.lower())
     query = [word for word in query if word not in ENGLISH_STOP_WORDS]
 else:
+    title = sys.argv[1]
     logFile = 'Old_Summarization_Files/ROUGE/DUC-2007/docs/' + sys.argv[1] + '/'
     query = uni_grams(sys.argv[2].lower().replace('.', ''))
     query = [word for word in query if word not in ENGLISH_STOP_WORDS]
@@ -137,21 +136,30 @@ logData = sc.textFile(logFile).cache()
 unigrams = logData.filter(lambda x: query_filter(x, query)).flatMap(uni_grams).map(lambda word: (word, 1)).reduceByKey(lambda a, b: a + b)
 bigrams = logData.filter(lambda x: query_filter(x, query)).flatMap(bi_grams).map(lambda word: (word, 1)).reduceByKey(lambda a, b: a + b)
 trigrams = logData.filter(lambda x: query_filter(x, query)).flatMap(tri_grams).map(lambda word: (word, 1)).reduceByKey(lambda a, b: a + b)
-quadgrams = logData.filter(lambda x: query_filter(x, query)).flatMap(quad_grams).map(lambda word: (word, 1)).reduceByKey(lambda a, b: a + b)
+#quadgrams = logData.filter(lambda x: query_filter(x, query)).flatMap(quad_grams).map(lambda word: (word, 1)).reduceByKey(lambda a, b: a + b)
+
+num_uni = unigrams.count()
+num_bi = bigrams.count()
+num_tri = trigrams.count()
+
+uni = int(round(num_uni * uni_perc, 0))
+bi = int(round(num_bi * bi_perc, 0))
+tri = int(round(num_tri * tri_perc, 0))
 
 #Get top 50 
-set_of_uni = np.array(unigrams.takeOrdered(50, key=lambda x: -x[1]))
-set_of_bi = np.array(bigrams.takeOrdered(30, key=lambda x: -x[1]))
-set_of_tri = np.array(trigrams.takeOrdered(40, key=lambda x: -x[1]))
-set_of_quad = np.array(trigrams.takeOrdered(5, key=lambda x: -x[1]))
+set_of_uni = np.array(unigrams.takeOrdered(uni, key=lambda x: -x[1]))
+set_of_bi = np.array(bigrams.takeOrdered(bi, key=lambda x: -x[1]))
+sec_set_of_bi = set_of_bi[:5]
+#test_1 = np.array(bigrams.takeOrdered(5, key=lambda x: -x[1]))
+set_of_tri = np.array(trigrams.takeOrdered(tri, key=lambda x: -x[1]))
+sec_set_of_tri = set_of_tri[:5]
+#test_2 = np.array(trigrams.takeOrdered(5, key=lambda x: -x[1]))
 
-model = np.concatenate((set_of_uni, set_of_bi, set_of_tri, set_of_quad))
+model = np.concatenate((set_of_uni, set_of_bi, sec_set_of_bi, set_of_tri, sec_set_of_tri))
 
 #Blank Summary
 summary = "", np.zeros(len(model), np.int)
 
-
-count = 0
 #Future: Make is an np array?
 vect_sent_tuple = logData.filter(lambda x: query_filter(x, query)).map(lambda x: vector_map(x, model)).reduceByKey(lambda a, b: a).filter(lambda x: filter_zero_vectors(x[1])).cache()
 
@@ -168,11 +176,4 @@ while len(summary[0].split(' ')) < 250:
 with open('summary.txt', 'w') as f:
     f.write(summary[0].replace(' , ', ', ').replace(' .', '.').replace(' n\'t', 'n\'t').replace(' \'s', '\'s'))
 
-
-
-
-    # for item in range(len(summary_set[0][1])):
-    #     if summary_set[0][1][item] == 1 and item not in used:
-    #         print '{0}\t{1}'.format(item, model[item])
-    #         used.append(item)
 

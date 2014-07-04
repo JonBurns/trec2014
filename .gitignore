@@ -35,3 +35,5 @@ Old_Summarization_Files/mrjob_stuff/test.py
 test.txt
 stop_word_creater.py
 *.txt
+scala_tutorial_stuff/Spark_Scala/project/
+scala_tutorial_stuff/Spark_Scala/target/

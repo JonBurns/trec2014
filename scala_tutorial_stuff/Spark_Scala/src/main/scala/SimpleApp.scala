@@ -2,6 +2,8 @@
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkContext._
 import org.apache.spark.SparkConf
+import collection.mutable.ArrayBuffer
+import scala.util.control.Breaks._
 
 object SimpleApp {
     val ENGLISH_STOP_WORDS = List( "a", "about", "above", "across", "after", "afterwards", "again", "against",
@@ -103,6 +105,7 @@ object SimpleApp {
 
    val query = "activities Morris Dees Southern Poverty Law Center".toLowerCase().split(" ")
    var debug = ""
+
    def filterer(aline: String): Boolean = {
         var count: Int = 0
         for (word <- query) {
@@ -160,6 +163,43 @@ object SimpleApp {
     else true
   }
 
+  def vector_mapper(asentence: String, model: Array[(Int, String)]): (String, ArrayBuffer[Int]) = {
+    val new_sentence = asentence.replaceAll(" n't", "n't").replaceAll( " '", "").replaceAll( " [.]", "").replaceAll( "[.]", "").replaceAll( ",", "").replaceAll("'", "").replaceAll("`` ", "").replaceAll("`", "").replaceAll("   ", " ").replaceAll("  ", " ").replaceAll("\n", "").toLowerCase().trim
+    var vector: ArrayBuffer[Int] = collection.mutable.ArrayBuffer.fill(model.length)(0)
+    for (x <- (0 until vector.length - 1)) {
+        val word: String = model(x)._2
+        if (new_sentence contains word) {
+            vector(x) = 1
+        }
+
+    }
+    (asentence, vector)
+    
+  }
+
+  def score_mapper(sent_vector: (String, ArrayBuffer[Int]), summary_vector: ArrayBuffer[Int]): (String, ArrayBuffer[Int], Int) = {
+    var result_vector = vector_logical_OR(sent_vector._2, summary_vector)
+
+    var i = 0
+    var sum = 0
+    while(i < result_vector.length) {
+        sum += result_vector(i)
+        i += 1
+    }
+    (sent_vector._1, result_vector, sum)
+  }
+
+  def vector_logical_OR(vector_one: ArrayBuffer[Int], vector_two: ArrayBuffer[Int]): ArrayBuffer[Int] = {
+    var vector: ArrayBuffer[Int] = collection.mutable.ArrayBuffer.fill(vector_one.length)(0)
+
+    for (x <- (0 until vector.length)) {
+        if (vector_one(x) == 1 || vector_two(x) == 1) {
+            vector(x) = 1
+        }
+    }
+    vector
+  }
+
 
 
   def main(args: Array[String]) {
@@ -167,21 +207,28 @@ object SimpleApp {
     val conf = new SparkConf().setAppName("Simple Application")
     val sc = new SparkContext(conf)
     val logData = sc.textFile(logFile, 2).cache()
-    
+
     val uni_counts = logData.filter(filterer).flatMap(line => uni_string_fixer(line)).filter(filter_stop_words).map(word => (word, 1)).reduceByKey(_+_).map(tuple => (tuple._2, tuple._1)).sortByKey().top(20)
     val bi_counts = logData.filter(filterer).flatMap(line => bi_string_fixer(line)).filter(filter_stop_words).map(word => (word, 1)).reduceByKey(_+_).map(tuple => (tuple._2, tuple._1)).sortByKey().top(20)
     val tri_counts = logData.filter(filterer).flatMap(line => tri_string_fixer(line)).filter(filter_stop_words).map(word => (word, 1)).reduceByKey(_+_).map(tuple => (tuple._2, tuple._1)).sortByKey().top(20)
-    for (x <- uni_counts) {
-        println(x)
-    }
-    println("------_______------_______------_______------_______------_______------_______------_______------_______")
-    for (x <- bi_counts) {
-        println(x)
+
+    var model = uni_counts ++ bi_counts ++ tri_counts
+
+    val mapped_sentences = logData.map(sentence => vector_mapper(sentence, model)).sortByKey().cache()
+    var summary_vector: ArrayBuffer[Int] = collection.mutable.ArrayBuffer.fill(model.length)(0)
+    var summary = ("", summary_vector)
+
+    var scores = mapped_sentences.map(sent_vector => score_mapper(sent_vector, summary._2)).map(tuple => (tuple._3, (tuple._1, tuple._2))).sortByKey(false).take(1)
+
+    while (summary._1.split(" ").length < 250) {
+        var scores = mapped_sentences.map(sent_vector => score_mapper(sent_vector, summary._2)).map(tuple => (tuple._3, (tuple._1, tuple._2))).sortByKey(false).take(1)
+        var new_summary_sentence = summary._1 + "\n" + scores(0)._2._1
+        var new_summary_vector = scores(0)._2._2
+        summary = (new_summary_sentence, new_summary_vector)
     }
 
-    println("------_______------_______------_______------_______------_______------_______------_______------_______")
-    for (x <- tri_counts) {
-        println(x)
-    }
+    println(summary)
+
   }
+
 }

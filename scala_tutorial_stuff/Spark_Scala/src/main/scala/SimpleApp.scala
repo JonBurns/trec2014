@@ -208,11 +208,17 @@ object SimpleApp {
     val sc = new SparkContext(conf)
     val logData = sc.textFile(logFile, 2).cache()
 
-    val uni_counts = logData.filter(filterer).flatMap(line => uni_string_fixer(line)).filter(filter_stop_words).map(word => (word, 1)).reduceByKey(_+_).map(tuple => (tuple._2, tuple._1)).sortByKey().top(20)
-    val bi_counts = logData.filter(filterer).flatMap(line => bi_string_fixer(line)).filter(filter_stop_words).map(word => (word, 1)).reduceByKey(_+_).map(tuple => (tuple._2, tuple._1)).sortByKey().top(20)
-    val tri_counts = logData.filter(filterer).flatMap(line => tri_string_fixer(line)).filter(filter_stop_words).map(word => (word, 1)).reduceByKey(_+_).map(tuple => (tuple._2, tuple._1)).sortByKey().top(20)
+    val uni_counts = logData.filter(filterer).flatMap(line => uni_string_fixer(line)).filter(filter_stop_words).map(word => (word, 1)).reduceByKey(_+_).map(tuple => (tuple._2, tuple._1)).sortByKey().top(50)
+    val bi_counts = logData.filter(filterer).flatMap(line => bi_string_fixer(line)).filter(filter_stop_words).map(word => (word, 1)).reduceByKey(_+_).map(tuple => (tuple._2, tuple._1)).sortByKey().top(30)
+    val tri_counts = logData.filter(filterer).flatMap(line => tri_string_fixer(line)).filter(filter_stop_words).map(word => (word, 1)).reduceByKey(_+_).map(tuple => (tuple._2, tuple._1)).sortByKey().top(40)
+    val extra_uni = new Array[(Int, String)](5) 
+    Array.copy(uni_counts, 0, extra_uni, 0, 5)
+    val extra_bi = new Array[(Int, String)](5) 
+    Array.copy(bi_counts, 0, extra_bi, 0, 5)
+    val extra_tri = new Array[(Int, String)](5) 
+    Array.copy(tri_counts, 0, extra_tri, 0, 5)
 
-    var model = uni_counts ++ bi_counts ++ tri_counts
+    var model = uni_counts ++ bi_counts ++ tri_counts ++ extra_uni ++ extra_bi ++ extra_tri
 
     val mapped_sentences = logData.map(sentence => vector_mapper(sentence, model)).sortByKey().cache()
     var summary_vector: ArrayBuffer[Int] = collection.mutable.ArrayBuffer.fill(model.length)(0)

@@ -141,11 +141,28 @@ object NetworkWordCount {
     if (topUni != null && topBi != null) {
         val model = topUni ++ topBi
     
-
+        //We use our model here to create a tuple (sentence, vectorOfCoverage)
         var vectorizedSentences = lines.map(sentence => vector_mapper(sentence, model)).cache()
 
         var summary_vector: ArrayBuffer[Int] = collection.mutable.ArrayBuffer.fill(model.length)(0)
         var summary = ("", summary_vector)
+
+        while (summary._1.split(" ").length < 250) {
+        //Scores are calculated based on the vectorOfCoverage and what has already been covered, summary._2
+        var scores = vectorizedSentences.map(sent_vector => score_mapper(sent_vector, summary._2)).map(tuple => (tuple._3, (tuple._1, tuple._2))).transform(rdd => rdd.sortByKey(false))
+       
+        var topScore: Array[(Int, (String, ArrayBuffer[Int]))] = null
+
+        //We need to delve into the Dstream here to grab the top most score
+        scores.foreachRDD(rdd => {
+        val currentTopScore = rdd.take(1)
+        topScore = currentTopScore
+        println("\nTop Score:\n" + rdd.take(1).mkString("\n")) } )
+
+        var new_summary_sentence = summary._1 + "\n" + topScore(0)._2._1
+        var new_summary_vector = topScore(0)._2._2
+        summary = (new_summary_sentence, new_summary_vector)
+        }
     }
 
 

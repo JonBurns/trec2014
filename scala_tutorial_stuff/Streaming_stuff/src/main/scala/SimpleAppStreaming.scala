@@ -10,6 +10,8 @@ import org.apache.spark.streaming.{Seconds, StreamingContext}
 import org.apache.spark.streaming.StreamingContext._
 import org.apache.spark.storage.StorageLevel
 
+import collection.mutable.ArrayBuffer
+
 /**
  * Counts words in UTF8 encoded, '\n' delimited text received from the network every second.
  *
@@ -37,6 +39,46 @@ object NetworkWordCount {
 
     new_list
   }
+
+  def vector_mapper(asentence: String, model: Array[(Int, String)]): (String, ArrayBuffer[Int]) = {
+    val new_sentence = asentence.replaceAll(" n't", "n't").replaceAll( " '", "").replaceAll( " [.]", "").replaceAll( "[.]", "").replaceAll( ",", "").replaceAll("'", "").replaceAll("`` ", "").replaceAll("`", "").replaceAll("   ", " ").replaceAll("  ", " ").replaceAll("\n", "").toLowerCase().trim
+    var vector: ArrayBuffer[Int] = collection.mutable.ArrayBuffer.fill(model.length)(0)
+    for (x <- (0 until vector.length - 1)) {
+        val word: String = model(x)._2
+        if (new_sentence contains word) {
+            vector(x) = 1
+        }
+
+    }
+    (asentence, vector)
+    
+  }
+
+    def score_mapper(sent_vector: (String, ArrayBuffer[Int]), summary_vector: ArrayBuffer[Int]): (String, ArrayBuffer[Int], Int) = {
+    var result_vector = vector_logical_OR(sent_vector._2, summary_vector)
+
+    var i = 0
+    var sum = 0
+    while(i < result_vector.length) {
+        sum += result_vector(i)
+        i += 1
+    }
+    (sent_vector._1, result_vector, sum)
+  }
+
+  def vector_logical_OR(vector_one: ArrayBuffer[Int], vector_two: ArrayBuffer[Int]): ArrayBuffer[Int] = {
+    var vector: ArrayBuffer[Int] = collection.mutable.ArrayBuffer.fill(vector_one.length)(0)
+
+    for (x <- (0 until vector.length)) {
+        if (vector_one(x) == 1 || vector_two(x) == 1) {
+            vector(x) = 1
+        }
+    }
+    vector
+  }
+
+
+
   def main(args: Array[String]) {
     // if (args.length < 2) {
     //   System.err.println("Usage: NetworkWordCount <hostname> <port>")
@@ -71,12 +113,29 @@ object NetworkWordCount {
     val uniStateDstream = unigramDstream.updateStateByKey[Int](updateFunc)
     val biStateDstream = bigramsDstream.updateStateByKey[Int](updateFunc)
 
-    uniStateDstream.print()
-    uniStateDstream.saveAsTextFiles("test-uni", "txt")
+    val uniSorted = uniStateDstream.map { case(tag, count) =>  (count, tag) }.transform(rdd => rdd.sortByKey(false))
+    val biSorted = biStateDstream.map { case(tag, count) =>  (count, tag) }.transform(rdd => rdd.sortByKey(false))
 
-    biStateDstream.print()
-    biStateDstream.saveAsTextFiles("test-bi", "txt")
+    var topUni: Array[(Int, String)] = null
+    var topBi: Array[(Int, String)] = null
+
+
+
+    //We need to take the top # of unigrams, this code will store them in topUni
+    uniSorted.foreachRDD(rdd => {
+    val currentTopUniCounts = rdd.take(10)
+    topUni = currentTopUniCounts
+    println("\nTop 10 Uni:\n" + rdd.take(10).mkString("\n")) } )
+
+    //We need to take the top # of bigrams, this code will store them in topBi
+    biSorted.foreachRDD(rdd => {
+    val currentTopBiCounts = rdd.take(15)
+    topBi = currentTopBiCounts
+    println("\nTop 15 Bi:\n" + rdd.take(15).mkString("\n")) } )
+
     
+
+
     ssc.start()
     ssc.awaitTermination()
   }

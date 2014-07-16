@@ -165,29 +165,36 @@ object NetworkWordCount {
     biSorted.foreachRDD(rdd => {
         summary_vector = collection.mutable.ArrayBuffer.fill(model.length)(0)
         summary = ("", summary_vector)
+        i = 0
     })
-    var scores = vectorizedSentences.map(sent_vector => score_mapper(sent_vector, summary._2)).map(tuple => (tuple._3, (tuple._1, tuple._2))).transform(rdd => rdd.sortByKey(false)).persist()
-    scores.print()
 
     while (i < 3) {//summary._1.split(" ").length < 250) {
+        var scores = vectorizedSentences.map(sent_vector => score_mapper(sent_vector, summary._2)).map(tuple => (tuple._3, (tuple._1, tuple._2))).transform(rdd => rdd.sortByKey(false)).persist()
+
         // vectorizedSentences.print()
         //Scores are calculated based on the vectorOfCoverage and what has already been covered, summary._2
-        // scores.print()
-        //     var topScore: Array[(Int, (String, ArrayBuffer[Int]))] = null
+        //scores.print()
+        var topScore: Array[(Int, (String, ArrayBuffer[Int]))] = null
 
-        //     vectorizedSentences.print()
-        //     //We need to delve into the Dstream here to grab the top most score
-        //     // scores.foreachRDD(rdd => {
-        //     //     val currentTopScore = rdd.take(1)
-        //     //     topScore = currentTopScore
-        //     //     println("\nTop Score:\n" + rdd.take(1).mkString("\n")) } )
-        //     // scores.print()
-
-        //     // var new_summary_sentence = summary._1 + "\n" + topScore(0)._2._1
-        //     // var new_summary_vector = topScore(0)._2._2
-        //     // summary = (new_summary_sentence, new_summary_vector)
-
-        // }
+        //We need to delve into the Dstream here to grab the top most score
+        scores.foreachRDD(rdd => {
+            val currentTopScore = rdd.take(1)
+            topScore = currentTopScore
+            println("\nTop Score:\n" + rdd.take(1).mkString("\n")) 
+            var new_summary_sentence = summary._1 + "\n"// + topScore(0)._2._1 //<- Error
+            var test = topScore.length
+            println("\n\n\n\nTop Score Length: " + test + "\n\n\n\n")
+            if (test > 0) {
+                println("\n\n\n\n Oh nooooooooo \n\n\n\n")
+                var new_summary_sentence = summary._1 + "\n" + topScore(0)._2._1 //<- Error
+                var new_summary_vector = topScore(0)._2._2
+                summary = (new_summary_sentence, new_summary_vector)
+                println("\n\n\nSummary:\n" + summary._1)
+            }
+            // var new_summary_vector = topScore(0)._2._2
+            // summary = (new_summary_sentence, new_summary_vector)
+            // println("\n\n\nSummary:\n" + summary)
+        } )
         i = i + 1
     }
     ssc.start()

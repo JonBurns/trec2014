@@ -129,6 +129,19 @@ object NetworkWordCount {
         "whom", "whose", "why", "will", "willing", "wish", "with", "within", "without", "won't", "wonder", "would", 
         "would", "wouldn't", "x", "y", "yes", "yet", "you", "you'd", "you'll", "you're", "you've", "your", "yours", 
         "yourself", "yourselves", "z", "zero", ".'", ",'")
+    val query = "activities Morris Dees Southern Poverty Law Center".toLowerCase().split(" ")
+
+
+   def filterer(aline: String): Boolean = {
+        var count: Int = 0
+        for (word <- query) {
+            if (aline.toLowerCase() contains word) 
+                count += 1         
+        }
+        if (count > 0) true
+        else false
+    }
+
 
    def uni_string_fixer(astring: String): Array[String] = {
     /* replace(" n't", "n't").replace(' \' ', '') */
@@ -199,28 +212,28 @@ object NetworkWordCount {
   }
 
   def summary_scoreer(summary: String, model: Array[(Int, String)], currentSummaryVector: ArrayBuffer[Int]): (Int, (String, ArrayBuffer[Int])) = {
+    
     var sentences = summary.split("\n")
+    //println("\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n\n\n\nSummary: " + summary + "\n")
+    //println("sentences: " + sentences + "\n")
+    //println("Sentences.length: " + sentences.length + "\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n\n\n\n")
     var vectorizedSentenceHolder: ArrayBuffer[(String, ArrayBuffer[Int])] = new ArrayBuffer[(String, ArrayBuffer[Int])]
     var scoreHolder: ArrayBuffer[(String, ArrayBuffer[Int], Int)] = new ArrayBuffer[(String, ArrayBuffer[Int], Int)]
     for (sentence <- sentences) {
         vectorizedSentenceHolder.append(vector_mapper(sentence, model))
     }
-    var max = 0
-    var max_sentence: (String, ArrayBuffer[Int], Int) = null
+    
+    var max_sentence: (String, ArrayBuffer[Int], Int) = ("", collection.mutable.ArrayBuffer.fill(model.length)(0), 0)
     for (sentVector <- vectorizedSentenceHolder) {
         var score = score_mapper(sentVector, currentSummaryVector)
         scoreHolder.append(score)
-        if (score._3 > max) {
+        //println("\n\n############################################\n\ncur max: " + max + "\n\nscore._1: " + score._1 + "\nscore._2: " + score._2 + "\nscore._3: " + score._3 + " \n\n################################################################")
+        if (score._3 > max_sentence._3) {
             max_sentence = score
         }
     }
     //test return
-    if (max_sentence != null){
-        (max_sentence._3, (max_sentence._1, max_sentence._2))
-    }
-    else {
-        (-1, ("", ArrayBuffer(1)))
-    }
+    (max_sentence._3, (max_sentence._1, max_sentence._2))
     // (1, ("", ArrayBuffer(1)))
   }
 
@@ -248,8 +261,8 @@ object NetworkWordCount {
     // Note that no duplication in storage level only for running locally.
     // Replication necessary in distributed scenario for fault tolerance.
     val lines = ssc.socketTextStream("localhost", 9999, StorageLevel.MEMORY_AND_DISK_SER)
-    val unigrams = lines.flatMap(uni_string_fixer(_))
-    val bigrams = lines.flatMap(bi_string_fixer(_))
+    val unigrams = lines.filter(filterer).flatMap(uni_string_fixer(_))
+    val bigrams = lines.filter(filterer).flatMap(bi_string_fixer(_))
 
     val unigramDstream = unigrams.map(x => (x, 1))
     val bigramsDstream = bigrams.map(x => (x, 1))
@@ -315,92 +328,93 @@ object NetworkWordCount {
     }
     })
 
-    //     // //We use our model here to create a tuple (sentence, vectorOfCoverage)
+        // //We use our model here to create a tuple (sentence, vectorOfCoverage)
 
-    // var vectorizedSentences = lines.map(sentence => vector_mapper(sentence, model))
+    var vectorizedSentences = lines.map(sentence => vector_mapper(sentence, model))
 
-    // var summary_vector: ArrayBuffer[Int] = collection.mutable.ArrayBuffer.fill(model.length)(0)
-    // var summary = ("", summary_vector)
+    var summary_vector: ArrayBuffer[Int] = collection.mutable.ArrayBuffer.fill(model.length)(0)
+    var summary = ("", summary_vector)
 
-    // // vectorizedSentences.print()
-    // var i = 0
-    // var old_summary = ""
-    // biSorted.foreachRDD(rdd => {
-    //     summary_vector = collection.mutable.ArrayBuffer.fill(model.length)(0)
-    //     if (summary._1 != "") {
-    //         old_summary = summary._1
-    //         summary = ("", summary_vector)
-    //     }
-    //     else {
-    //         summary = ("", summary_vector)
-    //     }
-    // })
+    // vectorizedSentences.print()
+    var i = 0
+    var old_summary = ""
+    biSorted.foreachRDD(rdd => {
+        summary_vector = collection.mutable.ArrayBuffer.fill(model.length)(0)
+        if (summary._1 != "") {
+            old_summary = summary._1
+            summary = ("", summary_vector)
+        }
+        else {
+            summary = ("", summary_vector)
+        }
+    })
 
-    // while (i < 10) {
+    while (i < 5) {
 
-    //     var scores = vectorizedSentences.map(sent_vector => score_mapper(sent_vector, summary._2)).map(tuple => (tuple._3, (tuple._1, tuple._2))).transform(rdd => rdd.sortByKey(false)).persist()
-    //     // vectorizedSentences.print()
-    //     //Scores are calculated based on the vectorOfCoverage and what has already been covered, summary._2
-    //     //scores.print()
-    //     var topScore: Array[(Int, (String, ArrayBuffer[Int]))] = null
+        var scores = vectorizedSentences.map(sent_vector => score_mapper(sent_vector, summary._2)).map(tuple => (tuple._3, (tuple._1, tuple._2))).transform(rdd => rdd.sortByKey(false)).persist()
+        // vectorizedSentences.print()
+        //Scores are calculated based on the vectorOfCoverage and what has already been covered, summary._2
+        //scores.print()
+        var topScore: Array[(Int, (String, ArrayBuffer[Int]))] = null
 
-    //     //We need to delve into the Dstream here to grab the top most score
-    //     scores.foreachRDD(rdd => {
-    //         val oldScore = 0    
-    //         val currentTopScore = rdd.take(1)
-    //         topScore = currentTopScore
+        //We need to delve into the Dstream here to grab the top most score
+        scores.foreachRDD(rdd => {
+            val oldScore = 0    
+            val currentTopScore = rdd.take(1)
+            topScore = currentTopScore
 
-    //         var i = 0
-    //         var sum = 0
-    //         while(i < summary._2.length) {
-    //             sum += summary._2(i)
-    //             i += 1
-    //         }
+            var i = 0
+            var sum = 0
+            while(i < summary._2.length) {
+                sum += summary._2(i)
+                i += 1
+            }
 
-    //         var old_summary_top_score = summary_scoreer(old_summary, model, summary._2) 
-    //         println("\nCurrent Summary Total: " + sum + "\n\n") 
-    //         println("\nTop Score:\n" + rdd.take(1).mkString("\n")) 
-    //         println("\nTop Old Score:\n" + old_summary_top_score._2._1 + " " + old_summary_top_score._1 + "\n\n\n") 
+            var old_summary_top_score = summary_scoreer(old_summary, model, summary._2) 
+            println("\nCurrent Summary Total: " + sum + "\n\n") 
+            println("\nTop Score:\n" + rdd.take(1).mkString("\n")) 
+            println("\nTop Old Score:\n" + old_summary_top_score._2._1 + " " + old_summary_top_score._1 + "\n\n\n") 
 
-    //         if (topScore.length == 0)  {
-    //             summary = (old_summary, ArrayBuffer(0))
-    //         }
-    //         else if ((topScore.length > 0) || (old_summary != "")) { //Or old summary
-    //             println("\n\n\n\n Summary Creation sentence: " + i + "\n\n")
+            if (topScore.length == 0)  {
+                val new_vector = collection.mutable.ArrayBuffer.fill(model.length)(0)
+                summary = (old_summary, new_vector)
+            }
+            else if ((topScore.length > 0) || (old_summary != "")) { //Or old summary
+                println("\n\n\n\n Summary Creation sentence: " + i + "\n\n")
 
-    //             if ((topScore(0)._1 >= old_summary_top_score._1) && (topScore(0)._1 - sum != 0)) {
-    //                 var new_summary_sentence = summary._1 + "\n" + topScore(0)._2._1 //<- Error
-    //                 var new_summary_vector = topScore(0)._2._2
+                if ((topScore(0)._1 >= old_summary_top_score._1) && (topScore(0)._1 - sum != 0)) {
+                    var new_summary_sentence = summary._1 + "\n" + "N" + topScore(0)._2._1 //<- Error
+                    var new_summary_vector = topScore(0)._2._2
 
 
 
-    //                 println("\n\n~~~~~~~~~~~~~New Chosen~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nSummary:\n Old Vector: " + summary._2 + "\n New Vector: " + new_summary_vector + "\n Difference: " + (topScore(0)._1 - sum)) 
-    //                 summary = (new_summary_sentence, new_summary_vector)
-    //                 println("\n\n" + summary._1 + "\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n")
+                    println("\n\n~~~~~~~~~~~~~New Chosen~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nSummary:\n Old Vector: " + summary._2 + "\n New Vector: " + new_summary_vector + "\n Difference: " + (topScore(0)._1 - sum)) 
+                    summary = (new_summary_sentence, new_summary_vector)
+                    println("\n\n" + summary._1 + "\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n")
                     
-    //             }
+                }
 
-    //             else if ((topScore(0)._1 < old_summary_top_score._1) && (old_summary_top_score._1 - sum != 0)) {
-    //                 var new_summary_sentence = summary._1 + "\n" + old_summary_top_score._2._1 //<- Error
-    //                 var new_summary_vector = old_summary_top_score._2._2
+                else if ((topScore(0)._1 < old_summary_top_score._1) && (old_summary_top_score._1 - sum != 0)) {
+                    var new_summary_sentence = summary._1 + "\n" + "O" + old_summary_top_score._2._1 //<- Error
+                    var new_summary_vector = old_summary_top_score._2._2
 
 
 
-    //                 println("\n\n~~~~~~~~~~~~~Old Chosen~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nSummary:\n Old Vector: " + summary._2 + "\n New Vector: " + new_summary_vector + "\n Difference: " + (old_summary_top_score._1 - sum))
-    //                 summary = (new_summary_sentence, new_summary_vector)
-    //                 println("\n\n" + summary._1 + "\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n")
-    //                 //old_summary = old_summary.split("\n").filter(sentence => !(summary._1 contains sentence)).mkString("\n")
-    //             }
-    //             else {
-    //                 println("\n\n\n\n0 Added bonus, no sentence added!\n")
-    //                 println("\n\n" + summary._1 + "\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n\n")
-    //             }
+                    println("\n\n~~~~~~~~~~~~~Old Chosen~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nSummary:\n Old Vector: " + summary._2 + "\n New Vector: " + new_summary_vector + "\n Difference: " + (old_summary_top_score._1 - sum))
+                    summary = (new_summary_sentence, new_summary_vector)
+                    println("\n\n" + summary._1 + "\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n")
+                    //old_summary = old_summary.split("\n").filter(sentence => !(summary._1 contains sentence)).mkString("\n")
+                }
+                else {
+                    println("\n\n\n\n0 Added bonus, no sentence added!\n")
+                    println("\n\n" + summary._1 + "\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n\n")
+                }
 
-    //         }
-    //     } )
+            }
+        } )
 
-    //     i = i + 1
-    // }
+        i = i + 1
+    }
     ssc.start()
     ssc.awaitTermination()
   }

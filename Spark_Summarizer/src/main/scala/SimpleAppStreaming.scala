@@ -167,6 +167,21 @@ object NetworkWordCount {
     new_list
   }
 
+  def tri_string_fixer(astring: String): Array[String] = {
+    /* replace(" n't", "n't").replace(' \' ', '') */
+    val new_string = astring.replaceAll(" n't", "n't").replaceAll( " '", "").replaceAll( " [.]", "").replaceAll( "[.]", "").replaceAll( ",", "").replaceAll("'", "").replaceAll("`` ", "").replaceAll("`", "").replaceAll("   ", " ").replaceAll("  ", " ").replaceAll("\n", "").toLowerCase().trim
+
+    val list_of_words = new_string.split(" ").filter(item => !(ENGLISH_STOP_WORDS contains item))
+
+    var new_list: Array[String] = Array[String]()
+    for (x <- (0 to list_of_words.length - 3)) {
+        var temp_string = list_of_words(x).toString() + " " + list_of_words(x + 1) + " " + list_of_words(x + 2).toString()
+        new_list = new_list :+ temp_string
+      }
+
+    new_list
+  }
+
 
 
   def vector_mapper(asentence: String, model: Array[(Int, String)]): (String, ArrayBuffer[Int]) = {
@@ -222,12 +237,12 @@ object NetworkWordCount {
     for (sentence <- sentences) {
         vectorizedSentenceHolder.append(vector_mapper(sentence, model))
     }
-    
+
     var max_sentence: (String, ArrayBuffer[Int], Int) = ("", collection.mutable.ArrayBuffer.fill(model.length)(0), 0)
     for (sentVector <- vectorizedSentenceHolder) {
         var score = score_mapper(sentVector, currentSummaryVector)
         scoreHolder.append(score)
-        //println("\n\n############################################\n\ncur max: " + max + "\n\nscore._1: " + score._1 + "\nscore._2: " + score._2 + "\nscore._3: " + score._3 + " \n\n################################################################")
+       
         if (score._3 > max_sentence._3) {
             max_sentence = score
         }
@@ -261,52 +276,72 @@ object NetworkWordCount {
     // Note that no duplication in storage level only for running locally.
     // Replication necessary in distributed scenario for fault tolerance.
     val lines = ssc.socketTextStream("localhost", 9999, StorageLevel.MEMORY_AND_DISK_SER)
+
     val unigrams = lines.filter(filterer).flatMap(uni_string_fixer(_))
     val bigrams = lines.filter(filterer).flatMap(bi_string_fixer(_))
+    val trigrams = lines.filter(filterer).flatMap(tri_string_fixer(_))
 
-    val unigramDstream = unigrams.map(x => (x, 1))
+    val unigramsDstream = unigrams.map(x => (x, 1))
     val bigramsDstream = bigrams.map(x => (x, 1))
+    val trigramsDstream = trigrams.map(x => (x, 1))
 
-    val uniStateDstream = unigramDstream.updateStateByKey[Int](updateFunc)
+    val uniStateDstream = unigramsDstream.updateStateByKey[Int](updateFunc)
     val biStateDstream = bigramsDstream.updateStateByKey[Int](updateFunc)
+    val triStateDstream = trigramsDstream.updateStateByKey[Int](updateFunc)
 
-    val currentUniSorted= unigramDstream.reduceByKey(_ + _).map { case(tag, count) =>  (count, tag) }.transform(rdd => rdd.sortByKey(false))
+    val currentUniSorted= unigramsDstream.reduceByKey(_ + _).map { case(tag, count) =>  (count, tag) }.transform(rdd => rdd.sortByKey(false))
     val currentBiSorted = bigramsDstream.reduceByKey(_ + _).map { case(tag, count) =>  (count, tag) }.transform(rdd => rdd.sortByKey(false))
+    val currentTriSorted = trigramsDstream.reduceByKey(_ + _).map {case(tag, count) =>  (count, tag) }.transform(rdd => rdd.sortByKey(false))
 
     val uniSorted = uniStateDstream.map { case(tag, count) =>  (count, tag) }.transform(rdd => rdd.sortByKey(false))
     val biSorted = biStateDstream.map { case(tag, count) =>  (count, tag) }.transform(rdd => rdd.sortByKey(false))
+    val triSorted = triStateDstream.map { case(tag, count) =>  (count, tag) }.transform(rdd => rdd.sortByKey(false))
 
     var topUni: Array[(Int, String)] = null
     var topBi: Array[(Int, String)] = null
+    var topTri: Array[(Int, String)] = null
 
     var currentTopUni: Array[(Int, String)] = null
     var currentTopBi: Array[(Int, String)] = null
+    var currentTopTri: Array[(Int, String)] = null
 
 
     //We need to take the top # of unigrams, this code will store them in topUni
     uniSorted.foreachRDD(rdd => {
     val currentTopUniCounts = rdd.take(20)
     topUni = currentTopUniCounts
-    println("\nTop 20 Uni(Stateful):\n" + rdd.take(20).mkString("\n"))
+    //println("\nTop 20 Uni(Stateful):\n" + rdd.take(20).mkString("\n"))
      } )
 
     //We need to take the top # of bigrams, this code will store them in topBi
     biSorted.foreachRDD(rdd => {
     val currentTopBiCounts = rdd.take(15)
     topBi = currentTopBiCounts
-    println("\nTop 15 Bi(Stateful):\n" + rdd.take(15).mkString("\n"))
+    //println("\nTop 15 Bi(Stateful):\n" + rdd.take(15).mkString("\n"))
+     } )
+
+    triSorted.foreachRDD(rdd => {
+    val currentTopTriCounts = rdd.take(10)
+    topTri = currentTopTriCounts
+    //println("\nTop 10 Tri(Stateful):\n" + rdd.take(10).mkString("\n"))
      } )
 
     currentUniSorted.foreachRDD(rdd => {
-    val currentTopUniCounts = rdd.take(20)
+    val currentTopUniCounts = rdd.take(10)
     currentTopUni = currentTopUniCounts
-    println("\nTop 20 Uni(Non-Stateful):\n" + rdd.take(10).mkString("\n"))
+    //println("\nTop 10 Uni(Non-Stateful):\n" + rdd.take(10).mkString("\n"))
      } )
 
     currentBiSorted.foreachRDD(rdd => {
-    val currentTopBiCounts = rdd.take(15)
+    val currentTopBiCounts = rdd.take(5)
     currentTopBi = currentTopBiCounts
-    println("\nTop 15 Bi(Non-Stateful):\n" + rdd.take(5).mkString("\n"))
+    //println("\nTop 5 Bi(Non-Stateful):\n" + rdd.take(5).mkString("\n"))
+     } )
+
+    currentTriSorted.foreachRDD(rdd => {
+    val currentTopTriCounts = rdd.take(5)
+    currentTopTri = currentTopTriCounts
+    //println("\nTop 5 Tri(Non-Stateful):\n" + rdd.take(5).mkString("\n"))
      } )
 
     //This is so that we don't get a null pointer exception right off the bat
@@ -317,7 +352,7 @@ object NetworkWordCount {
     //It doesn't make sense to do anything until we get that information
     biSorted.foreachRDD(rdd => {
     if (topUni != null && topBi != null) {
-        model = topUni ++ topBi ++ currentTopUni ++ currentTopBi
+        model = topUni ++ topBi ++ topTri ++ currentTopUni ++ currentTopBi ++ currentTopTri
         modelLength = model.length
         println("\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
         for (x <- model) {
